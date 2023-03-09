@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('../fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('../fonts/Satoshi-Variable.woff') format('woff'),
+       url('../fonts/Satoshi-Variable.ttf') format('truetype');
+       font-weight: 300 900;
+       font-display: swap;
+       font-style: normal;
+}
+
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  justify-content: center;
+  font-family: 'Satoshi-Variable', 'sans-serif';
+  margin-top: 20px;
   min-width: 320px;
   min-height: 100vh;
 }
