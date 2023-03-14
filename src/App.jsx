@@ -5,12 +5,12 @@ import TwitterLogo from "./assets/twitter.png";
 import InstagramLogo from "./assets/instagram.png";
 import MenuLogo from "./assets/menu.png";
 import About from "./pages/About";
-import Services from "./pages/Services";
 import Experience from "./pages/Experience";
+import TechStack from "./pages/TechStack";
 
 function App() {
   return (
-    <div className="App bg-[#F8FAFC]">
+    <div className="App">
       <div className=" flex justify-between mx-16 ">
         <div className="text-xl pt-2">DvJoan</div>
         <div className=" flex gap-7 items-center ">
@@ -48,7 +48,7 @@ function App() {
       <hr className="my-3 w-full" />
       <Home />
       <About />
-      <Services />
+      <TechStack />
       <Experience />
     </div>
   );
