@@ -6,10 +6,11 @@ import InstagramLogo from "./assets/instagram.png";
 import MenuLogo from "./assets/menu.png";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import Experience from "./pages/Experience";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-[#F8FAFC]">
       <div className=" flex justify-between mx-16 ">
         <div className="text-xl pt-2">DvJoan</div>
         <div className=" flex gap-7 items-center ">
@@ -44,10 +45,11 @@ function App() {
           </button>
         </div>
       </div>
-      <hr  className="my-3 w-full"/>
+      <hr className="my-3 w-full" />
       <Home />
-      <About/>
-      <Services/>
+      <About />
+      <Services />
+      <Experience />
     </div>
   );
 }
