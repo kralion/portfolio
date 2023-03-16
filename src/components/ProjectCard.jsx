@@ -15,7 +15,7 @@ import {
     Tooltip,
 
 } from "@material-tailwind/react";
-export default function Example({ projectTitle, description, usedTechnologies, projectImage }) {
+export default function Example({ projectTitle, description, usedTechnologies, projectImage, projectLink }) {
     const technologies = [
         {
             logo: tailwindLogo,
@@ -49,7 +49,7 @@ export default function Example({ projectTitle, description, usedTechnologies, p
 
 
     return (
-        <Card className="w-full max-w-[26rem] relative p-3 mx-5 hover:shadow-xl border-[1px] border-slate-400 rounded-xl">
+        <Card className="w-full max-w-[26rem] relative p-5 mx-5 hover:shadow-xl hover:border-[1px] hover:border-slate-400 rounded-xl duration-200">
             <CardHeader floated={false} color="blue-gray">
                 <img
                     src={projectImage}
@@ -65,15 +65,12 @@ export default function Example({ projectTitle, description, usedTechnologies, p
                         {projectTitle}
                     </Typography>
                     <Typography
-                        className="flex items-center gap-1.5 font-normal text-[12px] text-[#eb5e28] rounded-lg px-2 py-0.5"
+                        className="flex items-center gap-1.5 font-normal text-[12px] text-[#eb5e28] rounded-lg px-2 py-0.5 border-[1px] border-orange-600 cursor-pointer  hover:bg-orange-600 hover:text-white duration-200 active:bg-orange-700 "
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                        </svg>
-                        medium
+                        demo
                     </Typography>
                 </div>
-                <Typography color="gray" className="text-justify font-Roboto px-3">
+                <Typography color="gray" className="text-left font-Roboto px-3">
                     {description}
                 </Typography>
                 <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
@@ -81,7 +78,7 @@ export default function Example({ projectTitle, description, usedTechnologies, p
                         if (usedTechnologies.includes(tech.alt)) {
                             return (
                                 <Tooltip key={tech.alt} content={tech.Tooltip}>
-                                    <span className="cursor-pointer flex justify-center items-center rounded-full border border-blue-500/5 py-[9px] transition-colors hover:border-blue-500/10 hover:bg-blue-600/10 w-10 h-10 hover:!opacity-100 group-hover:opacity-70">
+                                    <span className="flex justify-center items-center rounded-full border border-blue-500/5 py-[9px] transition-colors hover:border-blue-500/10 hover:bg-blue-600/10 w-10 h-10 hover:!opacity-100 group-hover:opacity-70">
                                         <img className="p-[5px]" src={tech.logo} alt={tech.alt} />
                                     </span>
                                 </Tooltip>
@@ -98,8 +95,8 @@ export default function Example({ projectTitle, description, usedTechnologies, p
                 </div>
             </CardBody>
             <CardFooter className="pt-3">
-                <Button size="lg" fullWidth={true} className="px-12 py-2 bg-[#403d39] text-white tracking-wider  rounded-xl" >
-                    Go to Project
+                <Button size="lg" fullWidth={true} className="px-12 py-2 normal-case bg-[#403d39] text-white tracking-wider  rounded-xl" >
+                    <a href={projectLink} target="_blank" rel="noreferrer" >Go to Project</a>
                 </Button>
             </CardFooter>
         </Card>

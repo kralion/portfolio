@@ -6,6 +6,7 @@ module.exports = {
 			fontFamily: {
 				"Source-Sans-Pro": ["Source Sans Pro", "sans-serif"],
 				Roboto: ["Roboto", "sans-serif"],
+				Satisfy: ["Satisfy", "cursive"],
 			},
 			boxShadow: {
 				"3xl": "0 55px 60px 55px rgba(0, 0, 0, 0)",
