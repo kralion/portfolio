@@ -7,11 +7,11 @@ import githubWhite from "../assets/github-white.png"
 
 function Experience() {
     return (
-        <div className=" mx-24 my-12 text-center font-Source-Sans-Pro">
-            <div className="p-20 flex flex-col gap-5">
+        <section id='experience' className=" mx-24 my-12 text-center font-Source-Sans-Pro">
+            <header className="p-20 flex flex-col gap-5">
                 <span className="bg-[#eb5e28] w-[102px] text-center px-3 my-2 text-gray-100 font-semibold py-1 self-center pb-2 rounded-full">Experience</span>
                 <h3 className="text-4xl font-bold">My Latest Projects</h3>
-            </div>
+            </header>
 
 
 
@@ -27,7 +27,7 @@ function Experience() {
                 </div>
 
                 <div
-                    className=" w-full max-w-[26rem] relative p-5 mx-5 hover:shadow-xl hover:border-[1px] hover:border-slate-400 rounded-xl duration-200 bg-white ">
+                    className=" w-full max-w-[26rem] hover:scale-105 relative p-5 mx-5 hover:shadow-xl  rounded-xl duration-200 bg-white ">
 
                     More Projects
 
@@ -55,7 +55,7 @@ function Experience() {
 
 
 
-        </div>
+        </section >
 
     )
 }

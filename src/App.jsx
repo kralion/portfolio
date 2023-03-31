@@ -14,51 +14,59 @@ import mailIcon from "./assets/mail.svg";
 function App() {
   return (
     <div className="App">
-      <div className=" flex justify-between ml-16 mr-7 my-7">
-        <div className="text-3xl pt-2 font-Satisfy drop-shadow-lg">Brayanjoan</div>
-        <div className=" flex gap-5 items-center font-Source-Sans-Pro font-semibold tracking-wide ">
-          <a href="https://github.com/Dv-Joan" target="_blank" rel="noreferrer" >
-            <div className="flex gap-2 px-3 py-1 border-[1px] border-zinc-200  rounded-md hover:text-slate-600 cursor-pointer ">
-              <div className="pt-1  ">
-                <img src={GitHubLogo} alt="github" />
+      <header className=" flex justify-between ml-16 mr-7 my-7">
+        <h2 className="text-3xl pt-2 font-Satisfy drop-shadow-lg">Brayanjoan</h2>
+        <nav className="font-Source-Sans-Pro font-semibold tracking-wide ">
+          <ul className="flex gap-5 mt-2">
+            <li><a href="https://github.com/Dv-Joan" target="_blank" rel="noreferrer" >
+              <div className="flex gap-2 px-3 py-1 border-[1px] border-zinc-200  rounded-md  cursor-pointer hover:bg-neutral-200">
+                <div className="pt-1  ">
+                  <img src={GitHubLogo} alt="github" />
+                </div>
+                <span>GitHub</span>
               </div>
-              <span>GitHub</span>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/brayan-joan/" target="_blank" rel="noreferrer">
-            <div className="flex gap-2 px-3 py-1 border-[1px] border-zinc-200  rounded-md hover:text-slate-600 cursor-pointer ">
-              <div className="pt-1">
-                <img src={LinkedInLogo} alt="linkedin" />
-              </div>
-              <span>LinkedIn</span>
-            </div>
-          </a>
-          <a href="https://twitter.com/joanpaucar_" target="_blank" rel="noreferrer">
-            <div className="flex gap-2 px-3 py-1 border-[1px] border-zinc-200  rounded-md hover:text-slate-600 cursor-pointer ">
-              <div className="pt-1">
-                <img src={TwitterLogo} alt="twitter" />
-              </div>
-              Twitter
-            </div>
-          </a>
+            </a>
+            </li>
 
-          <a href="https://www.instagram.com/joan.paucar/" target="_blank" rel="noreferrer">
+            <li>
+              <a href="https://www.linkedin.com/in/brayan-joan/" target="_blank" rel="noreferrer">
+                <div className="flex gap-2 px-3 py-1 border-[1px] border-zinc-200  rounded-md  cursor-pointer hover:bg-neutral-200">
+                  <div className="pt-1">
+                    <img src={LinkedInLogo} alt="linkedin" />
+                  </div>
+                  <span>LinkedIn</span>
+                </div>
+              </a>
+            </li>
 
-            <div className="flex gap-2 px-3 py-1 border-[1px] border-zinc-200  rounded-md hover:text-slate-600 cursor-pointer ">
-              <div className="pt-1">
-                <img src={InstagramLogo} alt="instagram" />
-              </div>
-              Instagram
-            </div>
-          </a>
-        </div>
-        <div className="">
-          <button className=" font-Source-Sans-Pro px-4 py-2 rounded-md">
-            <img src={MenuLogo} className="hover:text-slate-600" alt="menu" />
-          </button>
-        </div>
-      </div>
-      <hr className="my-3 w-full" />
+            <li>
+              <a href="https://twitter.com/joanpaucar_" target="_blank" rel="noreferrer">
+                <div className="flex gap-2 px-3 py-1 border-[1px] border-zinc-200  rounded-md  cursor-pointer hover:bg-neutral-200">
+                  <div className="pt-1">
+                    <img src={TwitterLogo} alt="twitter" />
+                  </div>
+                  Twitter
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/joan.paucar/" target="_blank" rel="noreferrer">
+
+                <div className="flex gap-2 px-3 py-1 border-[1px] border-zinc-200  rounded-md  cursor-pointer hover:bg-neutral-200">
+                  <div className="pt-1">
+                    <img src={InstagramLogo} alt="instagram" />
+                  </div>
+                  Instagram
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </header>
+      <hr
+        class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-300 to-transparent opacity-80 " />
       <Home />
       <About />
       <hr
@@ -67,10 +75,12 @@ function App() {
       <hr
         class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-300 to-transparent opacity-80 " />
       <Experience />
-      <hr />
+      <hr
+        class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-300 to-transparent opacity-80 " />
       <Contact />
       <footer>
-        <hr className="my-3 w-full" />
+        <hr
+          class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-300 to-transparent opacity-80 " />
         <div className="flex justify-center font-Source-Sans-Pro gap-16">
 
           <div className="flex items-center">

@@ -49,7 +49,7 @@ export default function Example({ projectTitle, description, usedTechnologies, p
 
 
     return (
-        <Card className="w-full max-w-[26rem] relative p-5 mx-5 hover:shadow-xl hover:border-[1px] hover:border-slate-400 rounded-xl duration-200">
+        <Card className="w-full cursor-default max-w-[26rem] relative p-5 mx-5 hover:scale-105 hover:shadow-xl hover:border-slate-400 rounded-xl duration-300">
             <CardHeader floated={false} color="blue-gray">
                 <img
                     src={projectImage}
