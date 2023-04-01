@@ -9,7 +9,7 @@ function Contact() {
             </div>
 
             <button className="bg-[#FDC738] hover:text-[#e4bc50] hover:bg-black  font-semibold px-5 py-2 ease-in-out duration-300 active:shadow-[0.3rem_0.3rem_0.01rem_0.1rem_rgba(167,138,59,0.8)]  shadow-[0.3rem_0.3rem_0.01rem_0.1rem_rgba(15,15,15,15)] hover:shadow-[0.3rem_0.3rem_0.01rem_0.1rem_rgba(253,199,56,0.8)]">
-                <a href="https://www.linkedin.com/in/brayan-joan">LET'S TALK</a>
+                <a href="https://wa.me/51914019629">LET'S TALK</a>
             </button>
         </section>
     )
