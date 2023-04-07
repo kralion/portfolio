@@ -10,6 +10,7 @@ import TechStack from "./pages/TechStack";
 import Contact from "./pages/Contact";
 import callIcon from "./assets/call.svg";
 import mailIcon from "./assets/mail.svg";
+import Testimonial from "./pages/Testimonial";
 
 function App() {
   return (
@@ -75,6 +76,9 @@ function App() {
       <hr
         class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-300 to-transparent opacity-80 " />
       <Experience />
+      <hr
+        class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-300 to-transparent opacity-80 " />
+      <Testimonial />
       <hr
         class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-300 to-transparent opacity-80 " />
       <Contact />
