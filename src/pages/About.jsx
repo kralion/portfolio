@@ -12,7 +12,9 @@ function About() {
         <span className="bg-[#eb5e28] w-[102px] text-center px-3 my-5 text-gray-100 font-semibold py-1 self-left pb-2 rounded-full">About Me</span>
         <h3 className="text-4xl font-semibold">Why Hiring Me For Your Next <br /> Project</h3>
         <p className="text-gray-500 w-3/4">
-          My passion is transforming ideas into captivating digital experiences. With over a year of experience in large-scale projects, I am passionate about pushing my creativity to the limit and using the latest technologies to create solutions that impact users. I'm about to graduate and I'm eager to put into practice everything I've learned and face new challenges that will allow me to continue growing as a professional.        </p>
+          The combination of AI and Frontend is one of the perfect combinations to achieve this, and I have experience in both areas. My focus on leveraging AI to drive Frontend development has allowed me to create efficient, user-centric solutions. As a prompt engineer, I can streamline the process of developing technology solutions to take full advantage of AI and Frontend, and take the company's core business to the next level.  <br /> <span className='text-zinc-700 font-semibold'>
+            " I am excited to face new challenges and continue to grow as a professional "   </span>   </p>
+
 
         <div className="my-5">
           <a href={cv} download="CV.pdf">
