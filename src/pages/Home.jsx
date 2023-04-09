@@ -13,7 +13,7 @@ function Home() {
           <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="200"  >
             <div className="flex flex-col gap-2 mt-10">
               <span className="text-4xl font-semibold">FRONT-END DEVELOPER </span>
-              <span className="text-4xl font-semibold"><span className="text-[#FDC738]  text-4xl"> & </span>PROMPT ENGINEER</span>
+              <span className="text-4xl font-semibold"><span className="text-[#ecbb32]  text-4xl"> & </span>PROMPT ENGINEER</span>
               <span className="text-5xl mt-16 font-black">BRAYAN JOAN P.M</span>
             </div>
             <div className="mt-14 mb-7">

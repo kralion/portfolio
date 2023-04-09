@@ -12,6 +12,7 @@ import callIcon from "./assets/call.svg";
 import mailIcon from "./assets/mail.svg";
 import Testimonial from "./pages/Testimonial";
 import AOSWrapper from "./utils/AOS";
+import myLogo from "./assets/mylogo.png";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
     <div className="App">
       <AOSWrapper>
         <header data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" className=" flex justify-between ml-16 mr-7 my-7">
-          <h2 className="text-3xl pt-2 font-Satisfy drop-shadow-lg">Brayanjoan</h2>
+          {/* <h2 className="text-3xl pt-2 font-Satisfy drop-shadow-lg">Brayanjoan</h2> */}
+          <img data-aos="flip-up" data-aos-duration="1500" data-aos-delay="300" src={myLogo} height={10} width={150} alt="myLogo" />
           <nav className="font-Source-Sans-Pro font-semibold tracking-wide ">
             <ul className="flex gap-5 mt-2">
               <li><a href="https://github.com/Dv-Joan" target="_blank" rel="noreferrer" >
