@@ -3,12 +3,14 @@ import devBanner from "../assets/banner.png";
 import cv from "../assets/CV.pdf";
 
 
+
 function About() {
+
   return (
 
     <section id='about' className="flex justify-between ml-36 gap-10 items-center font-Source-Sans-Pro">
-      <img src={devBanner} className="mt-7" width={800} alt="devbanner" />
-      <div className=" flex flex-col gap-5">
+      <img data-aos="slide-right" data-aos-duration="1000" src={devBanner} className="mt-7" width={800} alt="devbanner" />
+      <div data-aos="fade-in" data-aos-delay="200" data-aos-duration="500" className=" flex flex-col gap-5">
         <span className="bg-[#eb5e28] w-[102px] text-center px-3 my-5 text-gray-100 font-semibold py-1 self-left pb-2 rounded-full">About Me</span>
         <h3 className="text-4xl font-semibold">Why Hiring Me For Your Next <br /> Project</h3>
         <p className="text-gray-500 w-3/4">
@@ -25,6 +27,7 @@ function About() {
         </div>
       </div>
     </section>
+
   )
 }
 
