@@ -19,10 +19,13 @@ function App() {
 
     <div className="App">
       <AOSWrapper>
-        <header data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" className=" flex justify-between ml-16 mr-7 my-7">
-          {/* <h2 className="text-3xl pt-2 font-Satisfy drop-shadow-lg">Brayanjoan</h2> */}
-          <img data-aos="flip-up" data-aos-duration="1500" data-aos-delay="300" src={myLogo} height={10} width={150} alt="myLogo" />
-          <nav className="font-Source-Sans-Pro font-semibold tracking-wide ">
+        <header data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" className=" backdrop-blur-xl  sticky lg:static top-0 z-50 flex justify-between lg:ml-16 lg:mr-7 lg:my-7">
+          <div className="flex justify-between gap-36 items-center">
+
+            <img data-aos="flip-up" data-aos-duration="1500" data-aos-delay="300" src={myLogo} height={10} width={150} alt="myLogo" />
+            <img src={MenuLogo} alt="menuLogo" className="inline lg:hidden" />
+          </div>
+          <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
             <ul className="flex gap-5 mt-2">
               <li><a href="https://github.com/Dv-Joan" target="_blank" rel="noreferrer" >
                 <div className="flex gap-2 px-3 py-1 border-[1px] border-zinc-200  rounded-md  cursor-pointer hover:bg-neutral-200">
@@ -90,8 +93,8 @@ function App() {
       <Contact />
       <footer>
         <hr
-          class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-300 to-transparent opacity-80 " />
-        <div className="flex justify-center font-Source-Sans-Pro gap-16">
+          class="lg:my-12 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-300 to-transparent opacity-80 " />
+        <div className="flex justify-center lg:flex-row flex-col font-Source-Sans-Pro lg:gap-16">
 
           <div className="flex items-center">
             <img className="bg-[#403d39] w-12 duration-200 rounded-full p-3 m-3" src={callIcon} alt="callme" />

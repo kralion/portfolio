@@ -8,12 +8,12 @@ import githubWhite from "../assets/github-white.png"
 function Experience() {
 
     return (
-        <section data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1000" id='experience' className=" mx-24 my-12 text-center font-Source-Sans-Pro">
-            <header className="p-20 flex flex-col gap-5">
+        <section data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1000" id='experience' className=" lg:mx-24 my-12 text-center font-Source-Sans-Pro">
+            <header className="lg:p-20 px-5 py-10 flex flex-col gap-5">
                 <span className="bg-[#eb5e28] w-[102px] text-center px-3 my-2 text-gray-100 font-semibold py-1 self-center pb-2 rounded-full">Experience</span>
-                <h3 className="text-4xl font-bold">My Latest Projects</h3>
+                <h3 className="lg:text-4xl text-2xl font-bold">My Latest Projects</h3>
             </header>
-            <div className="grid grid-cols-3 gap-12 items-center">
+            <div className="grid  grid-cols-1 lg:grid-cols-3 gap-12 items-center">
                 <ProjectCard projectTitle="UX UI Todo" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." usedTechnologies={["react", "tailwindcss", "firebase", "graphql"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/ux-ui-todo.app" />
                 <ProjectCard projectTitle="Clans CRUD" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." usedTechnologies={["firebase", "tailwindcss", "react"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/practicas-react" />
                 <ProjectCard projectTitle="ECO Inc LP" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." usedTechnologies={["react", "tailwindcss"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/Ecologycall-SLP" />
