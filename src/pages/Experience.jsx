@@ -30,7 +30,7 @@ function Experience() {
                     More Projects
 
                     <hr
-                        class="my-3 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-400 to-transparent opacity-50" />
+                        className="my-3 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-400 to-transparent opacity-50" />
                     <div className="p-6 ">
                         <h5
                             className="mb-2 text-xl font-medium leading-tight text-neutral-800 ">
