@@ -68,6 +68,8 @@ export default function Example({ projectTitle, description, usedTechnologies, p
                     src={projectImage}
                     alt="ui/ux review check"
                     className="rounded-xl"
+                    width="100%"
+                    height="auto"
                 />
                 <div className="to-bg-black-10 absolute inset-0 h-full rounded-xl bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
 

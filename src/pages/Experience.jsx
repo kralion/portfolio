@@ -4,6 +4,7 @@ import uxuitodo from "../assets/project-bg/uxuitodo.png"
 import todo from "../assets/project-bg/todo.png"
 import { Button } from "@material-tailwind/react";
 import githubWhite from "../assets/github-white.png"
+import uncpLogo from "../assets/project-bg/uncp.png"
 
 function Experience() {
 
@@ -18,7 +19,7 @@ function Experience() {
                 <ProjectCard projectTitle="Clans CRUD" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." usedTechnologies={["firebase", "tailwindcss", "react"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/practicas-react" />
                 <ProjectCard projectTitle="ECO Inc LP" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." usedTechnologies={["react", "tailwindcss"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/Ecologycall-SLP" />
                 <ProjectCard projectTitle="UX UI Todo" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." usedTechnologies={["react", "tailwindcss", "firebase", "graphql"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/uncp-apps-dev" />
-                <ProjectCard projectTitle="WebApp Course" description="University course about web applications development with JavaScript & it's libraries" usedTechnologies={["react", "js","tailwindcss", "css"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/uncp-apps-dev" />
+                <ProjectCard projectTitle="WebApp Course" description="University course about web applications development with JavaScript & it's libraries" usedTechnologies={["react", "js","tailwindcss", "css"]} projectImage={uncpLogo} projectLink="https://github.com/Dv-Joan/uncp-apps-dev" />
                 <ProjectCard projectTitle="Clans CRUD" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." usedTechnologies={["firebase", "tailwindcss", "react"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/practicas-react" />
                 <div className="">
 
