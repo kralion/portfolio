@@ -3,6 +3,8 @@ import reactLogo from "../assets/tag-images/react-tag.png";
 import viteLogo from "../assets/tag-images/vite-tag.png";
 import graphqlLogo from "../assets/tag-images/graphql-tag.png";
 import firebaseLogo from "../assets/tag-images/firebase-tag.png";
+import cssLogo from "../assets/tag-images/css-tag.png";
+import jsLogo from "../assets/tag-images/js-tag.png";
 
 
 import {
@@ -43,6 +45,17 @@ export default function Example({ projectTitle, description, usedTechnologies, p
             alt: "graphql",
             Tooltip: "GraphQL",
         },
+        {
+            logo: cssLogo,
+            alt: "css",
+            Tooltip: "CSS",
+        }
+        ,
+        {
+            logo: jsLogo,
+            alt: "js",
+            Tooltip: "JavaScript",
+        }
 
 
     ]
@@ -64,11 +77,13 @@ export default function Example({ projectTitle, description, usedTechnologies, p
                     <Typography variant="h5" color="blue-gray" className="font-medium">
                         {projectTitle}
                     </Typography>
-                    <Typography
-                        className="flex items-center gap-1.5 font-normal text-[12px] text-[#eb5e28] rounded-lg px-2 py-0.5 border-[1px] border-orange-600 cursor-pointer  hover:bg-orange-600 hover:text-white duration-200 active:bg-orange-700 "
-                    >
+                    
+                        <a href="https://www.brave.com" target="_blank" rel="noreferrer"
+                        className="flex items-center gap-1.5 font-normal text-[12px] text-[#eb5e28] rounded-lg px-2 py-0.5 border-[1px] border-orange-600 cursor-pointer  hover:bg-orange-600 hover:text-white duration-200 active:bg-orange-700 ">
+
                         demo
-                    </Typography>
+                        </a>
+                   
                 </div>
                 <Typography color="gray" className="text-left font-Roboto px-3">
                     {description}
@@ -87,11 +102,7 @@ export default function Example({ projectTitle, description, usedTechnologies, p
                             return null;
                         }
                     })}
-                    <Tooltip content="And +2 more">
-                        <span className="cursor-pointer flex items-center justify-center rounded-full border border-blue-500/5 bg-blue-500/5 transition-colors hover:border-blue-500/10 hover:bg-blue-500/10 w-10 h-10 text-[#FDC738] hover:!opacity-100 group-hover:opacity-70">
-                            +2
-                        </span>
-                    </Tooltip>
+                   
                 </div>
             </CardBody>
             <CardFooter className="pt-3">
