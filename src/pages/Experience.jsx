@@ -1,10 +1,10 @@
 import React from 'react'
 import ProjectCard from '../components/ProjectCard'
-import uxuitodo from "../assets/project-bg/uxuitodo.png"
-import todo from "../assets/project-bg/todo.png"
+import uxuitodo from "../assets/images/uxuitodo.png"
+import todo from "../assets/images/todo.png"
 import { Button } from "@material-tailwind/react";
-import githubWhite from "../assets/github-white.png"
-import uncpLogo from "../assets/project-bg/uncp.png"
+import githubWhite from "../assets/images/github-white.png"
+import uncpLogo from "../assets/images/uncp.png"
 
 function Experience() {
     return (
@@ -14,15 +14,14 @@ function Experience() {
                 <h3 className="lg:text-4xl text-2xl font-bold">My Latest Projects</h3>
             </header>
             <div className="grid  grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-                <ProjectCard projectTitle="UX UI Todo" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." usedTechnologies={["react", "tailwindcss", "firebase", "graphql"]} demoLink="https://www.github.com" projectImage={todo} projectLink="https://github.com/Dv-Joan/event-wise" />
+                <ProjectCard projectTitle="Event Wise" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." usedTechnologies={["react", "tailwindcss", "firebase", "graphql"]} demoLink="https://www.github.com" projectImage={todo} projectLink="https://github.com/Dv-Joan/event-wise" />
                 <ProjectCard projectTitle="Clans CRUD" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." demoLink="https://www.github.com" usedTechnologies={["firebase", "tailwindcss", "react"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/practicas-react" />
                 <ProjectCard projectTitle="ECO Inc LP" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." demoLink="https://www.github.com" usedTechnologies={["react", "tailwindcss"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/Ecologycall-SLP" />
                 <ProjectCard projectTitle="UX UI Todo" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." demoLink="https://www.github.com" usedTechnologies={["react", "tailwindcss", "firebase", "graphql"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/uncp-apps-dev" />
                 <ProjectCard projectTitle="WebApp Course" description="University course about web applications development with JavaScript & it's libraries" usedTechnologies={["react", "js","tailwindcss", "css"]} projectImage={uncpLogo} demoLink="https://6474ba21cc503510286b207e--thunderous-snickerdoodle-14be3c.netlify.app/" projectLink="https://github.com/Dv-Joan/uncp-apps-dev" />
                 <ProjectCard projectTitle="Clans CRUD" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." demoLink="https://www.github.com"usedTechnologies={["firebase", "tailwindcss", "react"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/practicas-react" />
-                <div className="">
-
-                </div>
+                
+            
 
                 <div
                     className=" w-full max-w-[26rem] hover:scale-105 relative p-5 mx-5 hover:shadow-xl  rounded-xl duration-200 bg-white ">

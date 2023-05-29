@@ -1,8 +1,9 @@
 import React from "react";
-import AppleBrand from "../assets/apple-11.svg";
-import profilePic from "../assets/profile-pic.png";
+import profilePic from "../assets/images/profile-pic.png";
 import '../styles/styles.css';
-import uncpLogo from "../assets/logos/uncp-logo.png";
+import uncpLogo from "../assets/images/uncp.png";
+import fisLogo from "../assets/images/fis.png";
+import microsfotLogo from "../assets/images/microsoft.png";
 import AOSWrapper from '../utils/AOS';
 
 function Home() {
@@ -26,32 +27,20 @@ function Home() {
           </div></div>
         <hr />
         <section id="logos-section" className="flex justify-center space-x-24">
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={uncpLogo} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
-          <img id="logo" src={AppleBrand} alt="apple" />
+      
+          <img id="logo"  src={uncpLogo} alt="apple" />
+          <img id="logo" src={fisLogo} alt="apple" />
+          <img id='logo' src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Microsoft_Edge_Dev_Logo_%282018%29.svg" alt="microsoft" />
+          <img id='logo' src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Bing_Logo.svg" alt="microsoft" />
+          <img id="logo"  src={uncpLogo} alt="apple" />
+          <img id="logo" src={fisLogo} alt="apple" />
+          <img id='logo' src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Microsoft_Edge_Dev_Logo_%282018%29.svg" alt="microsoft" />
+<img id='logo' src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Bing_Logo.svg" alt="microsoft" />
+          <img id="logo"  src={uncpLogo} alt="apple" />
+          <img id="logo" src={fisLogo} alt="apple" />
+          <img id='logo' src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Microsoft_Edge_Dev_Logo_%282018%29.svg" alt="microsoft" />
+<img id='logo' src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Bing_Logo.svg" alt="microsoft" />
+          
         </section>
         <hr />
       </div>

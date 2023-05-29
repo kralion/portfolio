@@ -1,10 +1,10 @@
-import tailwindLogo from "../assets/tag-images/tailwindcss-tag.png";
-import reactLogo from "../assets/tag-images/react-tag.png";
-import viteLogo from "../assets/tag-images/vite-tag.png";
-import graphqlLogo from "../assets/tag-images/graphql-tag.png";
-import firebaseLogo from "../assets/tag-images/firebase-tag.png";
-import cssLogo from "../assets/tag-images/css-tag.png";
-import jsLogo from "../assets/tag-images/js-tag.png";
+import tailwindLogo from "../assets/images/tailwindcss-tag.png";
+import reactLogo from "../assets/images/react-tag.png";
+import viteLogo from "../assets/images/vite-tag.png";
+import graphqlLogo from "../assets/images/graphql-tag.png";
+import firebaseLogo from "../assets/images/firebase-tag.png";
+import cssLogo from "../assets/images/css-tag.png";
+import jsLogo from "../assets/images/js-tag.png";
 
 
 

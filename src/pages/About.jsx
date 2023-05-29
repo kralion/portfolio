@@ -1,8 +1,6 @@
 import React from 'react'
-import devBanner from "../assets/banner.png";
+import devBanner from "../assets/images/banner.png";
 import cv from "../assets/CV.pdf";
-
-
 
 function About() {
 

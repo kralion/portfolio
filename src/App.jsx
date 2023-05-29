@@ -1,9 +1,9 @@
 import Home from "./pages/Home";
-import GitHubLogo from "./assets/github.png";
-import LinkedInLogo from "./assets/linkedin.png";
-import TwitterLogo from "./assets/twitter.png";
-import InstagramLogo from "./assets/instagram.png";
-import MenuLogo from "./assets/menu.png";
+import GitHubLogo from "./assets/images/github.png";
+import LinkedInLogo from "./assets/images/linkedin.png";
+import TwitterLogo from "./assets/images/twitter.png";
+import InstagramLogo from "./assets/images/instagram.png";
+import MenuLogo from "./assets/images/menu.png";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import TechStack from "./pages/TechStack";
@@ -12,7 +12,7 @@ import callIcon from "./assets/call.svg";
 import mailIcon from "./assets/mail.svg";
 import Testimonial from "./pages/Testimonial";
 import AOSWrapper from "./utils/AOS";
-import myLogo from "./assets/mylogo.png";
+import myLogo from "./assets/images/mylogo.png";
 
 function App() {
   return (

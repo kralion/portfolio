@@ -1,26 +1,27 @@
 #logos-section {
-    width: 100%;
+  width: 100%;
 
-    /* Ancho total del contenedor */
-    overflow: hidden;
+  /* Ancho total del contenedor */
+  overflow: hidden;
 }
 
 #logo {
-    display: inline-flex;
-    width: 180px;
-    height: auto;
+  display: inline-flex;
+  width: 100px;
+  height: auto;
+  filter: grayscale(100%);
 }
 
 @keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(-800%);
-    }
+  100% {
+    transform: translateX(-800%);
+  }
 }
 
 #logo {
-    animation: slide 20s linear infinite;
+  animation: slide 20s linear infinite;
 }
