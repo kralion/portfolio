@@ -7,7 +7,6 @@ import githubWhite from "../assets/github-white.png"
 import uncpLogo from "../assets/project-bg/uncp.png"
 
 function Experience() {
-
     return (
         <section data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1000" id='experience' className=" lg:mx-24 my-12 text-center font-Source-Sans-Pro">
             <header className="lg:p-20 px-5 py-10 flex flex-col gap-5">
@@ -19,7 +18,7 @@ function Experience() {
                 <ProjectCard projectTitle="Clans CRUD" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." demoLink="https://www.github.com" usedTechnologies={["firebase", "tailwindcss", "react"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/practicas-react" />
                 <ProjectCard projectTitle="ECO Inc LP" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." demoLink="https://www.github.com" usedTechnologies={["react", "tailwindcss"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/Ecologycall-SLP" />
                 <ProjectCard projectTitle="UX UI Todo" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." demoLink="https://www.github.com" usedTechnologies={["react", "tailwindcss", "firebase", "graphql"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/uncp-apps-dev" />
-                <ProjectCard projectTitle="WebApp Course" description="University course about web applications development with JavaScript & it's libraries" usedTechnologies={["react", "js","tailwindcss", "css"]} projectImage={uncpLogo} demoLink="https://dv-joan.github.io/uncp-apps-dev/" projectLink="https://github.com/Dv-Joan/uncp-apps-dev" />
+                <ProjectCard projectTitle="WebApp Course" description="University course about web applications development with JavaScript & it's libraries" usedTechnologies={["react", "js","tailwindcss", "css"]} projectImage={uncpLogo} demoLink="https://6474ba21cc503510286b207e--thunderous-snickerdoodle-14be3c.netlify.app/" projectLink="https://github.com/Dv-Joan/uncp-apps-dev" />
                 <ProjectCard projectTitle="Clans CRUD" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod." demoLink="https://www.github.com"usedTechnologies={["firebase", "tailwindcss", "react"]} projectImage={todo} projectLink="https://github.com/Dv-Joan/practicas-react" />
                 <div className="">
 

@@ -7,6 +7,7 @@ import cssLogo from "../assets/tag-images/css-tag.png";
 import jsLogo from "../assets/tag-images/js-tag.png";
 
 
+
 import {
     Card,
     CardHeader,
@@ -17,7 +18,7 @@ import {
     Tooltip,
 
 } from "@material-tailwind/react";
-export default function Example({ projectTitle, description, usedTechnologies, projectImage, projectLink }) {
+export default function Example({ projectTitle,demoLink, description, usedTechnologies, projectImage, projectLink }) {
     const technologies = [
         {
             logo: tailwindLogo,
