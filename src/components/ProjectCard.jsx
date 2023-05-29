@@ -80,7 +80,7 @@ export default function Example({ projectTitle, description, usedTechnologies, p
                         {projectTitle}
                     </Typography>
                     
-                        <a href="https://www.brave.com" target="_blank" rel="noreferrer"
+                        <a href={demoLink} target="_blank" rel="noreferrer"
                         className="flex items-center gap-1.5 font-normal text-[12px] text-[#eb5e28] rounded-lg px-2 py-0.5 border-[1px] border-orange-600 cursor-pointer  hover:bg-orange-600 hover:text-white duration-200 active:bg-orange-700 ">
 
                         demo
