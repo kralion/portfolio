@@ -64,19 +64,15 @@ export default function Example({
   ];
 
   return (
-    <Card className="w-full cursor-default lg:max-w-[26rem]  relative   hover:shadow-xl hover:border-slate-400 rounded-xl duration-300">
-      <CardHeader
-        className="flex justify-center"
-        floated={false}
-        color="blue-gray"
-      >
-        <img
-          src={projectImage}
-          alt="ui/ux review check"
-          className="rounded-xl"
-          width="90%"
-          height="auto"
-        />
+    <Card className="hover:shadow-2xl rounded-2xl  duration-300">
+      <CardHeader className="flex object-cover justify-center pt-4 ">
+        <a href={demoLink} target="_blank" rel="noreferrer">
+          <img
+            src={projectImage}
+            alt="cover"
+            className="rounded-md object-cover h-48 w-[300px] hover:scale-110 duration-200 pb-3"
+          />
+        </a>
       </CardHeader>
       <CardBody className="space-y-3">
         <div className=" flex items-baseline justify-between">
@@ -85,7 +81,7 @@ export default function Example({
           </Typography>
 
           <a
-            href={demoLink}
+            href={projectLink}
             target="_blank"
             rel="noreferrer"
             className="flex items-center  font-normal text-sm text-[#eb5e28] rounded-lg px-3 py-1 border-[1px] border-orange-600 cursor-pointer  hover:bg-orange-600 hover:text-white duration-200 active:bg-orange-700 "
@@ -97,13 +93,21 @@ export default function Example({
           {description}
         </Typography>
 
-        <div className="flex justify-center rounded-xl  items-center">
+        <div className="flex justify-center rounded-xl items-center">
           {technologies.map((tech) => {
             if (usedTechnologies.includes(tech.alt)) {
               return (
-                <Tooltip key={tech.alt} content={tech.Tooltip}>
-                  <span className="flex justify-center items-center rounded-full border border-blue-500/5 py-[9px] transition-colors hover:border-blue-500/10 hover:bg-blue-600/10 w-10 h-10 hover:!opacity-100 group-hover:opacity-70">
-                    <img className="p-[5px]" src={tech.logo} alt={tech.alt} />
+                <Tooltip key={tech.alt}>
+                  <span
+                    title={tech.Tooltip}
+                    className="flex justify-center items-center rounded-full border border-blue-500/5 p-2  transition-colors hover:border-blue-500/10 hover:bg-blue-600/10 hover:!opacity-100 group-hover:opacity-70"
+                  >
+                    <img
+                      width={30}
+                      height={30}
+                      src={tech.logo}
+                      alt={tech.alt}
+                    />
                   </span>
                 </Tooltip>
               );
@@ -113,15 +117,15 @@ export default function Example({
           })}
         </div>
       </CardBody>
-      <CardFooter className="pt-3">
+      <CardFooter>
         <Button
           size="lg"
           fullWidth={true}
-          className="flex justify-center py-3 normal-case bg-[#403d39] text-white hover:bg-black hoveR:text-white duration tracking-wider  rounded-xl"
+          className="flex justify-center py-3 normal-case bg-[#403d39] text-white hover:bg-black hover:text-white duration tracking-wider  rounded-xl"
         >
           <a
-            href={projectLink}
-            className="items-center flex gap-3  "
+            href={demoLink}
+            className="items-end flex gap-3  "
             target="_blank"
             rel="noreferrer"
           >
