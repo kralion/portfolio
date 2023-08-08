@@ -1,4 +1,5 @@
 import tailwindLogo from "../assets/images/tailwindcss-tag.png";
+import aiLogo from "../assets/icons/ai.png";
 import reactLogo from "../assets/images/react-tag.png";
 import viteLogo from "../assets/images/vite-tag.png";
 import graphqlLogo from "../assets/images/graphql-tag.png";
@@ -6,7 +7,11 @@ import firebaseLogo from "../assets/images/firebase-tag.png";
 import cssLogo from "../assets/images/css-tag.png";
 import jsLogo from "../assets/images/js-tag.png";
 import NewWindowLogo from "../assets/icons/new-window.png";
-
+import NextJSLogo from "../assets/stack-logos/nextjs.png";
+import SupabaseLogo from "../assets/stack-logos/supabase.png";
+import TypescriptLogo from "../assets/stack-logos/ts.png";
+import ViteJSLogo from "../assets/stack-logos/vite.png";
+import RedisLogo from "../assets/stack-logos/redis.png";
 import {
   Card,
   CardHeader,
@@ -31,6 +36,26 @@ export default function Example({
       Tooltip: "TailwindCSS",
     },
     {
+      logo: RedisLogo,
+      alt: "redis",
+      Tooltip: "Redis",
+    },
+    {
+      logo: TypescriptLogo,
+      alt: "typescript",
+      Tooltip: "TypeScript",
+    },
+    {
+      logo: SupabaseLogo,
+      alt: "supabase",
+      Tooltip: "Supabase",
+    },
+    {
+      logo: ViteJSLogo,
+      alt: "vitejs",
+      Tooltip: "ViteJS",
+    },
+    {
       logo: reactLogo,
       alt: "react",
       Tooltip: "React",
@@ -39,6 +64,11 @@ export default function Example({
       logo: viteLogo,
       alt: "vite",
       Tooltip: "Vite",
+    },
+    {
+      logo: NextJSLogo,
+      alt: "nextjs",
+      Tooltip: "NextJS",
     },
 
     {
@@ -60,6 +90,11 @@ export default function Example({
       logo: jsLogo,
       alt: "js",
       Tooltip: "JavaScript",
+    },
+    {
+      logo: aiLogo,
+      alt: "ai",
+      Tooltip: "Artificial Intelligence",
     },
   ];
 

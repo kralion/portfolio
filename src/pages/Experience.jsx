@@ -24,11 +24,11 @@ function Experience() {
         </span>
         <h3 className="lg:text-4xl text-2xl font-bold">Side Projects</h3>
       </header>
-      <div className="grid  grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+      <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 items-center">
         <ProjectCard
           projectTitle="Exaya"
           description="Modern transportation management system with AI integrations"
-          usedTechnologies={["react", "tailwindcss", "firebase", "graphql"]}
+          usedTechnologies={["nextjs", "tailwindcss", "redis", "ai", "graphql"]}
           demoLink="https://www.github.com"
           projectImage={ExayaRepoCover}
           projectLink="https://github.com/Dv-Joan/event-wise"
@@ -37,7 +37,13 @@ function Experience() {
           projectTitle="Event Wise"
           description="Smart productivity app harnessing AI for efficient workflows."
           demoLink="https://www.github.com"
-          usedTechnologies={["firebase", "tailwindcss", "react"]}
+          usedTechnologies={[
+            "ai",
+            "tailwindcss",
+            "react",
+            "vitejs",
+            "typescript",
+          ]}
           projectImage={EventWiseRepoCover}
           projectLink="https://github.com/Dv-Joan/practicas-react"
         />
@@ -45,7 +51,7 @@ function Experience() {
           projectTitle="Powerhub"
           description="Essential EV companion for battery stats and nearby charging station tracking."
           demoLink="https://www.github.com"
-          usedTechnologies={["react", "tailwindcss"]}
+          usedTechnologies={["tailwindcss", "nextjs", "redis", "typescript"]}
           projectImage={PowerhubRepoCover}
           projectLink="https://github.com/Dv-Joan/Ecologycall-SLP"
         />
@@ -53,14 +59,20 @@ function Experience() {
           projectTitle="Simplypay"
           description="A modern, intuitive payment app, city's top choice utilizing, w/ UX best practices."
           demoLink="https://www.github.com"
-          usedTechnologies={["react", "tailwindcss", "firebase", "graphql"]}
+          usedTechnologies={[
+            "vitejs",
+            "react",
+            "tailwindcss",
+            "redis",
+            "typescript",
+          ]}
           projectImage={SimplypayRepoCover}
           projectLink="https://github.com/Dv-Joan/uncp-apps-dev"
         />
         <ProjectCard
           projectTitle="Maburo"
           description="Innovative airline management platform harnessing cutting-edge technologies."
-          usedTechnologies={["react", "js", "tailwindcss", "css"]}
+          usedTechnologies={["nextjs", "typescript", "tailwindcss", "graphql"]}
           projectImage={MaburoRepoCover}
           demoLink="https://proyectos-semanales.netlify.app/"
           projectLink="https://github.com/Dv-Joan/uncp-apps-dev"
@@ -69,12 +81,13 @@ function Experience() {
           projectTitle="Luminary"
           description="Modern immersive electronics shopping experience for cutting-edge retail tech."
           demoLink="https://www.github.com"
-          usedTechnologies={["firebase", "tailwindcss", "react"]}
+          usedTechnologies={["firebase", "tailwindcss", "react", "vite"]}
           projectImage={LuminaryRepoCover}
           projectLink="https://github.com/Dv-Joan/practicas-react"
         />
-
-        <div className=" p-5 col-span-2 hover:shadow-2xl shadow-xl  rounded-2xl duration-200 bg-white ">
+      </div>
+      <div className="flex justify-center my-10">
+        <div className="w-[700px]  p-5 col-span-2 hover:shadow-2xl shadow-xl  rounded-2xl duration-200 bg-white ">
           More Projects
           <hr className="my-3 h-px " />
           <div className="p-6 ">
