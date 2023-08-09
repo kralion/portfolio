@@ -19,10 +19,12 @@ function Experience() {
       className=" lg:mx-24 my-12 text-center font-Source-Sans-Pro"
     >
       <header className="lg:p-20 px-5 py-10 flex flex-col gap-5">
-        <span className="bg-[#eb5e28] w-[102px] text-center px-3 my-2 text-gray-100 font-semibold py-1 self-center pb-2 rounded-full">
+        <span className="bg-[#eb5e28] w-[102px] text-center px-3 my-2 text-gray-100  py-1 self-center pb-2 rounded-full">
           Experience
         </span>
-        <h3 className="lg:text-4xl text-2xl font-bold">Side Projects</h3>
+        <h3 className="lg:text-4xl text-2xl font-Inter font-bold">
+          Side Projects
+        </h3>
       </header>
       <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 items-center">
         <ProjectCard

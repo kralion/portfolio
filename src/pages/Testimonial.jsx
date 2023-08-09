@@ -14,7 +14,7 @@ function Testimonial() {
             data-aos-duration="1500"
             className="p-4 md:w-1/2 w-full"
           >
-            <div className="h-full bg-gray-200/20 p-8 shadow-md rounded-xl">
+            <div className="h-full bg-white p-8 shadow-md rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="gray"
@@ -39,7 +39,7 @@ function Testimonial() {
                   <span className="title-font font-medium text-gray-900 ">
                     Robert Hudson
                   </span>
-                  <span className="text-gray-500 text-sm">Designer</span>
+                  <span className="text-gray-500 text-sm">Designer-</span>
                 </span>
               </a>
             </div>
@@ -50,7 +50,7 @@ function Testimonial() {
             data-aos-duration="1500"
             className="p-4 md:w-1/2 w-full"
           >
-            <div className="h-full bg-gray-200/20 p-8 shadow-md rounded-xl">
+            <div className="h-full bg-white p-8 shadow-md rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="gray"
