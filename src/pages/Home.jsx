@@ -12,7 +12,7 @@ function Home() {
       <div className="font-Inter ">
         <div className="flex justify-between gap-7  lg:mx-16 mx-5 items-center mb-24">
           <div
-            data-aos="zoom-out"
+            data-aos="slide-right"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
@@ -52,7 +52,10 @@ function Home() {
           </div>
         </div>
         <hr />
-        <section id="logos-section" className="flex justify-center space-x-24">
+        <section
+          id="logos-section"
+          className="flex justify-center space-x-24 h-10"
+        >
           <img id="logo" src={uncpLogo} alt="apple" />
           <img id="logo" src={fisLogo} alt="apple" />
           <img

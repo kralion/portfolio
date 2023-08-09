@@ -1,5 +1,5 @@
 import React from "react";
-import devBanner from "../assets/images/banner.png";
+import devBanner from "../assets/about-banner.gif";
 import cv from "../assets/CV.pdf";
 import DownloadIcon from "../assets/icons/download.png";
 
@@ -13,8 +13,8 @@ function About() {
         data-aos="slide-right"
         data-aos-duration="1000"
         src={devBanner}
-        className="mt-7 hidden lg:inline"
-        width={800}
+        className="hidden lg:inline"
+        width={500}
         alt="devbanner"
       />
       <div
@@ -33,10 +33,7 @@ function About() {
           The combination of AI and Frontend is one of the perfect combinations
           to achieve this, and I have experience in both areas. My focus on
           leveraging AI to drive Frontend development has allowed me to create
-          efficient, user-centric solutions. As a prompt engineer, I can
-          streamline the process of developing technology solutions to take full
-          advantage of AI and Frontend, and take the company's core business to
-          the next level. <br />{" "}
+          efficient, user-centric solutions. <br />{" "}
           <span className="text-zinc-700 font-semibold">
             " I am excited to face new challenges and continue to grow as a
             professional "{" "}
