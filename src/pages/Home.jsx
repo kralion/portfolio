@@ -26,7 +26,7 @@ function Home() {
                 Brayan J. Paucar Marca
               </span>
             </div>
-            <div className="mt-7 mb-7 group ">
+            <div className="mt-16 mb-7 group ">
               <div className="bg-[#FDC738] group-hover:translate-x-[2px] bottom-[22px] left-[10px] group-hover:translate-y-[2px] duration-300 absolute w-40 h-10"></div>
               <button className="group-hover:-translate-x-[2px] active:focus:ring-4 active:bg-slate-600 active:focus:ring-[#FDC738] group-hover:-translate-y-[3px] relative bg-black text-gray-100 font-semibold px-7 py-2 ease-in-out duration-300 uppercase   ">
                 Contact Me
@@ -40,7 +40,7 @@ function Home() {
           >
             <div class="flex items-center justify-center">
               <div class="rounded-full w-full  bg-gradient-to-r from-yellow-500 via-red-500 to-yellow-500 p-2">
-                <div class="flex rounded-full h-full w-full items-center justify-center  back">
+                <div class="flex  rounded-full h-full w-full items-center justify-center  back">
                   <img
                     src={profilePic}
                     alt="profilePic"
