@@ -1,0 +1,57 @@
+[
+  {
+    "icon": "https://cdn-icons-png.flaticon.com/128/5968/5968381.png",
+    "name": "typescript",
+    "label": "TypeScript"
+  },
+  {
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+    "name": "tailwindcss",
+    "label": "Tailwind CSS"
+  },
+  {
+    "icon": "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+    "name": "nextjs",
+    "label": "Next JS"
+  },
+  {
+    "icon": "https://cdn.worldvectorlogo.com/logos/apollo-graphql-compact.svg",
+    "name": "apollo",
+    "label": "Apollo"
+  },
+  {
+    "icon": "https://img.icons8.com/?size=512&id=kg46nzoJrmTR&format=png",
+    "name": "express",
+    "label": "Express JS"
+  },
+  {
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+    "name": "aws",
+    "label": "AWS"
+  },
+  {
+    "icon": "https://w1.pngwing.com/pngs/711/379/png-transparent-green-grass-mongodb-database-documentoriented-database-dashboard-nosql-bson-javascript-thumbnail.png",
+    "name": "mongodb",
+    "label": "MongoDB"
+  },
+  {
+    "icon": "https://w7.pngwing.com/pngs/29/237/png-transparent-mysql-php-data-objects-database-phpmyadmin-jsk-angle-text-logo-thumbnail.png",
+    "name": "mysql",
+    "label": "MySQL"
+  },
+  {
+    "icon": "https://w7.pngwing.com/pngs/667/16/png-transparent-websocket-hd-logo-thumbnail.png",
+    "name": "websocket",
+    "label": "Websocket"
+  },
+  {
+    "icon": "https://w7.pngwing.com/pngs/56/909/png-transparent-tensorflow-deep-learning-keras-machine-learning-caffe-thumbtack-miscellaneous-angle-rectangle-thumbnail.png",
+    "name": "tensorflow",
+    "label": "Tensorflow"
+  },
+  {
+    "icon": "https://w7.pngwing.com/pngs/326/224/png-transparent-redis-memcached-database-caching-key-value-database-others-miscellaneous-angle-logo-thumbnail.png",
+    "name": "redis",
+    "label": "Redis"
+  }
+]

@@ -99,13 +99,13 @@ export default function Example({
   ];
 
   return (
-    <Card className="hover:shadow-2xl rounded-2xl  duration-300">
+    <Card className="hover:shadow-2xl lg:mx-0 mx-5 rounded-2xl  duration-300">
       <CardHeader className="flex object-cover justify-center ">
         <a href={demoLink} target="_blank" rel="noreferrer">
           <img
             src={projectImage}
             alt="cover"
-            className="rounded-md object-cover h-48 w-[300px] hover:scale-125  duration-500"
+            className="rounded-md object-cover h-48 w-[350px] hover:scale-125  duration-500"
           />
         </a>
       </CardHeader>

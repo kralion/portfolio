@@ -23,10 +23,10 @@ function About() {
         data-aos-duration="500"
         className=" flex flex-col text-center lg:text-left gap-5"
       >
-        <span className="bg-[#eb5e28] w-[102px] text-center px-3 mb-5 lg:my-5 mt-10 text-gray-100 py-1  lg:self-left self-center pb-2 rounded-full">
+        <span className="bg-[#eb5e28]  text-center px-3  lg:my-5 mt-10 text-gray-100 py-1  lg:self-left self-center pb-2 rounded-full">
           About Me
         </span>
-        <h3 className="text-4xl font-semibold">
+        <h3 className="lg:text-4xl text-2xl font-semibold">
           Why Hiring Me For Your Next <br /> Project
         </h3>
         <p className="text-gray-500 lg:w-3/4 w-full ">
@@ -40,12 +40,12 @@ function About() {
           </span>{" "}
         </p>
 
-        <div className="mt-7 mb-7 group ">
-          <div className="bg-[#FDC738] group-hover:translate-x-[2px] bottom-[22px] left-[7px] group-hover:translate-y-[2px] duration-300 absolute w-48 h-10" />
+        <div className="mt-7 mb-7 group flex justify-center lg:flex-col lg:justify-start ">
+          <div className="bg-[#FDC738] group-hover:translate-x-[2px] bottom-[22px]  ml-2 group-hover:translate-y-[2px] duration-300 absolute lg:w-40 w-40 h-10" />
           <a
             href={cv}
             download="CV.pdf"
-            className="group-hover:-translate-x-[2px] active:focus:ring-4 active:bg-slate-600 w-48 flex active:focus:ring-[#FDC738] group-hover:-translate-y-[3px] relative bg-black text-gray-100 font-semibold px-7 items-center gap-3 py-2 ease-in-out duration-300 uppercase   "
+            className="group-hover:-translate-x-[2px] active:focus:ring-4 active:bg-slate-600 lg:w-40 w-[160px] flex active:focus:ring-[#FDC738] group-hover:-translate-y-[3px] relative bg-black text-gray-100 font-semibold px-7 text-sm lg:text-md items-center gap-3 py-2 ease-in-out duration-300 uppercase   "
           >
             <div>
               <img src={DownloadIcon} width={15} height={15} alt="download" />

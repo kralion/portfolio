@@ -88,7 +88,7 @@ function Experience() {
           projectLink="https://github.com/Dv-Joan/practicas-react"
         />
       </div>
-      <div className="flex justify-center my-10">
+      <div className="flex justify-center m-5  lg:my-10">
         <div className="w-[700px]  p-5 col-span-2 hover:shadow-2xl shadow-xl  rounded-2xl duration-200 bg-white ">
           More Projects
           <hr className="my-3 h-px " />

@@ -15,8 +15,9 @@ function Contact() {
           Interested In Working With Me ?
         </h3>
         <h5 className="text-xl text-slate-500">
-          Connect with me to discover how together we can take your projects to
-          the next level !
+          I welcome opportunities to collaborate with talented developers. Let's
+          connect to see how we can build robust solutions that deliver real
+          value.
         </h5>
       </div>
       <div
@@ -25,7 +26,7 @@ function Contact() {
         data-aos-duration="1000"
         className="mt-7 mb-7 group "
       >
-        <div className="bg-[#FDC738] group-hover:translate-x-[2px] top-[5px] left-[440px] group-hover:translate-y-[2px] duration-300 absolute w-32 h-10"></div>
+        <div className="bg-[#FDC738] group-hover:translate-x-[2px] top-[5px] lg:left-[500px] left-[130px] group-hover:translate-y-[2px] duration-300 absolute w-32 h-10"></div>
         <button className="group-hover:-translate-x-[2px] active:focus:ring-4 active:bg-slate-600 active:focus:ring-[#FDC738] group-hover:-translate-y-[3px] relative bg-black text-gray-100 font-semibold px-7 py-2 ease-in-out duration-300 uppercase   ">
           <a href="https://wa.me/51914019629">LET'S TALK</a>
         </button>
