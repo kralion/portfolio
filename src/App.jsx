@@ -39,7 +39,7 @@ function App() {
             <img src={MenuLogo} alt="menuLogo" className="inline lg:hidden" />
           </div>
           <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
-            <ul className="flex gap-2">
+            <ul className="flex">
               <li title="My Github">
                 <a
                   href="https://github.com/Dv-Joan"
@@ -47,8 +47,10 @@ function App() {
                   rel="noreferrer"
                 >
                   <img
-                    className="px-3 py-2 border-[1px] shadow-sm hover:bg-slate-200 rounded-md"
+                    className="px-3 py-2 shadow-sm hover:bg-slate-200 rounded-md"
                     src={GitHubLogo}
+                    width={40}
+                    height={20}
                     alt="github"
                   />
                 </a>
@@ -61,8 +63,10 @@ function App() {
                   rel="noreferrer"
                 >
                   <img
-                    className="px-3 py-2 border-[1px] shadow-sm hover:bg-slate-200 rounded-md"
+                    className="px-3 py-2 shadow-sm hover:bg-slate-200 rounded-md"
                     src={LinkedInLogo}
+                    width={40}
+                    height={20}
                     alt="linkedin"
                   />
                 </a>
@@ -75,9 +79,9 @@ function App() {
                   rel="noreferrer"
                 >
                   <img
-                    className="px-3 py-2 border-[1px] shadow-sm hover:bg-slate-200 rounded-md"
+                    className="px-3 py-2 shadow-sm hover:bg-slate-200 rounded-md"
                     src={TwitterLogo}
-                    width={42}
+                    width={40}
                     height={20}
                     alt="twitter"
                   />
@@ -91,8 +95,10 @@ function App() {
                   rel="noreferrer"
                 >
                   <img
-                    className="px-3 py-2 border-[1px] shadow-sm hover:bg-slate-200 rounded-md"
+                    className="px-3 py-2 drop-shadow-sm hover:bg-slate-200 rounded-md"
                     src={InstagramLogo}
+                    width={40}
+                    height={20}
                     alt="instagram"
                   />
                 </a>
