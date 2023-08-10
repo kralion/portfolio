@@ -29,7 +29,11 @@ function Home() {
               </span>
             </div>
 
-            <a href="">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/joan-paucar/"
+            >
               <button class="button mt-16 mb-7 group font-Source-Sans-Pro font-bold uppercase ">
                 Contact Me
               </button>

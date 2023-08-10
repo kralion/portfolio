@@ -1,6 +1,6 @@
 import React from "react";
 import devBanner from "../assets/about-banner.gif";
-import cv from "../assets/CV.pdf";
+import Resume from "../assets/Resume.pdf";
 import DownloadIcon from "../assets/icons/download.svg";
 
 function About() {
@@ -40,7 +40,7 @@ function About() {
           </span>{" "}
         </p>
 
-        <a className="icon" href={cv} download="CV.pdf">
+        <a className="icon" href={Resume} download="Resume.pdf">
           <button class="button font-semibold uppercase">My Resume</button>
         </a>
       </div>

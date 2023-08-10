@@ -58,7 +58,7 @@ function App() {
 
               <li title="My LinkedIn">
                 <a
-                  href="https://github.com/Dv-Joan"
+                  href="https://www.linkedin.com/in/joan-paucar/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -74,7 +74,7 @@ function App() {
 
               <li title="My Twitter">
                 <a
-                  href="https://github.com/Dv-Joan"
+                  href="https://twitter.com/joanpaucar_"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -90,7 +90,7 @@ function App() {
 
               <li title="My Ig">
                 <a
-                  href="https://github.com/Dv-Joan"
+                  href="https://www.instagram.com/joan.paucar/"
                   target="_blank"
                   rel="noreferrer"
                 >

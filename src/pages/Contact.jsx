@@ -27,7 +27,9 @@ function Contact() {
         className="mt-7 mb-7 group "
       >
         <button className="button font-semibold">
-          <a href="https://wa.me/51914019629">LET'S TALK</a>
+          <a target="_blank" rel="noreferrer" href="https://wa.me/51914019629">
+            LET'S TALK
+          </a>
         </button>
       </div>
     </section>
