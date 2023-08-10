@@ -25,3 +25,26 @@
 #logo {
   animation: slide 20s linear infinite;
 }
+/* inspired form gumroad website */
+.button {
+  --bg: #000;
+  --hover-bg: #ffc40c;
+  --hover-text: #000;
+  color: #fff;
+
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.3rem, -0.3rem);
+  background: var(--hover-bg);
+  box-shadow: 0.3rem 0.3rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}

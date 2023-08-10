@@ -5,6 +5,7 @@ import uncpLogo from "../assets/images/uncp.png";
 import fisLogo from "../assets/images/fis.png";
 import microsfotLogo from "../assets/images/microsoft.png";
 import AOSWrapper from "../utils/AOS";
+import style from "../styles/styles.css";
 
 function Home() {
   return (
@@ -19,7 +20,7 @@ function Home() {
             <div className="flex flex-col gap-2 lg:mt-10">
               <span className="text-2xl lg:text-6xl font-bold">
                 SOFTWARE{" "}
-                <span className="text-[#ecbb32] text-2xl lg:text-6xl"> / </span>{" "}
+                <span className="text-[#ffc40c] text-2xl lg:text-6xl"> / </span>{" "}
                 AI
               </span>
               <span className="text-2xl lg:text-6xl font-bold">DEVELOPER</span>
@@ -27,12 +28,12 @@ function Home() {
                 Brayan J. Paucar Marca
               </span>
             </div>
-            <div className="mt-16 mb-7 group ">
-              <div className="bg-[#FDC738] group-hover:translate-x-[2px] bottom-[22px] left-[10px] group-hover:translate-y-[2px] duration-300 absolute w-[150px] lg:w-[147px] h-10"></div>
-              <button className="group-hover:-translate-x-[2px] active:focus:ring-4 active:bg-slate-600 active:focus:ring-[#FDC738] group-hover:-translate-y-[3px] relative bg-black text-gray-100 text-sm lg:text-md font-semibold px-7 py-2 ease-in-out duration-300 uppercase   ">
+
+            <a href="">
+              <button class="button mt-16 mb-7 group font-Source-Sans-Pro font-bold uppercase ">
                 Contact Me
               </button>
-            </div>
+            </a>
           </div>
           <div
             data-aos="slide-left"
@@ -40,7 +41,7 @@ function Home() {
             data-aos-delay="200"
           >
             <div className="flex items-center justify-center">
-              <div className="rounded-full w-full  bg-gradient-to-r from-yellow-500 via-red-500 to-yellow-500 p-2">
+              <div className="rounded-full w-full  bg-gradient-to-r from-[#ffc40c] via-red-500 to-[#ffc40c] p-2">
                 <div className="flex  rounded-full h-full w-full items-center justify-center  back">
                   <img
                     src={profilePic}

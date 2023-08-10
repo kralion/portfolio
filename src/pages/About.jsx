@@ -1,7 +1,7 @@
 import React from "react";
 import devBanner from "../assets/about-banner.gif";
 import cv from "../assets/CV.pdf";
-import DownloadIcon from "../assets/icons/download.png";
+import DownloadIcon from "../assets/icons/download.svg";
 
 function About() {
   return (
@@ -40,19 +40,9 @@ function About() {
           </span>{" "}
         </p>
 
-        <div className="mt-7 mb-7 group flex justify-center lg:flex-col lg:justify-start ">
-          <div className="bg-[#FDC738] group-hover:translate-x-[2px] bottom-[22px]  ml-2 group-hover:translate-y-[2px] duration-300 absolute lg:w-40 w-40 h-10" />
-          <a
-            href={cv}
-            download="CV.pdf"
-            className="group-hover:-translate-x-[2px] active:focus:ring-4 active:bg-slate-600 lg:w-40 w-[160px] flex active:focus:ring-[#FDC738] group-hover:-translate-y-[3px] relative bg-black text-gray-100 font-semibold px-7 text-sm lg:text-md items-center gap-3 py-2 ease-in-out duration-300 uppercase   "
-          >
-            <div>
-              <img src={DownloadIcon} width={15} height={15} alt="download" />
-            </div>
-            My Resume
-          </a>
-        </div>
+        <a className="icon" href={cv} download="CV.pdf">
+          <button class="button font-semibold uppercase">My Resume</button>
+        </a>
       </div>
     </section>
   );

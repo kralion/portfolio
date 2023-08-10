@@ -26,8 +26,7 @@ function Contact() {
         data-aos-duration="1000"
         className="mt-7 mb-7 group "
       >
-        <div className="bg-[#FDC738] group-hover:translate-x-[2px] top-[5px] lg:left-[500px] left-[130px] group-hover:translate-y-[2px] duration-300 absolute w-32 h-10"></div>
-        <button className="group-hover:-translate-x-[2px] active:focus:ring-4 active:bg-slate-600 active:focus:ring-[#FDC738] group-hover:-translate-y-[3px] relative bg-black text-gray-100 font-semibold px-7 py-2 ease-in-out duration-300 uppercase   ">
+        <button className="button font-semibold">
           <a href="https://wa.me/51914019629">LET'S TALK</a>
         </button>
       </div>
