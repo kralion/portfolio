@@ -1,17 +1,13 @@
 import Home from "./pages/Home";
-import MenuLogo from "./assets/images/menu.png";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import TechStack from "./pages/TechStack";
 import Contact from "./pages/Contact";
-import callIcon from "./assets/call.svg";
-import mailIcon from "./assets/mail.svg";
 import Testimonial from "./pages/Testimonial";
 import AOSWrapper from "./utils/AOS";
 import myLogo from "./assets/images/mylogo.png";
 import Socials from "./data/socials.json";
-import { IconButton } from "@material-tailwind/react";
-import { Mail, PhoneCall } from "lucide-react";
+import { Mail, PhoneCall, Menu } from "lucide-react";
 
 function App() {
   return (
@@ -24,18 +20,25 @@ function App() {
           className=" backdrop-blur-xl  sticky lg:static top-0 z-50 flex justify-between items-center lg:m-5"
         >
           <div className="flex justify-between items-center">
-            <a href="/">
-              <img
-                data-aos="flip-up"
-                data-aos-duration="1500"
-                data-aos-delay="300"
-                src={myLogo}
-                height={10}
-                width={150}
-                alt="myLogo"
+            <div className="flex gap-56 items-center">
+              <a href="/">
+                <img
+                  data-aos="flip-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="300"
+                  src={myLogo}
+                  height={10}
+                  width={150}
+                  alt="myLogo"
+                />
+              </a>
+              <Menu
+                alt="menuLogo"
+                className="inline lg:hidden"
+                color="#ffc40c"
+                size={30}
               />
-            </a>
-            <img src={MenuLogo} alt="menuLogo" className="inline lg:hidden" />
+            </div>
           </div>
           <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
             <ul className="flex gap-3.5">
@@ -69,7 +72,7 @@ function App() {
 
       <Contact />
       <footer>
-        <div className="flex justify-center  lg:flex-row flex-col lg:mb-7 font-Source-Sans-Pro lg:gap-10">
+        <div className="flex justify-center m-3 lg:mx-0 lg:mb-7 font-Source-Sans-Pro gap-10">
           <a
             target="_blank"
             rel="noreferrer"

@@ -9,23 +9,19 @@ function Home() {
   return (
     <AOSWrapper>
       <div className="font-Inter ">
-        <div className="flex justify-between lg:h-screen lg:mx-10 mx-5 items-center ">
+        <div className="flex lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between justify-center h-screen lg:mx-10 mx-5 items-center ">
           <div
             data-aos="slide-right"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div className="flex flex-col gap-2 lg:mt-10">
-              <span className="text-2xl lg:text-6xl font-bold">
-                SOFTWARE{" "}
-                <span className="text-[#ffc40c] text-2xl lg:text-6xl"> / </span>{" "}
-                AI
-              </span>
-              <span className="text-2xl lg:text-6xl font-bold">
+            <div className="flex flex-col gap-2 font-bold text-xl lg:text-6xl lg:mt-10">
+              <span>
                 {" "}
-                NATIVE DEVELOPER
-              </span>
-              <span className="text-3xl lg:text-5xl  font-Borel lg:mt-16 ">
+                SOFTWARE <span className="text-[#ffc40c] ">/</span>
+              </span>{" "}
+              AI NATIVE DEVELOPER
+              <span className="text-xl lg:text-5xl  font-Borel lg:mt-16 ">
                 Brayan J. Paucar Marca
               </span>
             </div>
@@ -35,7 +31,7 @@ function Home() {
               rel="noreferrer"
               href="https://www.linkedin.com/in/joan-paucar/"
             >
-              <button class="button mt-16 rounded group font-Source-Sans-Pro font-bold uppercase ">
+              <button class="button lg:text-md text-sm mt-16 rounded group font-Source-Sans-Pro font-bold uppercase ">
                 Contact Me
               </button>
             </a>
@@ -45,7 +41,7 @@ function Home() {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div className="rounded-full w-full  bg-gradient-to-r from-yellow-400 via-red-500 to-yellow-400 p-2">
+            <div className="rounded-full w-full lg:m-0 mx-10  bg-gradient-to-r from-yellow-400 via-red-500 to-yellow-400  p-10">
               <div className="flex  rounded-full h-full w-full items-center justify-center">
                 <img
                   src={profilePic}

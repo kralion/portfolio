@@ -11,10 +11,10 @@ function Contact() {
         data-aos-duration="500"
         className="lg:p-20 p-10 flex flex-col gap-5"
       >
-        <h3 className="lg:text-4xl text-3xl font-bold">
-          Interested In Working With Me ?
+        <h3 className="lg:text-4xl text-2xl font-bold">
+          Interested In Working With Me?
         </h3>
-        <h5 className="text-xl text-slate-500 lg:px-44">
+        <h5 className="lg:text-xl text-slate-500 lg:px-44">
           I welcome opportunities to collaborate with talented developers. Let's
           connect to see how we can build robust solutions that deliver real
           value.
@@ -26,7 +26,7 @@ function Contact() {
         data-aos-duration="1000"
         className="mt-7 mb-7 group "
       >
-        <button className="button font-semibold rounded">
+        <button className="button text-sm lg:text-md font-semibold rounded">
           <a target="_blank" rel="noreferrer" href="https://wa.me/51914019629">
             LET'S TALK
           </a>
