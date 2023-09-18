@@ -4,8 +4,8 @@ function Testimonial() {
   return (
     <section id="testomonial" className="text-gray-600 font-Source-Sans-Pro">
       <div className="container flex flex-col gap-5 px-5 py-24 mx-auto">
-        <span className="bg-[#eb5e28] w-[102px] text-center  px-3 my-5 text-gray-100 font-semibold py-1 self-center pb-2 rounded-full">
-          Testimonial
+        <span className="bg-[#eb5e28] text-center px-3 my-5 text-gray-100 font-semibold py-1 self-center rounded-full">
+          Testimonials
         </span>
         <div className="flex flex-wrap -m-4">
           <div
@@ -35,11 +35,11 @@ function Testimonial() {
                   src="https://randomuser.me/api/portraits/men/52.jpg"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                 />
-                <span className="flex-grow flex flex-col pl-4  hover:scale-105 duration-200 hover:font-bold">
-                  <span className="title-font font-medium text-gray-900 ">
+                <span className="flex-grow flex flex-col pl-4 ">
+                  <span className="font-medium text-gray-900 ">
                     Robert Hudson
                   </span>
-                  <span className="text-gray-500 text-sm">Designer-</span>
+                  <span className="text-gray-500 text-sm">Designer</span>
                 </span>
               </a>
             </div>
@@ -71,7 +71,7 @@ function Testimonial() {
                   src="https://randomuser.me/api/portraits/men/35.jpg"
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                 />
-                <span className="flex-grow flex flex-col pl-4  hover:scale-105 duration-200 hover:font-bold">
+                <span className="flex-grow flex flex-col pl-4 ">
                   <span className="title-font font-medium text-gray-900 ">
                     Roberto Ferreiros
                   </span>

@@ -3,15 +3,13 @@ import profilePic from "../assets/images/profile-pic.png";
 import "../styles/styles.css";
 import uncpLogo from "../assets/images/uncp.png";
 import fisLogo from "../assets/images/fis.png";
-import microsfotLogo from "../assets/images/microsoft.png";
 import AOSWrapper from "../utils/AOS";
-import style from "../styles/styles.css";
 
 function Home() {
   return (
     <AOSWrapper>
       <div className="font-Inter ">
-        <div className="flex justify-between gap-7  lg:mx-16 mx-5 items-center mb-24">
+        <div className="flex justify-between lg:h-screen lg:mx-10 mx-5 items-center ">
           <div
             data-aos="slide-right"
             data-aos-duration="1000"
@@ -23,7 +21,10 @@ function Home() {
                 <span className="text-[#ffc40c] text-2xl lg:text-6xl"> / </span>{" "}
                 AI
               </span>
-              <span className="text-2xl lg:text-6xl font-bold">DEVELOPER</span>
+              <span className="text-2xl lg:text-6xl font-bold">
+                {" "}
+                NATIVE DEVELOPER
+              </span>
               <span className="text-3xl lg:text-5xl  font-Borel lg:mt-16 ">
                 Brayan J. Paucar Marca
               </span>
@@ -34,7 +35,7 @@ function Home() {
               rel="noreferrer"
               href="https://www.linkedin.com/in/joan-paucar/"
             >
-              <button class="button mt-16 mb-7 group font-Source-Sans-Pro font-bold uppercase ">
+              <button class="button mt-16 rounded group font-Source-Sans-Pro font-bold uppercase ">
                 Contact Me
               </button>
             </a>
@@ -44,15 +45,13 @@ function Home() {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div className="flex items-center justify-center">
-              <div className="rounded-full w-full  bg-gradient-to-r from-[#ffc40c] via-red-500 to-[#ffc40c] p-2">
-                <div className="flex  rounded-full h-full w-full items-center justify-center  back">
-                  <img
-                    src={profilePic}
-                    alt="profilePic"
-                    className="rounded-full drop-shadow-2xl p-1  "
-                  />
-                </div>
+            <div className="rounded-full w-full  bg-gradient-to-r from-yellow-400 via-red-500 to-yellow-400 p-2">
+              <div className="flex  rounded-full h-full w-full items-center justify-center">
+                <img
+                  src={profilePic}
+                  alt="profilePic"
+                  className="rounded-full drop-shadow-2xl p-1 bg-[#FDFFF6]"
+                />
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ function Contact() {
         <h3 className="lg:text-4xl text-3xl font-bold">
           Interested In Working With Me ?
         </h3>
-        <h5 className="text-xl text-slate-500">
+        <h5 className="text-xl text-slate-500 lg:px-44">
           I welcome opportunities to collaborate with talented developers. Let's
           connect to see how we can build robust solutions that deliver real
           value.
@@ -26,7 +26,7 @@ function Contact() {
         data-aos-duration="1000"
         className="mt-7 mb-7 group "
       >
-        <button className="button font-semibold">
+        <button className="button font-semibold rounded">
           <a target="_blank" rel="noreferrer" href="https://wa.me/51914019629">
             LET'S TALK
           </a>

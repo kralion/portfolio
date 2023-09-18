@@ -16,10 +16,10 @@ function Experience() {
       data-aos-delay="200"
       data-aos-duration="1000"
       id="experience"
-      className=" lg:mx-24 my-12 text-center font-Source-Sans-Pro"
+      className=" lg:mx-24 my-24 space-y-10 font-Source-Sans-Pro"
     >
-      <header className="lg:p-20 px-5 py-10 flex flex-col gap-5">
-        <span className="bg-[#eb5e28] w-[102px] text-center px-3 my-2 text-gray-100  py-1 self-center pb-2 rounded-full">
+      <header className="space-y-3.5 text-center">
+        <span className="bg-[#eb5e28] px-3 my-2 text-gray-100 py-1 w-fit  rounded-full">
           Experience
         </span>
         <h3 className="lg:text-4xl text-2xl font-Inter font-bold">

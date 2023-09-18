@@ -23,7 +23,7 @@ function About() {
         data-aos-duration="500"
         className=" flex flex-col text-center lg:text-left gap-5"
       >
-        <span className="bg-[#eb5e28]  text-center px-3  lg:my-5 mt-10 text-gray-100 py-1  lg:self-left self-center pb-2 rounded-full">
+        <span className="bg-[#eb5e28] w-fit  text-center px-3  lg:my-5  text-gray-100 py-1  rounded-full">
           About Me
         </span>
         <h3 className="lg:text-4xl text-2xl font-semibold">
@@ -41,7 +41,9 @@ function About() {
         </p>
 
         <a className="icon" href={Resume} download="Resume.pdf">
-          <button class="button font-semibold uppercase">My Resume</button>
+          <button class="button rounded font-semibold uppercase">
+            My Resume
+          </button>
         </a>
       </div>
     </section>

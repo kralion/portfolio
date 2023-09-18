@@ -1,9 +1,9 @@
 import { TechStack as Techs } from "../data";
 function TechStack() {
   return (
-    <div className=" lg:mx-24 mx-5 my-12 text-center font-Source-Sans-Pro">
-      <div className="lg:p-20 pb-4  flex flex-col gap-5">
-        <span className="bg-[#eb5e28] w-[102px] text-center px-3 my-2 text-gray-100 font-semibold py-1 self-center pb-2 rounded-full">
+    <div className=" lg:mx-24 mx-5 mt-20 text-center font-Source-Sans-Pro">
+      <div className="lg:my-10 pb-4 text-center gap-5">
+        <span className="bg-[#eb5e28] px-3  text-gray-100 font-semibold py-1 w-fit rounded-full">
           Tech Stack
         </span>
       </div>
