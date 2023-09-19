@@ -48,5 +48,25 @@
     "icon": "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg",
     "label": "Tensorflow",
     "name": "tensorflow"
+  },
+  {
+    "icon": "https://img.icons8.com/?size=2x&id=4GhGzHg3nZeG&format=png",
+    "label": "AI",
+    "name": "ai"
+  },
+  {
+    "icon": "https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg",
+    "label": "Supabase",
+    "name": "supabase"
+  },
+  {
+    "icon": "https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_light_prisma.svg",
+    "label": "Prisma",
+    "name": "prisma"
+  },
+  {
+    "icon": "https://raw.githubusercontent.com/detain/svg-logos/master/svg/v/vitejs.svg",
+    "label": "Vite",
+    "name": "vite"
   }
 ]

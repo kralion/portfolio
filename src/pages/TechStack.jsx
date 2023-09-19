@@ -4,7 +4,7 @@ function TechStack() {
     <div className=" lg:mx-24 mx-5 mt-20 text-center font-Source-Sans-Pro">
       <div className="lg:my-10 pb-4 text-center gap-5">
         <span className="bg-[#eb5e28] px-3  text-gray-100 font-semibold py-1 w-fit rounded-full">
-          Tech Stack
+          My Tech Stack
         </span>
       </div>
       <div
@@ -13,7 +13,7 @@ function TechStack() {
         data-aos-duration="1500"
         className="grid grid-cols-2 lg:grid-cols-5 lg:gap-5 lg:py-5 lg:px-3 justify-center gap-5"
       >
-        {Techs.map((tech, index) => (
+        {Techs.slice(0, 10).map((tech, index) => (
           <div
             key={index}
             title={tech.label}

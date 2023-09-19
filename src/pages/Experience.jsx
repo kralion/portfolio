@@ -30,74 +30,74 @@ function Experience() {
         <ProjectCard
           projectTitle="Exaya"
           description="Modern transportation management system with AI integrations"
-          usedTechnologies={["nextjs", "tailwindcss", "redis", "ai", "graphql"]}
-          demoLink="https://www.github.com"
+          usedTechnologies={[
+            "nextjs",
+            "tensorflow",
+            "tailwindcss",
+            "supabase",
+            "prisma",
+          ]}
+          demoLink="#"
           projectImage={ExayaRepoCover}
-          projectLink="https://github.com/Dv-Joan/event-wise"
+          projectLink="https://github.com/Dv-Joan/exaya"
         />
         <ProjectCard
           projectTitle="Event Wise"
           description="Smart productivity app harnessing AI for efficient workflows."
-          demoLink="https://www.github.com"
-          usedTechnologies={[
-            "ai",
-            "tailwindcss",
-            "react",
-            "vitejs",
-            "typescript",
-          ]}
+          demoLink="#"
+          usedTechnologies={["tensorflow", "tailwindcss", "vite", "typescript"]}
           projectImage={EventWiseRepoCover}
-          projectLink="https://github.com/Dv-Joan/practicas-react"
+          projectLink="https://github.com/Dv-Joan/event-wise"
         />
         <ProjectCard
           projectTitle="Powerhub"
           description="Essential EV companion for battery stats and nearby charging station tracking."
-          demoLink="https://www.github.com"
+          demoLink="#"
           usedTechnologies={["tailwindcss", "nextjs", "redis", "typescript"]}
           projectImage={PowerhubRepoCover}
-          projectLink="https://github.com/Dv-Joan/Ecologycall-SLP"
+          projectLink="https://github.com/Dv-Joan/powerhub"
         />
         <ProjectCard
           projectTitle="Simplypay"
           description="A modern, intuitive payment app, city's top choice utilizing, w/ UX best practices."
-          demoLink="https://www.github.com"
+          demoLink="#"
           usedTechnologies={[
-            "vitejs",
-            "react",
+            "aws",
+            "nextjs",
             "tailwindcss",
             "redis",
             "typescript",
           ]}
           projectImage={SimplypayRepoCover}
-          projectLink="https://github.com/Dv-Joan/uncp-apps-dev"
+          projectLink="https://github.com/Dv-Joan/simplypay"
         />
         <ProjectCard
           projectTitle="Maburo"
           description="Innovative airline management platform harnessing cutting-edge technologies."
           usedTechnologies={["nextjs", "typescript", "tailwindcss", "graphql"]}
           projectImage={MaburoRepoCover}
-          demoLink="https://proyectos-semanales.netlify.app/"
-          projectLink="https://github.com/Dv-Joan/uncp-apps-dev"
+          demoLink="#"
+          projectLink="https://github.com/Dv-Joan/maburo"
         />
         <ProjectCard
           projectTitle="Luminary"
           description="Modern immersive electronics shopping experience for cutting-edge retail tech."
-          demoLink="https://www.github.com"
+          demoLink="#"
           usedTechnologies={["firebase", "tailwindcss", "react", "vite"]}
           projectImage={LuminaryRepoCover}
-          projectLink="https://github.com/Dv-Joan/practicas-react"
+          projectLink="https://github.com/Dv-Joan/luminary"
         />
       </div>
       <div className="flex justify-center m-5  lg:my-10">
         <div className="w-[700px]  p-5 col-span-2 hover:shadow-2xl shadow-xl  rounded-2xl duration-200 bg-white ">
           More Projects
-          <hr className="my-3 h-px " />
-          <div className="p-6 ">
+          <hr className="my-3" />
+          <div className="p-6 text-center ">
             <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 ">
               Want to explore ?
             </h5>
             <p className="mb-10 text-base text-neutral-600 font-Roboto">
-              Click the button below to see more of my projects on Github.
+              Click the button below to see more of my projects.{" "}
             </p>
 
             <Button

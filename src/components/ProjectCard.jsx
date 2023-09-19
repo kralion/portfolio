@@ -1,26 +1,14 @@
-import tailwindLogo from "../assets/images/tailwindcss-tag.png";
-import aiLogo from "../assets/icons/ai.png";
-import reactLogo from "../assets/images/react-tag.png";
-import viteLogo from "../assets/images/vite-tag.png";
-import graphqlLogo from "../assets/images/graphql-tag.png";
-import firebaseLogo from "../assets/images/firebase-tag.png";
-import cssLogo from "../assets/images/css-tag.png";
-import jsLogo from "../assets/images/js-tag.png";
-import NewWindowLogo from "../assets/icons/new-window.png";
-import NextJSLogo from "../assets/stack-logos/nextjs.png";
-import SupabaseLogo from "../assets/stack-logos/supabase.png";
-import TypescriptLogo from "../assets/stack-logos/ts.png";
-import ViteJSLogo from "../assets/stack-logos/vite.png";
-import RedisLogo from "../assets/stack-logos/redis.png";
 import {
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
-  Typography,
-  Button,
+  CardHeader,
   Tooltip,
+  Typography,
 } from "@material-tailwind/react";
+import { ExternalLink, FolderSymlink } from "lucide-react";
+import { TechStack } from "./../data";
+
 export default function Example({
   projectTitle,
   demoLink,
@@ -29,75 +17,6 @@ export default function Example({
   projectImage,
   projectLink,
 }) {
-  const technologies = [
-    {
-      logo: tailwindLogo,
-      alt: "tailwindcss",
-      Tooltip: "TailwindCSS",
-    },
-    {
-      logo: RedisLogo,
-      alt: "redis",
-      Tooltip: "Redis",
-    },
-    {
-      logo: TypescriptLogo,
-      alt: "typescript",
-      Tooltip: "TypeScript",
-    },
-    {
-      logo: SupabaseLogo,
-      alt: "supabase",
-      Tooltip: "Supabase",
-    },
-    {
-      logo: ViteJSLogo,
-      alt: "vitejs",
-      Tooltip: "ViteJS",
-    },
-    {
-      logo: reactLogo,
-      alt: "react",
-      Tooltip: "React",
-    },
-    {
-      logo: viteLogo,
-      alt: "vite",
-      Tooltip: "Vite",
-    },
-    {
-      logo: NextJSLogo,
-      alt: "nextjs",
-      Tooltip: "NextJS",
-    },
-
-    {
-      logo: firebaseLogo,
-      alt: "firebase",
-      Tooltip: "Firebase",
-    },
-    {
-      logo: graphqlLogo,
-      alt: "graphql",
-      Tooltip: "GraphQL",
-    },
-    {
-      logo: cssLogo,
-      alt: "css",
-      Tooltip: "CSS",
-    },
-    {
-      logo: jsLogo,
-      alt: "js",
-      Tooltip: "JavaScript",
-    },
-    {
-      logo: aiLogo,
-      alt: "ai",
-      Tooltip: "Artificial Intelligence",
-    },
-  ];
-
   return (
     <Card className="hover:shadow-2xl lg:mx-0 mx-5 rounded-2xl  duration-300">
       <CardHeader className="flex object-cover justify-center ">
@@ -105,7 +24,7 @@ export default function Example({
           <img
             src={projectImage}
             alt="cover"
-            className="rounded-md object-cover h-48 w-[350px] hover:scale-125  duration-500"
+            className="rounded-md object-cover duration-500"
           />
         </a>
       </CardHeader>
@@ -114,14 +33,11 @@ export default function Example({
           <Typography variant="h5" color="blue-gray" className="font-semibold">
             {projectTitle}
           </Typography>
-
-          <a
-            href={projectLink}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center  font-normal text-sm text-[#eb5e28] rounded-lg px-3 py-1 border-[1px] border-orange-600 cursor-pointer  hover:bg-orange-600 hover:text-white duration-200 active:bg-orange-700 "
-          >
-            repo
+          <a href={projectLink} target="_blank" rel="noreferrer">
+            <FolderSymlink
+              className="text-orange-500 bg-orange-100 rounded p-1 hover:text-orange-700 cursor-pointer"
+              size={25}
+            />
           </a>
         </div>
         <Typography color="gray" className="text-left font-Roboto ">
@@ -129,19 +45,19 @@ export default function Example({
         </Typography>
 
         <div className="flex justify-center rounded-xl items-center">
-          {technologies.map((tech) => {
-            if (usedTechnologies.includes(tech.alt)) {
+          {TechStack.map((tech) => {
+            if (usedTechnologies.includes(tech.name)) {
               return (
-                <Tooltip key={tech.alt}>
+                <Tooltip key={tech.label}>
                   <span
-                    title={tech.Tooltip}
-                    className="flex justify-center items-center rounded-full border border-blue-500/5 p-2  transition-colors hover:border-blue-500/10 hover:bg-blue-600/10 hover:!opacity-100 group-hover:opacity-70"
+                    title={tech.label}
+                    className="flex gap-1 justify-center items-center rounded-full border border-orange-500/5 p-2 mx-1 transition-colors  bg-orange-600/10  group-hover:opacity-70"
                   >
                     <img
                       width={30}
                       height={30}
-                      src={tech.logo}
-                      alt={tech.alt}
+                      src={tech.icon}
+                      alt={tech.label}
                     />
                   </span>
                 </Tooltip>
@@ -153,23 +69,15 @@ export default function Example({
         </div>
       </CardBody>
       <CardFooter>
-        <Button
-          size="lg"
-          fullWidth={true}
-          className="flex justify-center py-3 normal-case bg-[#403d39] text-white hover:bg-black hover:text-white duration tracking-wider  rounded-xl"
+        <a
+          href={demoLink}
+          target="_blank"
+          rel="noreferrer"
+          className="flex justify-center py-2 normal-case hover:bg-[#403d39] text-white bg-black hover:text-white duration-200 items-center gap-2 rounded-xl"
         >
-          <a
-            href={demoLink}
-            className="items-end flex gap-3  "
-            target="_blank"
-            rel="noreferrer"
-          >
-            View Demo
-            <div>
-              <img width={15} height={15} src={NewWindowLogo} alt="demo" />
-            </div>
-          </a>
-        </Button>
+          View Demo
+          <ExternalLink size={15} />
+        </a>
       </CardFooter>
     </Card>
   );
