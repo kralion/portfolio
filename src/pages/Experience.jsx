@@ -1,13 +1,13 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import { Button } from "@material-tailwind/react";
-import RepoIcon from "../assets/icons/repo.png";
 import ExayaRepoCover from "../assets/repo-covers/exaya.png";
 import PowerhubRepoCover from "../assets/repo-covers/powerhub.png";
 import SimplypayRepoCover from "../assets/repo-covers/simplypay.jpg";
 import EventWiseRepoCover from "../assets/repo-covers/eventwise.png";
 import LuminaryRepoCover from "../assets/repo-covers/luminary.png";
 import MaburoRepoCover from "../assets/repo-covers/maburo.png";
+import { FolderInput } from "lucide-react";
 
 function Experience() {
   return (
@@ -103,7 +103,7 @@ function Experience() {
             <Button
               size="lg"
               fullWidth={true}
-              className="flex justify-center py-3 normal-case bg-[#403d39] text-white hover:bg-black hover:text-white duration tracking-wider  rounded-xl"
+              className="flex justify-center py-3 normal-case  text-white hover:bg-[#403d39] bg-black hover:text-white duration-200 tracking-wider  rounded-xl"
             >
               <a
                 href="https://github.com/Dv-Joan?tab=repositories"
@@ -112,9 +112,7 @@ function Experience() {
                 rel="noreferrer"
               >
                 Go to Github
-                <div>
-                  <img width={15} height={15} src={RepoIcon} alt="demo" />
-                </div>
+                <FolderInput size={20} />
               </a>
             </Button>
           </div>

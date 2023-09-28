@@ -6,7 +6,7 @@ import {
   Tooltip,
   Typography,
 } from "@material-tailwind/react";
-import { ExternalLink, FolderSymlink } from "lucide-react";
+import { ArrowUpRightSquare, FolderSymlink } from "lucide-react";
 import { TechStack } from "./../data";
 
 export default function Example({
@@ -76,7 +76,7 @@ export default function Example({
           className="flex justify-center py-2 normal-case hover:bg-[#403d39] text-white bg-black hover:text-white duration-200 items-center gap-2 rounded-xl"
         >
           View Demo
-          <ExternalLink size={15} />
+          <ArrowUpRightSquare size={15} />
         </a>
       </CardFooter>
     </Card>

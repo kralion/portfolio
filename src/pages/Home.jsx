@@ -2,7 +2,6 @@ import React from "react";
 import profilePic from "../assets/images/profile-pic.png";
 import "../styles/styles.css";
 import uncpLogo from "../assets/images/uncp.png";
-import fisLogo from "../assets/images/fis.png";
 import AOSWrapper from "../utils/AOS";
 
 function Home() {
@@ -58,7 +57,7 @@ function Home() {
           className="flex justify-center space-x-24 h-10"
         >
           <img id="logo" src={uncpLogo} alt="apple" />
-          <img id="logo" src={fisLogo} alt="apple" />
+          <img id="logo" src={uncpLogo} alt="apple" />
           <img
             id="logo"
             src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Microsoft_Edge_Dev_Logo_%282018%29.svg"
@@ -70,7 +69,7 @@ function Home() {
             alt="microsoft"
           />
           <img id="logo" src={uncpLogo} alt="apple" />
-          <img id="logo" src={fisLogo} alt="apple" />
+          <img id="logo" src={uncpLogo} alt="apple" />
           <img
             id="logo"
             src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Microsoft_Edge_Dev_Logo_%282018%29.svg"
@@ -82,7 +81,7 @@ function Home() {
             alt="microsoft"
           />
           <img id="logo" src={uncpLogo} alt="apple" />
-          <img id="logo" src={fisLogo} alt="apple" />
+          <img id="logo" src={uncpLogo} alt="apple" />
           <img
             id="logo"
             src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Microsoft_Edge_Dev_Logo_%282018%29.svg"
