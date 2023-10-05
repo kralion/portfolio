@@ -3,6 +3,7 @@ import profilePic from "../assets/images/profile-pic.png";
 import "../styles/styles.css";
 import uncpLogo from "../assets/images/uncp.png";
 import AOSWrapper from "../utils/AOS";
+import { TypeAnimation } from "react-type-animation";
 
 function Home() {
   return (
@@ -17,9 +18,42 @@ function Home() {
             <div className="flex flex-col gap-2 font-bold text-xl lg:text-6xl lg:mt-10">
               <span>
                 {" "}
-                SOFTWARE <span className="text-[#ffc40c] ">/</span>
+                <TypeAnimation
+                  sequence={[
+                    "",
+                    500,
+                    "SOFTWARE", // Types 'One'
+                    1000,
+                  ]}
+                  cursor={false}
+                  wrapper="span"
+                  style={{ display: "inline-block" }}
+                />
+                <span className=" text-[#ffc40c]"> & </span>
               </span>{" "}
-              AI NATIVE DEVELOPER
+              <TypeAnimation
+                sequence={[
+                  "",
+                  2000,
+                  "AI NATIVE", // Types 'One'
+                  1000,
+                ]}
+                wrapper="span"
+                cursor={false}
+                style={{ display: "inline-block" }}
+              />
+              <TypeAnimation
+                className="text-[#ffc40c]"
+                sequence={[
+                  "",
+                  3000,
+                  " DEVELOPER", // Types 'One'
+                  1000,
+                ]}
+                wrapper="span"
+                cursor={true}
+                style={{ display: "inline-block" }}
+              />
               <span className="text-xl lg:text-5xl  font-Borel lg:mt-16 ">
                 Brayan J. Paucar Marca
               </span>
@@ -36,11 +70,11 @@ function Home() {
             </a>
           </div>
           <div
-            data-aos="slide-left"
+            data-aos="flip-right"
             data-aos-duration="1000"
-            data-aos-delay="200"
+            data-aos-delay="500"
           >
-            <div className="rounded-full w-full lg:m-0 mx-10  bg-gradient-to-r from-yellow-400 via-red-500 to-yellow-400  p-10">
+            <div className="rounded-full w-full lg:m-0 mx-10  bg-gradient-to-b from-yellow-400 via-red-500 to-yellow-400  p-7">
               <div className="flex  rounded-full h-full w-full items-center justify-center">
                 <img
                   src={profilePic}
