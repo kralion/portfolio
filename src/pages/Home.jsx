@@ -4,12 +4,13 @@ import "../styles/styles.css";
 import uncpLogo from "../assets/images/uncp.png";
 import AOSWrapper from "../utils/AOS";
 import { TypeAnimation } from "react-type-animation";
+import { Mouse } from "lucide-react";
 
 function Home() {
   return (
     <AOSWrapper>
       <div className="font-Inter ">
-        <div className="flex lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between justify-center h-screen lg:mx-10 mx-5 items-center ">
+        <div className="flex relative lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between justify-center h-screen lg:mx-10 mx-5 items-center ">
           <div
             data-aos="slide-right"
             data-aos-duration="1000"
@@ -85,6 +86,10 @@ function Home() {
             </div>
           </div>
         </div>
+        <Mouse
+          size={35}
+          className="absolute bottom-4 right-[700px] animate-bounce"
+        />
         <hr />
         <section
           id="logos-section"
