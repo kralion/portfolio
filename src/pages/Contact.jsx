@@ -26,11 +26,15 @@ function Contact() {
         data-aos-duration="1000"
         className="mt-7 mb-7 group "
       >
-        <button className="button text-sm lg:text-md font-semibold rounded">
-          <a target="_blank" rel="noreferrer" href="https://wa.me/51914019629">
-            LET'S TALK
-          </a>
-        </button>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/joan-paucar/"
+        >
+          <button class="button lg:text-md text-sm  rounded group font-Source-Sans-Pro font-bold uppercase ">
+            Contact Me
+          </button>
+        </a>
       </div>
     </section>
   );

@@ -8,7 +8,7 @@ function About() {
   return (
     <section
       id="about"
-      className="flex flex-col lg:flex-row lg:justify-between lg:ml-36 mt-10 lg:mt-0 ml-2 lg:gap-10 items-center font-Source-Sans-Pro"
+      className="flex h-screen flex-col lg:flex-row lg:justify-between lg:ml-36 mt-10 lg:mt-0 ml-2 lg:gap-10 items-center font-Source-Sans-Pro"
     >
       <img
         data-aos="slide-right"
@@ -39,30 +39,45 @@ function About() {
           </RoughNotation>
           and
           <RoughNotation show={true} color="#F3CC4A" type="underline">
-            <span className="text-black px-2 font-mono font-semibold">
-              AI Native
+            <span className="text-black px-2 font-mono font-semibold">AI</span>
+          </RoughNotation>
+          engineer based in South America, dedicated to creating innovative
+          solutions that make life easier. I thrive on challenges and am eager
+          to take on exciting projects that push boundaries. I have a passion
+          for tackling complex tasks and turning challenges into opportunities.
+          With my experience developing robust applications, I craft{" "}
+          <RoughNotation show={true} color="#F3CC4A" type="underline">
+            <span className="text-black px-2 font-mono font-semibold ">
+              elegant
             </span>
           </RoughNotation>
-          Developer based in Peru, South America. I thrive on challenges and I
-          am dedicated to creating innovative solutions that make life easier
-          for people. My expertise lies in software development and AI, and I'm
-          always eager to take on new and exciting projects that push the
-          boundaries of what's possible and I'm excited to apply my skills to
-          tackle the most challenging tasks.
+          solutions that solve
+          <RoughNotation show={true} color="#F3CC4A" type="underline">
+            <span className="text-black px-2 font-mono font-semibold ">
+              real world
+            </span>
+          </RoughNotation>{" "}
+          problems. As a quick learner who adapts well to new technologies,lover
+          of CI/CD to improve what I build over time, but also taking into
+          account the big picture of each project, making sure it fits into the
+          broader business goals and user needs. I am excited to embark on new
+          software development journeys together.
           <br />
           <RoughNotation show={true} color="#F3CC4A" type="highlight">
             <span className="text-black  font-semibold">
-              Let's embark on this journey together, and together, we can turn
-              complex challenges into opportunities for growth and innovation.
+              Through collaboration and innovation, we can transform complex
+              challenges into meaningful solutions that drive progress.
             </span>
           </RoughNotation>
         </p>
 
-        <a className="icon" href={Resume} download="Resume.pdf">
-          <button class="button rounded flex gap-2 items-center text-sm lg:text-md font-semibold uppercase">
-            My Resume <FileDown size={15} />
-          </button>
-        </a>
+        <div className="flex gap-5 mt-10">
+          <a className="icon" href={Resume} download="Resume.pdf">
+            <button class="button rounded flex gap-2 items-center text-sm lg:text-md font-semibold uppercase">
+              My Resume <FileDown size={15} />
+            </button>
+          </a>
+        </div>
       </div>
     </section>
   );

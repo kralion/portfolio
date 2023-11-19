@@ -48,7 +48,7 @@ function Home() {
                 sequence={[
                   "",
                   3000,
-                  " DEVELOPER", // Types 'One'
+                  "ENGINEER", // Types 'One'
                   1000,
                 ]}
                 wrapper="span"
@@ -56,19 +56,9 @@ function Home() {
                 style={{ display: "inline-block" }}
               />
               <span className="text-xl lg:text-5xl  font-Borel lg:mt-16 ">
-                Brayan J. Paucar Marca
+                Brayan Paucar
               </span>
             </div>
-
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/joan-paucar/"
-            >
-              <button class="button lg:text-md text-sm mt-16 rounded group font-Source-Sans-Pro font-bold uppercase ">
-                Contact Me
-              </button>
-            </a>
           </div>
           <div
             data-aos="flip-right"
@@ -88,50 +78,8 @@ function Home() {
         </div>
         <Mouse
           size={35}
-          className="absolute bottom-4 right-[700px] animate-bounce"
+          className="absolute bottom-0 right-[700px] animate-bounce"
         />
-        <hr />
-        <section
-          id="logos-section"
-          className="flex justify-center space-x-24 h-10"
-        >
-          <img id="logo" src={uncpLogo} alt="apple" />
-          <img id="logo" src={uncpLogo} alt="apple" />
-          <img
-            id="logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Microsoft_Edge_Dev_Logo_%282018%29.svg"
-            alt="microsoft"
-          />
-          <img
-            id="logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Bing_Logo.svg"
-            alt="microsoft"
-          />
-          <img id="logo" src={uncpLogo} alt="apple" />
-          <img id="logo" src={uncpLogo} alt="apple" />
-          <img
-            id="logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Microsoft_Edge_Dev_Logo_%282018%29.svg"
-            alt="microsoft"
-          />
-          <img
-            id="logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Bing_Logo.svg"
-            alt="microsoft"
-          />
-          <img id="logo" src={uncpLogo} alt="apple" />
-          <img id="logo" src={uncpLogo} alt="apple" />
-          <img
-            id="logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Microsoft_Edge_Dev_Logo_%282018%29.svg"
-            alt="microsoft"
-          />
-          <img
-            id="logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Bing_Logo.svg"
-            alt="microsoft"
-          />
-        </section>
         <hr />
       </div>
     </AOSWrapper>
