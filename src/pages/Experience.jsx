@@ -16,15 +16,13 @@ function Experience() {
       data-aos-delay="200"
       data-aos-duration="1000"
       id="experience"
-      className=" lg:mx-24 my-24 space-y-10 font-Source-Sans-Pro"
+      className=" lg:mx-24  my-24 space-y-10 font-Source-Sans-Pro"
     >
       <header className="space-y-3.5 text-center">
         <span className="bg-[#eb5e28] px-3 my-2 text-gray-100 py-1 w-fit  rounded-full">
           Experience
         </span>
-        <h3 className="lg:text-4xl text-2xl font-Inter font-bold">
-          Side Projects
-        </h3>
+        <h3 className="lg:text-4xl text-2xl font-Inter font-bold">Projects</h3>
       </header>
       <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 items-center">
         <ProjectCard
@@ -74,7 +72,12 @@ function Experience() {
         <ProjectCard
           projectTitle="Maburo"
           description="Innovative airline management platform harnessing cutting-edge technologies."
-          usedTechnologies={["nextjs", "typescript", "tailwindcss", "graphql"]}
+          usedTechnologies={[
+            "nextjs",
+            "typescript",
+            "tailwindcss",
+            "github-actions",
+          ]}
           projectImage={MaburoRepoCover}
           demoLink="#"
           projectLink="https://github.com/Dv-Joan/maburo"
@@ -83,7 +86,7 @@ function Experience() {
           projectTitle="Luminary"
           description="Modern immersive electronics shopping experience for cutting-edge retail tech."
           demoLink="#"
-          usedTechnologies={["firebase", "tailwindcss", "react", "vite"]}
+          usedTechnologies={["gcp", "tailwindcss", "vite"]}
           projectImage={LuminaryRepoCover}
           projectLink="https://github.com/Dv-Joan/luminary"
         />
@@ -93,13 +96,6 @@ function Experience() {
           More Projects
           <hr className="my-3" />
           <div className="p-6 text-center ">
-            <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 ">
-              Want to explore ?
-            </h5>
-            <p className="mb-10 text-base text-neutral-600 font-Roboto">
-              Click the button below to see more of my projects.{" "}
-            </p>
-
             <Button
               size="lg"
               fullWidth={true}

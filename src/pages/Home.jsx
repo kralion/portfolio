@@ -65,7 +65,7 @@ function Home() {
             data-aos-duration="1000"
             data-aos-delay="500"
           >
-            <div className="rounded-full w-full lg:m-0 mx-10  bg-gradient-to-b from-yellow-400 via-red-500 to-yellow-400  p-7">
+            <div className="rounded-full w-full lg:m-0 mx-10  bg-gradient-to-r from-yellow-400 via-orange-400 to-orange-600  p-7">
               <div className="flex  rounded-full h-full w-full items-center justify-center">
                 <img
                   src={profilePic}

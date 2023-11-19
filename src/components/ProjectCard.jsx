@@ -18,7 +18,7 @@ export default function Example({
   projectLink,
 }) {
   return (
-    <Card className="hover:shadow-2xl lg:mx-0 mx-5 rounded-2xl  duration-300">
+    <Card className="hover:shadow-2xl hover:shadow-orange-400 relative lg:mx-0 mx-5 rounded-2xl duration-300 h-[550px] ">
       <CardHeader className="flex object-cover justify-center ">
         <a href={demoLink} target="_blank" rel="noreferrer">
           <img
@@ -68,12 +68,12 @@ export default function Example({
           })}
         </div>
       </CardBody>
-      <CardFooter>
+      <CardFooter className="bottom-0 w-full absolute">
         <a
           href={demoLink}
           target="_blank"
           rel="noreferrer"
-          className="flex justify-center py-2 normal-case hover:bg-[#403d39] text-white bg-black hover:text-white duration-200 items-center gap-2 rounded-xl"
+          className="flex justify-center py-2 normal-case hover:bg-[#403d39] text-white bg-black hover:text-white duration-200  items-center gap-2 rounded-xl"
         >
           View Demo
           <ArrowUpRightSquare size={15} />

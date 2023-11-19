@@ -43,9 +43,8 @@ function About() {
           </RoughNotation>
           engineer based in South America, dedicated to creating innovative
           solutions that make life easier. I thrive on challenges and am eager
-          to take on exciting projects that push boundaries. I have a passion
-          for tackling complex tasks and turning challenges into opportunities.
-          With my experience developing robust applications, I craft{" "}
+          to take on exciting projects that push boundaries. With my experience
+          developing robust applications, I craft
           <RoughNotation show={true} color="#F3CC4A" type="underline">
             <span className="text-black px-2 font-mono font-semibold ">
               elegant
@@ -53,15 +52,15 @@ function About() {
           </RoughNotation>
           solutions that solve
           <RoughNotation show={true} color="#F3CC4A" type="underline">
-            <span className="text-black px-2 font-mono font-semibold ">
+            <span className="text-black  px-2 font-mono font-semibold ">
               real world
             </span>
-          </RoughNotation>{" "}
-          problems. As a quick learner who adapts well to new technologies,lover
-          of CI/CD to improve what I build over time, but also taking into
-          account the big picture of each project, making sure it fits into the
-          broader business goals and user needs. I am excited to embark on new
-          software development journeys together.
+          </RoughNotation>
+          problems. As a quick learner who adapts well to new stacks,lover of
+          CI/CD to improve what I build over time, but also taking into account
+          the big picture of each project, making sure it fits into the broader
+          business goals and user needs. I am excited to embark on new software
+          development journeys together.
           <br />
           <RoughNotation show={true} color="#F3CC4A" type="highlight">
             <span className="text-black  font-semibold">
@@ -71,13 +70,11 @@ function About() {
           </RoughNotation>
         </p>
 
-        <div className="flex gap-5 mt-10">
-          <a className="icon" href={Resume} download="Resume.pdf">
-            <button class="button rounded flex gap-2 items-center text-sm lg:text-md font-semibold uppercase">
-              My Resume <FileDown size={15} />
-            </button>
-          </a>
-        </div>
+        <a className="icon" href={Resume} download="Resume.pdf">
+          <button className="button rounded flex gap-2 items-center text-sm lg:text-md font-semibold uppercase">
+            My Resume <FileDown size={15} />
+          </button>
+        </a>
       </div>
     </section>
   );

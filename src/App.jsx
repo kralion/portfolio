@@ -3,7 +3,6 @@ import About from "./pages/About";
 import Experience from "./pages/Experience";
 import TechStack from "./pages/TechStack";
 import Contact from "./pages/Contact";
-import Testimonial from "./pages/Testimonial";
 import AOSWrapper from "./utils/AOS";
 import myLogo from "./assets/images/mylogo.png";
 import Socials from "./data/socials.json";
@@ -42,8 +41,8 @@ function App() {
           </div>
           <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
             <ul className="flex gap-3.5">
-              {Socials.map((social) => (
-                <li className="cursor-pointer" key={social.name}>
+              {Socials.map((social, index) => (
+                <li key={index} className="cursor-pointer">
                   <a href={social.link} target="_blank" rel="noreferrer">
                     <img
                       title={social.label}
@@ -67,8 +66,6 @@ function App() {
       <TechStack />
 
       <Experience />
-
-      <Testimonial />
 
       <Contact />
       <footer>

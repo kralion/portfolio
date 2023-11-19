@@ -25,14 +25,14 @@
     "name": "redis"
   },
   {
-    "icon": "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
-    "label": "GraphQL",
-    "name": "graphql"
+    "icon": "https://seeklogo.com/images/G/github-actions-logo-031704BDC6-seeklogo.com.png",
+    "label": "Github Actions",
+    "name": "github-actions"
   },
   {
-    "icon": "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg",
-    "label": "AWS",
-    "name": "aws"
+    "icon": "https://seeklogo.com/images/G/google-cloud-logo-ADE788217F-seeklogo.com.png",
+    "label": "GCP",
+    "name": "gcp"
   },
   {
     "icon": "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg",

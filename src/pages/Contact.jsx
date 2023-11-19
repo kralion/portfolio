@@ -14,10 +14,10 @@ function Contact() {
         <h3 className="lg:text-4xl text-2xl font-bold">
           Interested In Working With Me?
         </h3>
-        <h5 className="lg:text-xl text-slate-500 lg:px-44">
-          I welcome opportunities to collaborate with talented developers. Let's
-          connect to see how we can build robust solutions that deliver real
-          value.
+        <h5 className=" text-gray-500 lg:px-44">
+          I welcome opportunities to collaborate with talented people. Let's
+          connect to see how we can create strong solutions that provide real
+          value to the world around us.
         </h5>
       </div>
       <div
@@ -31,7 +31,7 @@ function Contact() {
           rel="noreferrer"
           href="https://www.linkedin.com/in/joan-paucar/"
         >
-          <button class="button lg:text-md text-sm  rounded group font-Source-Sans-Pro font-bold uppercase ">
+          <button className="button lg:text-md text-sm  rounded group font-Source-Sans-Pro font-bold uppercase ">
             Contact Me
           </button>
         </a>
