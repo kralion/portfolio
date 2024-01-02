@@ -1,5 +1,5 @@
 import { TechStack as Techs } from "../data";
-function TechStack() {
+export default function TechStack() {
   return (
     <div className=" lg:mx-24 h-screen mx-5 mt-20 text-center font-Source-Sans-Pro">
       <div className="lg:my-10 pb-4 text-center gap-5">
@@ -26,5 +26,3 @@ function TechStack() {
     </div>
   );
 }
-
-export default TechStack;

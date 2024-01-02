@@ -4,7 +4,7 @@ import Resume from "../assets/Resume.pdf";
 import { FileDown } from "lucide-react";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
-function About() {
+export default function About() {
   return (
     <section
       id="about"
@@ -79,5 +79,3 @@ function About() {
     </section>
   );
 }
-
-export default About;

@@ -1,5 +1,5 @@
 import React from "react";
-function Contact() {
+export default function Contact() {
   return (
     <section
       id="contact"
@@ -39,5 +39,3 @@ function Contact() {
     </section>
   );
 }
-
-export default Contact;

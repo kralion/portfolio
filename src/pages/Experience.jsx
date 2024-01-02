@@ -9,7 +9,7 @@ import LuminaryRepoCover from "../assets/repo-covers/luminary.png";
 import MaburoRepoCover from "../assets/repo-covers/maburo.png";
 import { FolderInput } from "lucide-react";
 
-function Experience() {
+export default function Experience() {
   return (
     <section
       data-aos="zoom-out"
@@ -117,5 +117,3 @@ function Experience() {
     </section>
   );
 }
-
-export default Experience;

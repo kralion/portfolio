@@ -1,12 +1,11 @@
+import { Mouse } from "lucide-react";
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 import profilePic from "../assets/images/profile-pic.png";
 import "../styles/styles.css";
-import uncpLogo from "../assets/images/uncp.png";
 import AOSWrapper from "../utils/AOS";
-import { TypeAnimation } from "react-type-animation";
-import { Mouse } from "lucide-react";
 
-function Home() {
+export default function Home() {
   return (
     <AOSWrapper>
       <div className="font-Inter ">
@@ -85,5 +84,3 @@ function Home() {
     </AOSWrapper>
   );
 }
-
-export default Home;
