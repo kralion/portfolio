@@ -1,8 +1,7 @@
+import { ArrowUpRight } from "lucide-react";
 import React from "react";
+import { RoughNotation } from "react-rough-notation";
 import devBanner from "../assets/about-banner.gif";
-import Resume from "../assets/Resume.pdf";
-import { FileDown } from "lucide-react";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 export default function About() {
   return (
@@ -70,9 +69,14 @@ export default function About() {
           </RoughNotation>
         </p>
 
-        <a className="icon" href={Resume} download="Resume.pdf">
+        <a
+          className="icon"
+          href="https://drive.google.com/file/d/1-3XAAqIMACy02xn0E9TJY1VrB_erirl0/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
           <button className="button rounded flex gap-2 items-center text-sm lg:text-md font-semibold uppercase">
-            My Resume <FileDown size={15} />
+            My Resume <ArrowUpRight size={15} />
           </button>
         </a>
       </div>

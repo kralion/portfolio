@@ -6,7 +6,7 @@ import {
   Tooltip,
   Typography,
 } from "@material-tailwind/react";
-import { ArrowUpRightSquare, FolderSymlink } from "lucide-react";
+import { ArrowUpRight, Code2 } from "lucide-react";
 import { TechStack } from "./../data";
 
 export default function Example({
@@ -34,7 +34,7 @@ export default function Example({
             {projectTitle}
           </Typography>
           <a href={projectLink} target="_blank" rel="noreferrer">
-            <FolderSymlink
+            <Code2
               className="text-orange-500 bg-orange-100 rounded p-1 hover:text-orange-700 cursor-pointer"
               size={25}
             />
@@ -76,7 +76,7 @@ export default function Example({
           className="flex justify-center py-2 normal-case hover:bg-[#403d39] text-white bg-black hover:text-white duration-200  items-center gap-2 rounded-xl"
         >
           View Demo
-          <ArrowUpRightSquare size={15} />
+          <ArrowUpRight size={15} />
         </a>
       </CardFooter>
     </Card>
