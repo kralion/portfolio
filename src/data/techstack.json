@@ -1,38 +1,33 @@
 [
   {
-    "icon": "https://cdn-icons-png.flaticon.com/128/5968/5968381.png",
-    "label": "TypeScript",
-    "name": "typescript"
-  },
-  {
     "icon": "https://cdn.worldvectorlogo.com/logos/next-js.svg",
     "label": "Next JS",
     "name": "nextjs"
   },
   {
-    "icon": "https://cdn.worldvectorlogo.com/logos/apollo-graphql-compact.svg",
+    "icon": "https://pbs.twimg.com/profile_images/1676741952014897152/j5t0mY_I_400x400.jpg",
+    "label": "Expo",
+    "name": "expo"
+  },
+  {
+    "icon": "https://cdn-icons-png.flaticon.com/128/5968/5968381.png",
+    "label": "TypeScript",
+    "name": "typescript"
+  },
+  {
+    "icon": "https://skillicons.dev/icons?i=apollo",
     "label": "Apollo",
     "name": "apollo"
+  },
+  {
+    "icon": "https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_light_prisma.svg",
+    "label": "Prisma",
+    "name": "prisma"
   },
   {
     "icon": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
     "label": "Tailwind CSS",
     "name": "tailwindcss"
-  },
-  {
-    "icon": "https://www.vectorlogo.zone/logos/redis/redis-icon.svg",
-    "label": "Redis",
-    "name": "redis"
-  },
-  {
-    "icon": "https://seeklogo.com/images/G/github-actions-logo-031704BDC6-seeklogo.com.png",
-    "label": "Github Actions",
-    "name": "github-actions"
-  },
-  {
-    "icon": "https://seeklogo.com/images/G/google-cloud-logo-ADE788217F-seeklogo.com.png",
-    "label": "GCP",
-    "name": "gcp"
   },
   {
     "icon": "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
@@ -44,10 +39,36 @@
     "label": "MySQL",
     "name": "mysql"
   },
+
+  {
+    "icon": "https://skillicons.dev/icons?i=docker",
+    "label": "Docker",
+    "name": "docker"
+  },
+  {
+    "icon": "https://skillicons.dev/icons?i=git",
+    "label": "Git",
+    "name": "git"
+  },
+  {
+    "icon": "https://skillicons.dev/icons?i=githubactions",
+    "label": "Github Actions",
+    "name": "github-actions"
+  },
+  {
+    "icon": "https://seeklogo.com/images/G/google-cloud-logo-ADE788217F-seeklogo.com.png",
+    "label": "GCP",
+    "name": "gcp"
+  },
   {
     "icon": "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg",
     "label": "Tensorflow",
     "name": "tensorflow"
+  },
+  {
+    "icon": "https://www.vectorlogo.zone/logos/redis/redis-icon.svg",
+    "label": "Redis",
+    "name": "redis"
   },
   {
     "icon": "https://img.icons8.com/?size=2x&id=4GhGzHg3nZeG&format=png",
@@ -58,11 +79,6 @@
     "icon": "https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg",
     "label": "Supabase",
     "name": "supabase"
-  },
-  {
-    "icon": "https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_light_prisma.svg",
-    "label": "Prisma",
-    "name": "prisma"
   },
   {
     "icon": "https://raw.githubusercontent.com/detain/svg-logos/master/svg/v/vitejs.svg",

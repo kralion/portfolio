@@ -19,7 +19,12 @@ export default function TechStack() {
             title={tech.label}
             className=" border shadow-xl boder-slate-700 hover:shadow-[0.01rem_0.001rem_0.130rem_0.1rem_rgba(36,36,34,0.9)] rounded-lg py-10 px-16 duration-200 "
           >
-            <img src={tech.icon} width={100} alt={tech.name} />
+            <img
+              src={tech.icon}
+              className="rounded-lg"
+              width={100}
+              alt={tech.name}
+            />
           </div>
         ))}
       </div>

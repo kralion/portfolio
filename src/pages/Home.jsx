@@ -1,4 +1,3 @@
-import { Mouse } from "lucide-react";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import profilePic from "../assets/images/profile-pic.png";
@@ -9,22 +8,18 @@ export default function Home() {
   return (
     <AOSWrapper>
       <div className="font-Inter ">
-        <div className="flex relative lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between justify-center h-screen lg:mx-10 mx-5 items-center ">
+        <div className="flex relative lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between justify-center lg:mx-32 mx-5  ">
           <div
             data-aos="slide-right"
             data-aos-duration="1000"
             data-aos-delay="200"
+            className="mt-20"
           >
-            <div className="flex flex-col gap-2 font-bold text-xl lg:text-6xl lg:mt-10">
+            <div className="flex flex-col gap-2 font-bold text-xl lg:text-6xl">
               <span>
                 {" "}
                 <TypeAnimation
-                  sequence={[
-                    "",
-                    500,
-                    "SOFTWARE", // Types 'One'
-                    1000,
-                  ]}
+                  sequence={["", 500, "WEB", 1000]}
                   cursor={false}
                   wrapper="span"
                   style={{ display: "inline-block" }}
@@ -32,31 +27,18 @@ export default function Home() {
                 <span className=" text-[#ffc40c]"> & </span>
               </span>{" "}
               <TypeAnimation
-                sequence={[
-                  "",
-                  2000,
-                  "AI NATIVE", // Types 'One'
-                  1000,
-                ]}
+                sequence={["", 2000, "MOBILE", 1000]}
                 wrapper="span"
                 cursor={false}
                 style={{ display: "inline-block" }}
               />
               <TypeAnimation
                 className="text-[#ffc40c]"
-                sequence={[
-                  "",
-                  3000,
-                  "ENGINEER", // Types 'One'
-                  1000,
-                ]}
+                sequence={["", 3000, "DEVELOPER", 1000]}
                 wrapper="span"
                 cursor={true}
                 style={{ display: "inline-block" }}
               />
-              <span className="text-xl lg:text-5xl  font-Borel lg:mt-16 ">
-                Brayan Paucar
-              </span>
             </div>
           </div>
           <div
@@ -64,7 +46,7 @@ export default function Home() {
             data-aos-duration="1000"
             data-aos-delay="500"
           >
-            <div className="rounded-full w-full lg:m-0 mx-10  bg-gradient-to-r from-yellow-400 via-orange-400 to-orange-600  p-7">
+            <div className="rounded-full w-full lg:m-0 mx-10  bg-gradient-to-r from-yellow-400 via-orange-400 to-orange-600  p-4">
               <div className="flex  rounded-full h-full w-full items-center justify-center">
                 <img
                   src={profilePic}
@@ -75,11 +57,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Mouse
-          size={35}
-          className="absolute bottom-0 right-[700px] animate-bounce"
-        />
-        <hr />
       </div>
     </AOSWrapper>
   );
