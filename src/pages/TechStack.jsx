@@ -23,6 +23,7 @@ export default function TechStack() {
               src={tech.icon}
               className="rounded-lg"
               width={100}
+              height={100}
               alt={tech.name}
             />
           </div>

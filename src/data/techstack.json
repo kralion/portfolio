@@ -1,16 +1,16 @@
 [
   {
-    "icon": "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+    "icon": "https://svgl.app/library/nextjs.svg",
     "label": "Next JS",
     "name": "nextjs"
   },
   {
-    "icon": "https://pbs.twimg.com/profile_images/1676741952014897152/j5t0mY_I_400x400.jpg",
+    "icon": "https://svgl.app/library/expo.svg",
     "label": "Expo",
     "name": "expo"
   },
   {
-    "icon": "https://cdn-icons-png.flaticon.com/128/5968/5968381.png",
+    "icon": "https://svgl.app/library/typescript.svg",
     "label": "TypeScript",
     "name": "typescript"
   },
@@ -20,12 +20,12 @@
     "name": "apollo"
   },
   {
-    "icon": "https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_light_prisma.svg",
+    "icon": "https://svgl.app/library/prisma.svg",
     "label": "Prisma",
     "name": "prisma"
   },
   {
-    "icon": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+    "icon": "https://svgl.app/library/tailwindcss.svg",
     "label": "Tailwind CSS",
     "name": "tailwindcss"
   },
@@ -35,13 +35,13 @@
     "name": "mongodb"
   },
   {
-    "icon": "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg",
+    "icon": "https://svgl.app/library/mysql.svg",
     "label": "MySQL",
     "name": "mysql"
   },
 
   {
-    "icon": "https://skillicons.dev/icons?i=docker",
+    "icon": "https://svgl.app/library/docker.svg",
     "label": "Docker",
     "name": "docker"
   },
@@ -66,7 +66,7 @@
     "name": "tensorflow"
   },
   {
-    "icon": "https://www.vectorlogo.zone/logos/redis/redis-icon.svg",
+    "icon": "https://svgl.app/library/redis.svg",
     "label": "Redis",
     "name": "redis"
   },
@@ -76,7 +76,7 @@
     "name": "ai"
   },
   {
-    "icon": "https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg",
+    "icon": "https://svgl.app/library/supabase.svg",
     "label": "Supabase",
     "name": "supabase"
   },

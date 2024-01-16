@@ -2,11 +2,8 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import { Button } from "@material-tailwind/react";
 import ExayaRepoCover from "../assets/repo-covers/exaya.png";
-import PowerhubRepoCover from "../assets/repo-covers/powerhub.png";
-import SimplypayRepoCover from "../assets/repo-covers/simplypay.jpg";
 import EventWiseRepoCover from "../assets/repo-covers/eventwise.png";
-import LuminaryRepoCover from "../assets/repo-covers/luminary.png";
-import MaburoRepoCover from "../assets/repo-covers/maburo.png";
+import VidplusRecoCover from "../assets/repo-covers/vidplus.png";
 import { FolderInput } from "lucide-react";
 
 export default function Experience() {
@@ -42,7 +39,7 @@ export default function Experience() {
         <ProjectCard
           projectTitle="Event Wise"
           description="Smart productivity app harnessing AI for efficient workflows."
-          demoLink="#"
+          demoLink="https://event-wise.vercel.app"
           usedTechnologies={["tensorflow", "tailwindcss", "vite", "typescript"]}
           projectImage={EventWiseRepoCover}
           projectLink="https://github.com/Dv-Joan/event-wise"
@@ -50,15 +47,16 @@ export default function Experience() {
         <ProjectCard
           projectTitle="Powerhub"
           description="Essential EV companion for battery stats and nearby charging station tracking."
-          demoLink="#"
+          demoLink="https://powerhub-hcn8flssc-dv-joan.vercel.app/powerhub"
           usedTechnologies={["tailwindcss", "nextjs", "redis", "typescript"]}
-          projectImage={PowerhubRepoCover}
+          projectImage="https://cdn.dribbble.com/userupload/7781111/file/original-7dc13437e1798e4a5d6a51dab52c210e.png?resize=640x480&vertical=center"
           projectLink="https://github.com/Dv-Joan/powerhub"
         />
         <ProjectCard
-          projectTitle="Simplypay"
-          description="A modern, intuitive payment app, city's top choice utilizing, w/ UX best practices."
-          demoLink="#"
+          projectTitle="VidPlus"
+          description="Vid plus SASS product backbone with modern tech stack, w/ UX best practices."
+          //TODO Change the url, because nextjs has an issue with the url
+          demoLink="https://vidplus-i2v5hx2iu-dv-joan.vercel.app"
           usedTechnologies={[
             "aws",
             "nextjs",
@@ -66,8 +64,8 @@ export default function Experience() {
             "redis",
             "typescript",
           ]}
-          projectImage={SimplypayRepoCover}
-          projectLink="https://github.com/Dv-Joan/simplypay"
+          projectImage={VidplusRecoCover}
+          projectLink="https://github.com/Dv-Joan/vidplus"
         />
         <ProjectCard
           projectTitle="Maburo"
@@ -78,17 +76,17 @@ export default function Experience() {
             "tailwindcss",
             "github-actions",
           ]}
-          projectImage={MaburoRepoCover}
-          demoLink="#"
+          projectImage="https://cdn.dribbble.com/userupload/8470118/file/original-dd543619c2bf6c15cc2ec62dfe818a2c.png?resize=640x480&vertical=center"
+          demoLink="https://maburo.vercel.app"
           projectLink="https://github.com/Dv-Joan/maburo"
         />
         <ProjectCard
-          projectTitle="Luminary"
-          description="Modern immersive electronics shopping experience for cutting-edge retail tech."
-          demoLink="#"
+          projectTitle="Parify"
+          description="This project serves as a platform for 3D printers, offering a diverse range of cutting-edge models."
+          demoLink="https://luminary-alpha.vercel.app"
           usedTechnologies={["gcp", "tailwindcss", "vite"]}
-          projectImage={LuminaryRepoCover}
-          projectLink="https://github.com/Dv-Joan/luminary"
+          projectImage="https://cdn.dribbble.com/userupload/6319482/file/original-77e9d1c1bd2e944cc97be31180191bf3.png?resize=640x480&vertical=center"
+          projectLink="https://github.com/Dv-Joan/parify"
         />
       </div>
       <div className="flex justify-center m-5  lg:my-10">
