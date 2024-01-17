@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex h-screen flex-col lg:flex-row lg:justify-between  mt-10 lg:mt-0 ml-2 lg:gap-10 items-center font-Source-Sans-Pro"
+      className="flex  flex-col lg:flex-row lg:justify-between  mt-10 lg:mt-0 ml-2 lg:gap-10 items-center font-Source-Sans-Pro"
     >
       <img
         data-aos="slide-right"

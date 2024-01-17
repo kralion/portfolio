@@ -11,7 +11,6 @@
 
 body {
   background-color: rgb(253, 255, 245, 1);
-  margin-top: 20px;
   min-width: 320px;
   min-height: 100vh;
   overflow-y: auto;
