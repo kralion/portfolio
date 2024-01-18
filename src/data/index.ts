@@ -1,3 +1,4 @@
-import TechStack from "./techstack.json";
+import Technologies from "./techstack.json";
+import Socials from "./socials.json";
 
-export { TechStack };
+export { Technologies, Socials };

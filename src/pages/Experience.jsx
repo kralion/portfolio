@@ -56,7 +56,7 @@ export default function Experience() {
           projectTitle="VidPlus"
           description="Vid plus SASS product backbone with modern tech stack, w/ UX best practices."
           //TODO Change the url, because nextjs has an issue with the url
-          demoLink="https://vidplus-i2v5hx2iu-dv-joan.vercel.app"
+          demoLink="https://vidplus-giqec8ne7-dv-joan.vercel.app"
           usedTechnologies={[
             "aws",
             "nextjs",

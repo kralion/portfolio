@@ -1,6 +1,6 @@
+import { Mail, PhoneCall } from "lucide-react";
 import React from "react";
 import backgroundImage from "../assets/gradient.png";
-import { Mail, PhoneCall, Menu } from "lucide-react";
 export default function Contact() {
   return (
     <section

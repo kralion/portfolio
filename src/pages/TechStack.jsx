@@ -1,4 +1,4 @@
-import { TechStack as Techs } from "../data";
+import { Technologies } from "../data";
 export default function TechStack() {
   return (
     <div className=" lg:mx-24 h-screen mx-5 mt-20 text-center font-Source-Sans-Pro">
@@ -13,7 +13,7 @@ export default function TechStack() {
         data-aos-duration="1500"
         className="grid grid-cols-2 lg:grid-cols-5 lg:gap-5 lg:py-5 lg:px-3 justify-center gap-5"
       >
-        {Techs.slice(0, 10).map((tech, index) => (
+        {Technologies.slice(0, 10).map((tech, index) => (
           <div
             key={index}
             title={tech.label}

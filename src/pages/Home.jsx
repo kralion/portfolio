@@ -2,7 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import profilePic from "../assets/images/profile-pic.png";
 import "../styles/styles.css";
-import Socials from "../data/socials.json";
+import { Socials } from "../data";
 import AOSWrapper from "../utils/AOS";
 import backgroundImage from "../assets/gradient.png";
 import { Menu } from "lucide-react";

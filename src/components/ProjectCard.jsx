@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { ArrowUpRight, Code2 } from "lucide-react";
-import { TechStack } from "./../data";
+import { Technologies } from "./../data";
 
 export default function Example({
   projectTitle,
@@ -50,7 +50,7 @@ export default function Example({
           </Typography>
         </div>
         <div className="flex justify-center items-center gap-6">
-          {TechStack.map((tech) => {
+          {Technologies.map((tech) => {
             if (usedTechnologies.includes(tech.name)) {
               return (
                 <Tooltip key={tech.label}>
