@@ -71,7 +71,7 @@ export default function About() {
 
         <a
           className="icon"
-          href="https://drive.google.com/file/d/1-3XAAqIMACy02xn0E9TJY1VrB_erirl0/view?usp=sharing"
+          href="https://drive.google.com/file/d/1-7HzNKJV675zgY2fGtIGo4def5gn9Q8h/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >

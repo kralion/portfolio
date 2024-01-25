@@ -17,7 +17,7 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
-        className="pb-20 rounded-b-3xl shadow-md mb-2"
+        className="pb-20 mb-2"
       >
         <header
           data-aos="fade-in"
@@ -41,17 +41,17 @@ export default function Home() {
             </div>
           </div>
           <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
-            <ul className="flex gap-3.5">
+            <ul className="flex gap-2">
               {Socials.map((social, index) => (
                 <li key={index} className="cursor-pointer">
-                  <a href={social.link} target="_blank" rel="noreferrer">
+                  <a href={social.url} target="_blank" rel="noreferrer">
                     <img
                       title={social.label}
                       src={social.logo}
                       alt={social.name}
-                      className="hover:opacity-70 duration-200 "
-                      width={20}
-                      height={20}
+                      className="rounded border border-black/80  bg-transparent shadow-[0_0_2px_0.4px_rgba(0,0,0,0.30),_0_0_0px_4px_rgba(181,181,181,0.25)] active:bg-gradient-to-b active:from-gray-300 active:to-white active:shadow-[0_0_2px_0.4px_rgba(0,0,0,0.35),_0_0_0px_4px_rgba(206,206,206,0.25)] "
+                      width={25}
+                      height={25}
                     />
                   </a>
                 </li>
@@ -94,7 +94,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              data-aos="flip-right"
+              data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="500"
             >
