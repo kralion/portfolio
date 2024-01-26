@@ -32,7 +32,7 @@ export default function Experience() {
             "supabase",
             "prisma",
           ]}
-          demoLink="https://main--superlative-biscotti-39a22f.netlify.app"
+          demoLink="https://superlative-biscotti-39a22f.netlify.app"
           projectImage={ExayaRepoCover}
           projectLink="https://github.com/Dv-Joan/exaya"
         />
