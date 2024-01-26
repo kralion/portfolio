@@ -11,7 +11,7 @@ export default function Contact() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
-      className=" lg:p-24 rounded-t-3xl py-10 mt-36 space-y-8 text-center font-Source-Sans-Pro"
+      className=" font-Source-Sans-Pro mt-36 space-y-8 rounded-t-3xl py-10 text-center lg:p-24"
     >
       <div
         data-aos="fade-in"
@@ -19,8 +19,8 @@ export default function Contact() {
         data-aos-duration="500"
         className="space-y-8"
       >
-        <h3 className="lg:text-4xl text-2xl font-bold">
-          Interested In Working With Me?
+        <h3 className="text-2xl font-bold lg:text-4xl">
+          Interested In Working With Me? Please let me know!
         </h3>
         <h5 className=" text-gray-500 lg:px-64">
           I welcome opportunities to collaborate with talented people. Let's
@@ -39,17 +39,17 @@ export default function Contact() {
           rel="noreferrer"
           href="https://www.linkedin.com/in/joan-paucar/"
         >
-          <button className="button lg:text-md text-sm  rounded group font-Source-Sans-Pro my-14 font-bold uppercase ">
+          <button className="button lg:text-md font-Source-Sans-Pro  group my-14 rounded text-sm font-bold uppercase ">
             Contact Me
           </button>
         </a>
       </div>
-      <div className="flex justify-center m-3 lg:mx-0 font-Source-Sans-Pro gap-10">
+      <div className="font-Source-Sans-Pro m-3 flex justify-center gap-10 lg:mx-0">
         <a
           target="_blank"
           rel="noreferrer"
           href="https://wa.me/51914019629"
-          className="flex cursor-pointer hover:opacity-70 items-center gap-2"
+          className="flex cursor-pointer items-center gap-2 hover:opacity-70"
         >
           <PhoneCall color="#ffc40c" />
           +51 914 019 629
@@ -59,7 +59,7 @@ export default function Contact() {
           rel="noreferrer"
           href="mailto:jpm_2001@icloud.com?subject=Contact to DvJoan,%20J!&body=Hi Joan,%20I see your portfolio and ... !
             "
-          className="flex cursor-pointer hover:opacity-70 items-center gap-2"
+          className="flex cursor-pointer items-center gap-2 hover:opacity-70"
         >
           <Mail color="#ffc40c" />
           jpm_2001@icloud.com
