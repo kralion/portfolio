@@ -7,10 +7,12 @@ function App() {
   return (
     <div className="App">
       <Home />
-      <About />
-      <TechStack />
-      <Experience />
-      <Contact />
+      <div className="space-y-44">
+        <About />
+        <TechStack />
+        <Experience />
+        <Contact />
+      </div>
     </div>
   );
 }

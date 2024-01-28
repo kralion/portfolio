@@ -9,13 +9,15 @@ import { FolderInput } from "lucide-react";
 export default function Experience() {
   return (
     <section
-      data-aos="zoom-out"
-      data-aos-delay="200"
-      data-aos-duration="1000"
       id="experience"
-      className=" lg:mx-24  my-24 space-y-10 font-Source-Sans-Pro"
+      className=" lg:mx-24  space-y-10 font-Source-Sans-Pro"
     >
-      <header className="space-y-3.5 text-center">
+      <header
+        data-aos="zoom-in"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+        className="space-y-3.5 text-center"
+      >
         <span className="bg-[#eb5e28] px-3 my-2 text-gray-100 py-1 w-fit  rounded-full">
           Experience
         </span>

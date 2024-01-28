@@ -18,7 +18,12 @@ export default function Example({
   projectLink,
 }) {
   return (
-    <Card className="hover:shadow-2xl shadow-md hover:shadow-orange-400 relative lg:mx-0 mx-5 rounded-2xl duration-300 h-[550px] ">
+    <Card
+      data-aos="fade-in"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+      className="hover:shadow-2xl shadow-md hover:shadow-orange-400 relative lg:mx-0 mx-5 rounded-2xl duration-300 h-[550px] "
+    >
       <CardHeader className="flex object-cover justify-center ">
         <a href={demoLink} target="_blank" rel="noreferrer">
           <img

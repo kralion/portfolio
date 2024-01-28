@@ -94,16 +94,16 @@ export default function Home() {
               </div>
             </div>
             <div
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="500"
+              data-aos="fade-in"
+              data-aos-duration="1500"
+              data-aos-delay="300"
             >
-              <div className="rounded-full w-full lg:m-0 mx-10  bg-gradient-to-r from-yellow-400 via-orange-400 to-orange-600  p-4">
+              <div className="rounded-full w-full lg:m-0 mx-10 p-4">
                 <div className="flex  rounded-full h-full w-full items-center justify-center">
                   <img
                     src={profilePic}
                     alt="profilePic"
-                    className="rounded-full drop-shadow-2xl p-1 bg-[#FDFFF6]"
+                    className="rounded-full  shadow-yellow-600 shadow-lg p-1 border-4 border-yellow-400"
                   />
                 </div>
               </div>
