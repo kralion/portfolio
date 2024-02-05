@@ -11,13 +11,13 @@ export default function Contact() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
-      className=" font-Source-Sans-Pro mt-36 space-y-8 rounded-t-3xl py-10 text-center lg:p-24"
+      className=" font-Source-Sans-Pro mt-36 space-y-8 lg:rounded-t-3xl py-10 text-center lg:p-24"
     >
       <div
         data-aos="fade-in"
         data-aos-delay="200"
         data-aos-duration="500"
-        className="space-y-8"
+        className="space-y-8 p-10"
       >
         <h3 className="text-2xl font-bold lg:text-4xl">
           Interested In Working With Me? Please let me know!
@@ -39,7 +39,7 @@ export default function Contact() {
           rel="noreferrer"
           href="https://www.linkedin.com/in/joan-paucar/"
         >
-          <button className="button lg:text-md font-Source-Sans-Pro  group my-14 rounded text-sm font-bold uppercase ">
+          <button className="button lg:text-md font-Source-Sans-Pro  group my-7 lg:my-14 rounded text-sm font-bold uppercase ">
             Contact Me
           </button>
         </a>

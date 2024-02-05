@@ -5,7 +5,13 @@ import "../styles/styles.css";
 import { Socials } from "../data";
 import AOSWrapper from "../utils/AOS";
 import backgroundImage from "../assets/gradient.png";
-import { Menu } from "lucide-react";
+import { Menu as Burger, User, Code, Briefcase, Phone } from "lucide-react";
+import {
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
+} from "@material-tailwind/react";
 
 export default function Home() {
   return (
@@ -23,22 +29,38 @@ export default function Home() {
           data-aos="fade-in"
           data-aos-duration="1000"
           data-aos-delay="200"
-          className=" backdrop-blur-xl lg:static top-0 z-50 flex justify-between items-center lg:p-10 lg:px-28"
+          className=" backdrop-blur-xl lg:static lg:top-0 p-5  z-50 flex justify-between items-center lg:p-10 lg:px-28"
         >
-          <div className="flex justify-between items-center">
-            <div className="flex gap-56 items-center">
-              <a href="/">
-                <span className="text-xl lg:text-6xl  font-Allura">
-                  Brayan Paucar
-                </span>
-              </a>
-              <Menu
-                alt="menuLogo"
-                className="inline lg:hidden"
-                color="#ffc40c"
-                size={30}
-              />
-            </div>
+          <div className="flex justify-between w-full items-center">
+            <a href="/">
+              <span className="text-2xl lg:text-6xl  font-Allura">
+                Brayan Paucar
+              </span>
+            </a>
+            <Menu>
+              <MenuHandler>
+                <Burger
+                  alt="menuLogo"
+                  className="inline lg:hidden"
+                  color="#000"
+                  size={30}
+                />
+              </MenuHandler>
+              <MenuList className="h-2/3 rounded-none rounded-b-2xl border-none flex flex-col justify-start items-start gap-3 w-full p-3">
+                <MenuItem className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center">
+                  About Me <User size={15} />
+                </MenuItem>
+                <MenuItem className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center">
+                  My Tech Stack <Code size={15} />
+                </MenuItem>
+                <MenuItem className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center">
+                  Experience <Briefcase size={15} />
+                </MenuItem>
+                <MenuItem className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center">
+                  Contact Me <Phone size={15} />
+                </MenuItem>
+              </MenuList>
+            </Menu>
           </div>
           <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
             <ul className="flex gap-2">
@@ -59,15 +81,15 @@ export default function Home() {
             </ul>
           </nav>
         </header>
-        <div className="font-Inter ">
-          <div className="flex relative lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between justify-center lg:mx-32 mx-5  ">
+        <div className="font-Inter  ">
+          <div className="flex relative justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28   ">
             <div
               data-aos="slide-right"
               data-aos-duration="1000"
               data-aos-delay="200"
-              className="mt-20"
+              className="lg:mt-20 "
             >
-              <div className="flex flex-col gap-2 font-bold text-xl lg:text-6xl">
+              <div className="flex lg:flex-col gap-2 font-bold text-2xl lg:text-6xl">
                 <span>
                   {" "}
                   <TypeAnimation
@@ -85,7 +107,7 @@ export default function Home() {
                   style={{ display: "inline-block" }}
                 />
                 <TypeAnimation
-                  className="text-[#ffc40c]"
+                  className="lg:text-[#ffc40c] text-black"
                   sequence={["", 3000, "DEVELOPER", 1000]}
                   wrapper="span"
                   cursor={true}
@@ -98,12 +120,12 @@ export default function Home() {
               data-aos-duration="1500"
               data-aos-delay="300"
             >
-              <div className="rounded-full w-full lg:m-0 mx-10 p-4">
+              <div className="rounded-full w-full lg:m-0 lgmx-10 p-4">
                 <div className="flex  rounded-full h-full w-full items-center justify-center">
                   <img
                     src={profilePic}
                     alt="profilePic"
-                    className="rounded-full  shadow-yellow-600 shadow-lg p-1 border-4 border-yellow-400"
+                    className="rounded-full  shadow-yellow-600 shadow-xl p-1 border-4 border-none"
                   />
                 </div>
               </div>
