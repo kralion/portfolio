@@ -49,7 +49,7 @@ export default function Experience() {
         <ProjectCard
           projectTitle="Powerhub"
           description="Essential EV companion for battery stats and nearby charging station tracking."
-          demoLink="https://powerhub-8l3pbmeme-dv-joan.vercel.app/powerhub"
+          demoLink="https://powerhub-k2lf8u56q-dv-joan.vercel.app"
           usedTechnologies={["tailwindcss", "nextjs", "redis", "typescript"]}
           projectImage="https://cdn.dribbble.com/userupload/7781111/file/original-7dc13437e1798e4a5d6a51dab52c210e.png?resize=640x480&vertical=center"
           projectLink="https://github.com/Dv-Joan/powerhub"
@@ -58,7 +58,7 @@ export default function Experience() {
           projectTitle="VidPlus"
           description="Vid plus SASS product backbone with modern tech stack, w/ UX best practices."
           //TODO Change the url, because nextjs has an issue with the url
-          demoLink="https://vidplus-giqec8ne7-dv-joan.vercel.app"
+          demoLink="https://vidplus-1758euuw7-dv-joan.vercel.app"
           usedTechnologies={[
             "aws",
             "nextjs",
