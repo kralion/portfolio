@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import { Button } from "@material-tailwind/react";
+import { Button, Chip } from "@material-tailwind/react";
 import ExayaCover from "../assets/repo-covers/exaya.png";
 import PowerHubCover from "../assets/repo-covers/powerhub.png";
 import ExpenseTrackerCover from "../assets/repo-covers/expense-tracker.png";
@@ -20,12 +20,15 @@ export default function Experience() {
         data-aos-duration="1000"
         className="space-y-3.5 text-center"
       >
-        <span className="bg-[#eb5e28] px-3 my-2 text-gray-100 py-1 w-fit  rounded-full">
-          Experience
-        </span>
+        <Chip
+          color="orange"
+          className="w-fit rounded-full mx-auto  "
+          variant="gradient"
+          value="Experience"
+        />
         <h3 className="lg:text-4xl text-2xl font-Inter font-bold">Projects</h3>
       </header>
-      <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 items-center">
+      <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 ">
         <ProjectCard
           projectTitle="Exaya"
           description="Modern transportation management system with AI integrations"
@@ -98,21 +101,20 @@ export default function Experience() {
           More Projects
           <hr className="my-3" />
           <div className="p-6 text-center ">
-            <Button
-              size="lg"
-              fullWidth={true}
-              className="flex justify-center py-3 normal-case  text-white hover:bg-[#403d39] bg-black hover:text-white duration-200 tracking-wider  rounded-xl"
+            <a
+              href="https://github.com/Dv-Joan?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
             >
-              <a
-                href="https://github.com/Dv-Joan?tab=repositories"
-                className=" items-center flex gap-3 "
-                target="_blank"
-                rel="noreferrer"
+              <Button
+                variant="gradient"
+                fullWidth
+                className="flex rounded-lg gap-3 justify-center font-semibold items-center"
               >
                 Go to Github
-                <FolderInput size={20} />
-              </a>
-            </Button>
+                <FolderInput size={15} />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

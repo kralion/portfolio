@@ -23,17 +23,17 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
-        className="pb-20 mb-2"
+        className="pb-20 mb-2 relative h-screen w-full flex flex-col justify-center items-center"
       >
         <header
           data-aos="fade-in"
           data-aos-duration="1000"
           data-aos-delay="200"
-          className=" backdrop-blur-xl lg:static lg:top-0 p-5  z-50 flex justify-between items-center lg:p-10 lg:px-28"
+          className=" backdrop-blur-xl lg:static lg:top-0 p-5  z-50 flex gap-10 items-center lg:p-10 lg:px-28"
         >
           <div className="flex justify-between w-full items-center">
             <a href="/">
-              <span className="text-2xl lg:text-6xl  font-Allura">
+              <span className="text-2xl  lg:text-6xl  font-Allura">
                 Brayan Paucar
               </span>
             </a>
@@ -81,56 +81,55 @@ export default function Home() {
             </ul>
           </nav>
         </header>
-        <div className="font-Inter  ">
-          <div className="flex relative justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28   ">
-            <div
-              data-aos="slide-right"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-              className="lg:mt-20 "
-            >
-              <div className="flex lg:flex-col gap-2 font-bold text-2xl lg:text-6xl">
-                <span>
-                  {" "}
-                  <TypeAnimation
-                    sequence={["", 500, "WEB", 1000]}
-                    cursor={false}
-                    wrapper="span"
-                    style={{ display: "inline-block" }}
-                  />
-                  <span className=" text-[#ffc40c]"> & </span>
-                </span>{" "}
+        <div className="flex  justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28 font-Inter ">
+          <div
+            data-aos="slide-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div className="flex lg:flex-col gap-2 font-bold text-2xl lg:text-6xl">
+              <span>
+                {" "}
                 <TypeAnimation
-                  sequence={["", 2000, "MOBILE", 1000]}
-                  wrapper="span"
+                  sequence={["", 500, "WEB", 1000]}
                   cursor={false}
-                  style={{ display: "inline-block" }}
-                />
-                <TypeAnimation
-                  className="lg:text-[#ffc40c] text-black"
-                  sequence={["", 3000, "DEVELOPER", 1000]}
                   wrapper="span"
-                  cursor={true}
                   style={{ display: "inline-block" }}
                 />
-              </div>
-            </div>
-            <div
-              data-aos="fade-in"
-              data-aos-duration="1500"
-              data-aos-delay="300"
-            >
-              <div className="rounded-full w-full lg:m-0 lgmx-10 p-4">
-                <div className="flex  rounded-full h-full w-full items-center justify-center">
-                  <img
-                    src={profilePic}
-                    alt="profilePic"
-                    className="rounded-full  shadow-yellow-600 shadow-xl p-1 border-4 border-none"
-                  />
-                </div>
-              </div>
+                <span className=" text-white/90"> & </span>
+              </span>{" "}
+              <TypeAnimation
+                sequence={["", 2000, "MOBILE", 1000]}
+                wrapper="span"
+                cursor={false}
+                style={{ display: "inline-block" }}
+              />
+              <TypeAnimation
+                className="text-white/90"
+                sequence={["", 3000, "DEVELOPER", 1000]}
+                wrapper="span"
+                cursor={true}
+                style={{ display: "inline-block" }}
+              />
             </div>
           </div>
+
+          <img
+            data-aos="fade-in"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+            className="absolute top-0 left-0  "
+            src={profilePic}
+            alt="profilePic"
+          />
+          <img
+            data-aos="fade-in"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+            className="absolute bottom-0 right-0"
+            src={profilePic}
+            alt="profilePic"
+          />
         </div>
       </div>
     </AOSWrapper>

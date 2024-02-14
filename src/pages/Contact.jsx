@@ -22,7 +22,7 @@ export default function Contact() {
         <h3 className="text-2xl font-bold lg:text-4xl">
           Interested In Working With Me? Please let me know!
         </h3>
-        <h5 className=" text-gray-500 lg:px-64">
+        <h5 className=" text-gray-700 lg:px-64">
           I welcome opportunities to collaborate with talented people. Let's
           connect to see how we can create strong solutions that provide real
           value to the world around us.
@@ -36,10 +36,11 @@ export default function Contact() {
       >
         <a
           target="_blank"
+          className="w-fit"
           rel="noreferrer"
           href="https://www.linkedin.com/in/joan-paucar/"
         >
-          <button className="button lg:text-md font-Source-Sans-Pro  group my-7 lg:my-14 rounded text-sm font-bold uppercase ">
+          <button className="button lg:text-md font-Source-Sans-Pro  group my-7 lg:mb-10 rounded text-sm font-bold uppercase ">
             Contact Me
           </button>
         </a>
