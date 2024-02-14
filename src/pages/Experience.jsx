@@ -1,9 +1,11 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import { Button } from "@material-tailwind/react";
-import ExayaRepoCover from "../assets/repo-covers/exaya.png";
-import EventWiseRepoCover from "../assets/repo-covers/eventwise.png";
-import VidplusRecoCover from "../assets/repo-covers/vidplus.png";
+import ExayaCover from "../assets/repo-covers/exaya.png";
+import PowerHubCover from "../assets/repo-covers/powerhub.png";
+import ExpenseTrackerCover from "../assets/repo-covers/expense-tracker.png";
+import EventWiseCover from "../assets/repo-covers/eventwise.png";
+import VidplusCover from "../assets/repo-covers/vidplus.png";
 import { FolderInput } from "lucide-react";
 
 export default function Experience() {
@@ -35,7 +37,7 @@ export default function Experience() {
             "prisma",
           ]}
           demoLink="https://superlative-biscotti-39a22f.netlify.app"
-          projectImage={ExayaRepoCover}
+          projectImage={ExayaCover}
           projectLink="https://github.com/Dv-Joan/exaya"
         />
         <ProjectCard
@@ -43,7 +45,7 @@ export default function Experience() {
           description="Smart productivity app harnessing AI for efficient workflows."
           demoLink="https://event-wise.vercel.app"
           usedTechnologies={["tensorflow", "tailwindcss", "vite", "typescript"]}
-          projectImage={EventWiseRepoCover}
+          projectImage={EventWiseCover}
           projectLink="https://github.com/Dv-Joan/event-wise"
         />
         <ProjectCard
@@ -51,7 +53,7 @@ export default function Experience() {
           description="Essential EV companion for battery stats and nearby charging station tracking."
           demoLink="https://powerhub-k2lf8u56q-dv-joan.vercel.app"
           usedTechnologies={["tailwindcss", "nextjs", "redis", "typescript"]}
-          projectImage="https://cdn.dribbble.com/userupload/7781111/file/original-7dc13437e1798e4a5d6a51dab52c210e.png?resize=640x480&vertical=center"
+          projectImage={PowerHubCover}
           projectLink="https://github.com/Dv-Joan/powerhub"
         />
         <ProjectCard
@@ -66,11 +68,11 @@ export default function Experience() {
             "redis",
             "typescript",
           ]}
-          projectImage={VidplusRecoCover}
+          projectImage={VidplusCover}
           projectLink="https://github.com/Dv-Joan/vidplus"
         />
         <ProjectCard
-          projectTitle="Maburo"
+          projectTitle="Expense Tracker"
           description="Innovative airline management platform harnessing cutting-edge technologies."
           usedTechnologies={[
             "nextjs",
@@ -78,8 +80,8 @@ export default function Experience() {
             "tailwindcss",
             "github-actions",
           ]}
-          projectImage="https://cdn.dribbble.com/userupload/8470118/file/original-dd543619c2bf6c15cc2ec62dfe818a2c.png?resize=640x480&vertical=center"
-          demoLink="https://maburo.vercel.app"
+          projectImage={ExpenseTrackerCover}
+          demoLink="https://expense-tracker-eta-khaki.vercel.app"
           projectLink="https://github.com/Dv-Joan/maburo"
         />
         <ProjectCard
