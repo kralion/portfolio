@@ -52,7 +52,7 @@ export default function Contact() {
           href="https://wa.me/51914019629"
           className="flex cursor-pointer items-center gap-2 hover:opacity-70"
         >
-          <PhoneCall color="#ffc40c" />
+          <PhoneCall color="black" />
           +51 914 019 629
         </a>
         <a
@@ -62,7 +62,7 @@ export default function Contact() {
             "
           className="flex cursor-pointer items-center gap-2 hover:opacity-70"
         >
-          <Mail color="#ffc40c" />
+          <Mail color="black" />
           jpm_2001@icloud.com
         </a>
       </div>

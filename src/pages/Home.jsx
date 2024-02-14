@@ -1,20 +1,55 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import profilePic from "../assets/images/profile-pic.png";
 import "../styles/styles.css";
 import { Socials } from "../data";
 import AOSWrapper from "../utils/AOS";
 import backgroundImage from "../assets/gradient.png";
-import { Menu as Burger, User, Code, Briefcase, Phone, X } from "lucide-react";
+import { scroller as scrollSpy } from "react-scroll";
+import {
+  Menu as Burger,
+  User,
+  Code,
+  Briefcase,
+  Phone,
+  X,
+  HomeIcon,
+} from "lucide-react";
 import {
   Menu,
   MenuHandler,
   MenuList,
   MenuItem,
+  Tooltip,
+  IconButton,
 } from "@material-tailwind/react";
-
 export default function Home() {
   const [openMenu, setOpenMenu] = React.useState(false);
+  const scroller = scrollSpy;
+  const handleSelectMobileMenu = (value) => {
+    if (value) {
+      scroller.scrollTo(value, {
+        duration: 1000,
+        delay: 0,
+        smooth: true,
+      });
+      setOpenMenu(false);
+    } else {
+      scrollSpy.scrollTo("home", {
+        duration: 1000,
+        delay: 0,
+        smooth: true,
+      });
+    }
+  };
+
+  useEffect(() => {
+    scroller.scrollTo("home", {
+      duration: 1000,
+      delay: 0,
+      smooth: true,
+    });
+  }, []);
   return (
     <AOSWrapper>
       <div
@@ -30,14 +65,15 @@ export default function Home() {
           data-aos="fade-in"
           data-aos-duration="1000"
           data-aos-delay="200"
-          className=" lg:static lg:top-0 p-5  z-50 flex gap-10 items-center lg:p-10 lg:px-28"
+          className=" lg:static lg:top-0 p-5  z-50 flex gap-16 items-center lg:p-10 lg:px-28"
         >
+          <span className=" lg:block hidden text-6xl  font-Allura">
+            Brayan Paucar
+          </span>
           <div className="flex lg:hidden justify-between w-full items-center">
-            <a href="/">
-              <span className="text-2xl  lg:text-6xl  font-Allura">
-                Brayan Paucar
-              </span>
-            </a>
+            <span className="text-3xl lg:text-6xl  font-Allura">
+              Brayan Paucar
+            </span>
             <Menu
               open={openMenu}
               handler={setOpenMenu}
@@ -57,35 +93,57 @@ export default function Home() {
               </MenuHandler>
 
               <MenuList className="h-full rounded-none rounded-b-2xl border-none flex flex-col justify-start items-start gap-3 w-full p-3">
-                <MenuItem className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center">
+                <MenuItem
+                  onClick={() => handleSelectMobileMenu("home")}
+                  className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center"
+                >
+                  Home <HomeIcon size={15} />
+                </MenuItem>
+                <MenuItem
+                  onClick={() => handleSelectMobileMenu("about")}
+                  className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center"
+                >
                   About Me <User size={15} />
                 </MenuItem>
-                <MenuItem className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center">
+                <MenuItem
+                  onClick={() => handleSelectMobileMenu("tech-stack")}
+                  className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center"
+                >
                   My Tech Stack <Code size={15} />
                 </MenuItem>
-                <MenuItem className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center">
+                <MenuItem
+                  onClick={() => handleSelectMobileMenu("experience")}
+                  className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center"
+                >
                   Experience <Briefcase size={15} />
                 </MenuItem>
-                <MenuItem className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center">
+                <MenuItem
+                  onClick={() => handleSelectMobileMenu("contact")}
+                  value="contact"
+                  className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center"
+                >
                   Contact Me <Phone size={15} />
                 </MenuItem>
               </MenuList>
             </Menu>
           </div>
           <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
-            <ul className="flex gap-2">
+            <ul className="flex gap-3">
               {Socials.map((social, index) => (
                 <li key={index} className="cursor-pointer">
-                  <a href={social.url} target="_blank" rel="noreferrer">
-                    <img
-                      title={social.label}
-                      src={social.logo}
-                      alt={social.name}
-                      className="rounded border border-black/80  bg-transparent shadow-[0_0_2px_0.4px_rgba(0,0,0,0.30),_0_0_0px_4px_rgba(181,181,181,0.25)] active:bg-gradient-to-b active:from-gray-300 active:to-white active:shadow-[0_0_2px_0.4px_rgba(0,0,0,0.35),_0_0_0px_4px_rgba(206,206,206,0.25)] "
-                      width={40}
-                      height={40}
-                    />
-                  </a>
+                  <Tooltip placement="top" content={social.label}>
+                    <a href={social.url} target="_blank" rel="noreferrer">
+                      <IconButton color="white" variant="gradient" size="md">
+                        <img
+                          title={social.label}
+                          src={social.logo}
+                          alt={social.name}
+                          width={30}
+                          height={30}
+                        />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
                 </li>
               ))}
             </ul>
