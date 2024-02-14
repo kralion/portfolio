@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex  flex-col lg:flex-row lg:justify-between  mt-10 lg:mt-0 ml-2 lg:gap-10 items-center font-Source-Sans-Pro"
+      className="flex  flex-col lg:flex-row lg:justify-between  mt-10 lg:mt-0 px-6 lg:px-0 lg:gap-10 items-center font-Source-Sans-Pro"
     >
       <img
         data-aos="slide-right"
@@ -33,7 +33,7 @@ export default function About() {
         <h3 className="lg:text-3xl text-2xl font-Inter flex items-center gap-1">
           Who I am & What I do <span className="text-orange-600">?</span>
         </h3>
-        <p className="text-gray-500 px-4 lg:px-0 lg:w-3/4 w-full">
+        <div className="text-gray-500  lg:px-0 lg:w-3/4 w-full">
           I'm Brayan, a dynamic
           <RoughNotation show={true} color="#F3CC4A" type="underline">
             <span className="text-black px-2 font-mono font-semibold">
@@ -66,7 +66,7 @@ export default function About() {
             Let's innovate and turn intricate problems into impactful,
             progress-driving solutions together.
           </p>
-        </p>
+        </div>
         <a
           className="icon w-fit"
           href="https://drive.google.com/file/d/1-7HzNKJV675zgY2fGtIGo4def5gn9Q8h/view?usp=sharing"

@@ -5,7 +5,7 @@ import "../styles/styles.css";
 import { Socials } from "../data";
 import AOSWrapper from "../utils/AOS";
 import backgroundImage from "../assets/gradient.png";
-import { Menu as Burger, User, Code, Briefcase, Phone } from "lucide-react";
+import { Menu as Burger, User, Code, Briefcase, Phone, X } from "lucide-react";
 import {
   Menu,
   MenuHandler,
@@ -14,6 +14,7 @@ import {
 } from "@material-tailwind/react";
 
 export default function Home() {
+  const [openMenu, setOpenMenu] = React.useState(false);
   return (
     <AOSWrapper>
       <div
@@ -23,7 +24,7 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
-        className="pb-20 mb-2 relative lg:h-screen h-96 w-full flex flex-col lg:justify-center lg:items-center"
+        className="pb-20 mb-2 relative h-screen w-full flex flex-col lg:justify-center lg:items-center"
       >
         <header
           data-aos="fade-in"
@@ -31,22 +32,31 @@ export default function Home() {
           data-aos-delay="200"
           className=" lg:static lg:top-0 p-5  z-50 flex gap-10 items-center lg:p-10 lg:px-28"
         >
-          <div className="flex justify-between w-full items-center">
+          <div className="flex lg:hidden justify-between w-full items-center">
             <a href="/">
               <span className="text-2xl  lg:text-6xl  font-Allura">
                 Brayan Paucar
               </span>
             </a>
-            <Menu>
+            <Menu
+              open={openMenu}
+              handler={setOpenMenu}
+              animate={{
+                mount: { y: 0 },
+                unmount: { y: 25 },
+              }}
+            >
               <MenuHandler>
-                <Burger
-                  alt="menuLogo"
-                  className="inline lg:hidden"
-                  color="#000"
-                  size={30}
-                />
+                <div
+                  className={`transition ease-in-out duration-500 transform ${
+                    openMenu ? "rotate-0" : "rotate-180"
+                  }`}
+                >
+                  {openMenu ? <X size={30} /> : <Burger size={30} />}
+                </div>
               </MenuHandler>
-              <MenuList className="h-2/3 rounded-none rounded-b-2xl border-none flex flex-col justify-start items-start gap-3 w-full p-3">
+
+              <MenuList className="h-full rounded-none rounded-b-2xl border-none flex flex-col justify-start items-start gap-3 w-full p-3">
                 <MenuItem className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center">
                   About Me <User size={15} />
                 </MenuItem>
@@ -81,13 +91,9 @@ export default function Home() {
             </ul>
           </nav>
         </header>
-        <div className="flex  justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28 font-Inter ">
-          <div
-            data-aos="slide-right"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <div className="flex lg:flex-col gap-2 font-bold text-center text-2xl lg:text-6xl">
+        <div className="flex  justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28 mt-10 lg:mt-0 font-Inter ">
+          <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
+            <div className="flex flex-col gap-2 font-bold text-center text-5xl lg:text-6xl">
               <span>
                 {" "}
                 <TypeAnimation
@@ -127,7 +133,7 @@ export default function Home() {
             data-aos="fade-in"
             data-aos-duration="1500"
             data-aos-delay="300"
-            className="absolute w-64 lg:w-auto bottom-0 right-0"
+            className="absolute  lg:bottom-0 lg:rounded-none rounded-full  bottom-28 mx-auto lg:right-0"
             src={profilePic}
             alt="profilePic"
           />

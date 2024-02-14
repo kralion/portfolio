@@ -22,7 +22,7 @@ export default function Contact() {
         <h3 className="text-2xl font-bold lg:text-4xl">
           Interested In Working With Me? Please let me know!
         </h3>
-        <h5 className=" text-gray-700 lg:px-64">
+        <h5 className=" text-gray-800 lg:px-64">
           I welcome opportunities to collaborate with talented people. Let's
           connect to see how we can create strong solutions that provide real
           value to the world around us.
