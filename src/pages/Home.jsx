@@ -23,13 +23,13 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
-        className="pb-20 mb-2 relative h-screen w-full flex flex-col justify-center items-center"
+        className="pb-20 mb-2 relative lg:h-screen h-96 w-full flex flex-col lg:justify-center lg:items-center"
       >
         <header
           data-aos="fade-in"
           data-aos-duration="1000"
           data-aos-delay="200"
-          className=" backdrop-blur-xl lg:static lg:top-0 p-5  z-50 flex gap-10 items-center lg:p-10 lg:px-28"
+          className=" lg:static lg:top-0 p-5  z-50 flex gap-10 items-center lg:p-10 lg:px-28"
         >
           <div className="flex justify-between w-full items-center">
             <a href="/">
@@ -72,8 +72,8 @@ export default function Home() {
                       src={social.logo}
                       alt={social.name}
                       className="rounded border border-black/80  bg-transparent shadow-[0_0_2px_0.4px_rgba(0,0,0,0.30),_0_0_0px_4px_rgba(181,181,181,0.25)] active:bg-gradient-to-b active:from-gray-300 active:to-white active:shadow-[0_0_2px_0.4px_rgba(0,0,0,0.35),_0_0_0px_4px_rgba(206,206,206,0.25)] "
-                      width={25}
-                      height={25}
+                      width={40}
+                      height={40}
                     />
                   </a>
                 </li>
@@ -87,7 +87,7 @@ export default function Home() {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div className="flex lg:flex-col gap-2 font-bold text-2xl lg:text-6xl">
+            <div className="flex lg:flex-col gap-2 font-bold text-center text-2xl lg:text-6xl">
               <span>
                 {" "}
                 <TypeAnimation
@@ -118,19 +118,36 @@ export default function Home() {
             data-aos="fade-in"
             data-aos-duration="1500"
             data-aos-delay="500"
-            className="absolute top-0 left-0  "
+            className="absolute top-0 left-0 hidden lg:block "
             src={profilePic}
             alt="profilePic"
           />
+
           <img
             data-aos="fade-in"
             data-aos-duration="1500"
             data-aos-delay="300"
-            className="absolute bottom-0 right-0"
+            className="absolute w-64 lg:w-auto bottom-0 right-0"
             src={profilePic}
             alt="profilePic"
           />
         </div>
+        <ul className="flex gap-2 lg:hidden absolute bottom-4 left-4">
+          {Socials.map((social, index) => (
+            <li key={index} className="cursor-pointer">
+              <a href={social.url} target="_blank" rel="noreferrer">
+                <img
+                  title={social.label}
+                  src={social.logo}
+                  alt={social.name}
+                  className="rounded border border-black/80  bg-transparent shadow-[0_0_2px_0.4px_rgba(0,0,0,0.30),_0_0_0px_4px_rgba(181,181,181,0.25)] active:bg-gradient-to-b active:from-gray-300 active:to-white active:shadow-[0_0_2px_0.4px_rgba(0,0,0,0.35),_0_0_0px_4px_rgba(206,206,206,0.25)] "
+                  width={25}
+                  height={25}
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </AOSWrapper>
   );
