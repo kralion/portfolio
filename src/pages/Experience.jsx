@@ -54,7 +54,7 @@ export default function Experience() {
         <ProjectCard
           projectTitle="Powerhub"
           description="Essential EV companion for battery stats and nearby charging station tracking."
-          demoLink="https://powerhub-k2lf8u56q-dv-joan.vercel.app"
+          demoLink="https://powerhub-b6enraqqz-dv-joan.vercel.app"
           usedTechnologies={["tailwindcss", "nextjs", "redis", "typescript"]}
           projectImage={PowerHubCover}
           projectLink="https://github.com/Dv-Joan/powerhub"
