@@ -3,26 +3,19 @@ import React from "react";
 import { RoughNotation } from "react-rough-notation";
 import devBanner from "../assets/about-banner.gif";
 import { Chip } from "@material-tailwind/react";
+import profilePic from "../assets/images/profile-pic.png";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="flex  flex-col lg:flex-row lg:justify-between  mt-10 lg:mt-0 px-6 lg:px-0 lg:gap-10 items-center font-Source-Sans-Pro"
+      className="flex flex-col lg:flex-row lg:justify-center gap-4 pt-24 lg:pt-16  px-4  items-center font-Source-Sans-Pro"
     >
-      <img
-        data-aos="slide-right"
-        data-aos-duration="1000"
-        src={devBanner}
-        className="hidden lg:inline"
-        width={500}
-        alt="devbanner"
-      />
       <div
         data-aos="fade-in"
         data-aos-delay="200"
         data-aos-duration="500"
-        className=" flex flex-col  gap-5"
+        className=" flex flex-col lg:w-1/2 gap-5"
       >
         <Chip
           color="orange"
@@ -78,6 +71,14 @@ export default function About() {
           </button>
         </a>
       </div>
+      <img
+        data-aos="slide-left"
+        data-aos-duration="1000"
+        className="hidden lg:inline drop-shadow-xl rounded-full"
+        src={profilePic}
+        width={400}
+        alt="profilePic"
+      />
     </section>
   );
 }

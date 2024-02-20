@@ -14,6 +14,7 @@ import {
   Phone,
   X,
   HomeIcon,
+  Mouse,
 } from "lucide-react";
 import {
   Menu,
@@ -25,7 +26,36 @@ import {
 } from "@material-tailwind/react";
 export default function Home() {
   const [openMenu, setOpenMenu] = React.useState(false);
+  const navLinks = [
+    {
+      name: "Home",
+      label: "home",
+      icon: <HomeIcon size={15} />,
+    },
+    {
+      name: "About Me",
+      label: "about",
+      icon: <User size={15} />,
+    },
+    {
+      name: "My Tech Stack",
+      label: "tech-stack",
+      icon: <Code size={15} />,
+    },
+    {
+      name: "Experience",
+      label: "experience",
+      icon: <Briefcase size={15} />,
+      delay: 400,
+    },
+    {
+      name: "Contact Me",
+      label: "contact",
+      icon: <Phone size={15} />,
+    },
+  ];
   const scroller = scrollSpy;
+  const [activeLink, setActiveLink] = React.useState("home");
   const handleSelectMobileMenu = (value) => {
     if (value) {
       scroller.scrollTo(value, {
@@ -33,6 +63,7 @@ export default function Home() {
         delay: 0,
         smooth: true,
       });
+      setActiveLink(value);
       setOpenMenu(false);
     } else {
       scrollSpy.scrollTo("home", {
@@ -65,26 +96,28 @@ export default function Home() {
           data-aos="fade-in"
           data-aos-duration="1000"
           data-aos-delay="200"
-          className=" lg:static lg:top-0 p-5  z-50 flex gap-16 items-center lg:p-10 lg:px-28"
+          className=" lg:hidden fixed lg:top-0 p-3 m-2  z-50 flex justify-between w-[95%] backdrop-blur-md bg-orange-100/90  rounded-lg    gap-16 items-center lg:p-10 lg:px-28"
         >
           <span className=" lg:block hidden text-6xl  font-Allura">
             Brayan Paucar
           </span>
-          <div className="flex lg:hidden justify-between w-full items-center">
+          <div className="flex lg:hidden  justify-between w-full items-center">
             <span className="text-3xl lg:text-6xl  font-Allura">
               Brayan Paucar
             </span>
+
             <Menu
               open={openMenu}
               handler={setOpenMenu}
+              placement="bottom-end"
               animate={{
                 mount: { y: 0 },
-                unmount: { y: 25 },
+                unmount: { y: 30 },
               }}
             >
               <MenuHandler>
                 <div
-                  className={`transition ease-in-out duration-500 transform ${
+                  className={` transition ease-in-out duration-500 transform ${
                     openMenu ? "rotate-0" : "rotate-180"
                   }`}
                 >
@@ -92,38 +125,20 @@ export default function Home() {
                 </div>
               </MenuHandler>
 
-              <MenuList className="h-full rounded-none rounded-b-2xl border-none flex flex-col justify-start items-start gap-3 w-full p-3">
-                <MenuItem
-                  onClick={() => handleSelectMobileMenu("home")}
-                  className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center"
-                >
-                  Home <HomeIcon size={15} />
-                </MenuItem>
-                <MenuItem
-                  onClick={() => handleSelectMobileMenu("about")}
-                  className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center"
-                >
-                  About Me <User size={15} />
-                </MenuItem>
-                <MenuItem
-                  onClick={() => handleSelectMobileMenu("tech-stack")}
-                  className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center"
-                >
-                  My Tech Stack <Code size={15} />
-                </MenuItem>
-                <MenuItem
-                  onClick={() => handleSelectMobileMenu("experience")}
-                  className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center"
-                >
-                  Experience <Briefcase size={15} />
-                </MenuItem>
-                <MenuItem
-                  onClick={() => handleSelectMobileMenu("contact")}
-                  value="contact"
-                  className="active:bg-gray-100 p-4 flex gap-2 items-center justify-center"
-                >
-                  Contact Me <Phone size={15} />
-                </MenuItem>
+              <MenuList className="h-[90%] backdrop-blur-md text-black bg-orange-100/90  rounded-lg border-none flex flex-col mx-2 mt-4 justify-center items-start gap-3 w-[95%] ">
+                {navLinks.map((link, index) => (
+                  <MenuItem
+                    key={index}
+                    onClick={() => handleSelectMobileMenu(link.label)}
+                    className={`p-4 flex gap-2 items-center justify-center ${
+                      activeLink === link.label
+                        ? "active:opacity-80 bg-gray-100"
+                        : ""
+                    }`}
+                  >
+                    {link.name} {link.icon}
+                  </MenuItem>
+                ))}
               </MenuList>
             </Menu>
           </div>
@@ -149,13 +164,45 @@ export default function Home() {
             </ul>
           </nav>
         </header>
-        <div className="flex  justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28 mt-10 lg:mt-0 font-Inter ">
+        <header className="hidden lg:flex rounded-lg gap-16 justify-center items-center py-10 ">
+          <span className=" lg:block hidden text-6xl  font-Allura">
+            Brayan Paucar
+          </span>
+          <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
+            <ul className="flex gap-3">
+              {Socials.map((social, index) => (
+                <li
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay={index * 100 + 500}
+                  key={index}
+                  className="cursor-pointer"
+                >
+                  <Tooltip placement="top" content={social.label}>
+                    <a href={social.url} target="_blank" rel="noreferrer">
+                      <IconButton color="white" variant="gradient" size="md">
+                        <img
+                          title={social.label}
+                          src={social.logo}
+                          alt={social.name}
+                          width={30}
+                          height={30}
+                        />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </header>
+        <div className="flex  justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28 mt-24 lg:mt-0 font-Inter ">
           <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
             <div className="flex flex-col gap-2 font-bold text-center text-5xl lg:text-6xl">
               <span>
                 {" "}
                 <TypeAnimation
-                  sequence={["", 500, "WEB", 1000]}
+                  sequence={["", 500, "WEB", 500]}
                   cursor={false}
                   wrapper="span"
                   style={{ display: "inline-block" }}
@@ -163,55 +210,34 @@ export default function Home() {
                 <span className=" text-white/90"> & </span>
               </span>{" "}
               <TypeAnimation
-                sequence={["", 2000, "MOBILE", 1000]}
+                sequence={["", 1000, "MOBILE", 500]}
                 wrapper="span"
                 cursor={false}
                 style={{ display: "inline-block" }}
               />
               <TypeAnimation
                 className="text-white/90"
-                sequence={["", 3000, "DEVELOPER", 1000]}
+                sequence={["", 2000, "DEVELOPER", 500]}
                 wrapper="span"
                 cursor={true}
                 style={{ display: "inline-block" }}
               />
             </div>
           </div>
-
-          <img
-            data-aos="fade-in"
-            data-aos-duration="1500"
-            data-aos-delay="500"
-            className="absolute top-0 left-0 hidden lg:block "
-            src={profilePic}
-            alt="profilePic"
-          />
-
-          <img
-            data-aos="fade-in"
-            data-aos-duration="1500"
-            data-aos-delay="300"
-            className="absolute  lg:bottom-0 lg:rounded-none rounded-full  bottom-28 mx-auto lg:right-0"
-            src={profilePic}
-            alt="profilePic"
-          />
         </div>
-        <ul className="flex gap-2 lg:hidden absolute bottom-4 left-4">
-          {Socials.map((social, index) => (
-            <li key={index} className="cursor-pointer">
-              <a href={social.url} target="_blank" rel="noreferrer">
-                <img
-                  title={social.label}
-                  src={social.logo}
-                  alt={social.name}
-                  className="rounded border border-black/80  bg-transparent shadow-[0_0_2px_0.4px_rgba(0,0,0,0.30),_0_0_0px_4px_rgba(181,181,181,0.25)] active:bg-gradient-to-b active:from-gray-300 active:to-white active:shadow-[0_0_2px_0.4px_rgba(0,0,0,0.35),_0_0_0px_4px_rgba(206,206,206,0.25)] "
-                  width={25}
-                  height={25}
-                />
-              </a>
-            </li>
-          ))}
-        </ul>
+
+        <Mouse
+          className=" hidden lg:flex absolute bottom-4 left-1/2  animate-bounce transform -translate-x-1/2 text-black/70 "
+          size={30}
+        />
+        <img
+          data-aos="fade-in"
+          data-aos-duration="1500"
+          data-aos-delay="300"
+          className="absolute lg:hidden  lg:bottom-0 lg:rounded-none rounded-full  bottom-28 mx-auto lg:right-0"
+          src={profilePic}
+          alt="profilePic"
+        />
       </div>
     </AOSWrapper>
   );

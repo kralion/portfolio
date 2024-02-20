@@ -12,7 +12,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className=" lg:mx-24  space-y-10 font-Source-Sans-Pro"
+      className=" lg:mx-24 pt-24 lg:pt-16 space-y-10 font-Source-Sans-Pro"
     >
       <header
         data-aos="zoom-in"
