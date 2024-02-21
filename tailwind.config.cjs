@@ -7,8 +7,6 @@ module.exports = withMT({
       fontFamily: {
         "Source-Sans-Pro": ["Source Sans Pro", "sans-serif"],
         Roboto: ["Roboto", "sans-serif"],
-        Satisfy: ["Satisfy", "cursive"],
-        "Source-Sans-3": ["Source Sans 3", "sans - serif"],
         Inter: ["Inter", "sans-serif"],
         Allura: ["Allura", "cursive"],
       },

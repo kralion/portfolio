@@ -1,6 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
 import React from "react";
-import { RoughNotation } from "react-rough-notation";
 import devBanner from "../assets/about-banner.gif";
 import { Chip } from "@material-tailwind/react";
 import profilePic from "../assets/images/profile-pic.png";
@@ -28,36 +27,27 @@ export default function About() {
         </h3>
         <div className="text-gray-500  lg:px-0 lg:w-3/4 w-full">
           I'm Brayan, a dynamic
-          <RoughNotation show={true} color="#F3CC4A" type="underline">
-            <span className="text-black px-2 font-mono font-semibold">
-              Software
-            </span>
-          </RoughNotation>
-          and
-          <RoughNotation show={true} color="#F3CC4A" type="underline">
-            <span className="text-black px-2 font-mono font-semibold">AI</span>
-          </RoughNotation>
+          <span className="text-black px-2 font-mono font-semibold">
+            Software
+          </span>
+          and<span className="text-black px-2 font-mono font-semibold">AI</span>
           Engineer from South America, committed to forging innovative solutions
           for real-world challenges. My drive for tackling complex projects is
           matched by a keen ability to adapt to new technologies and a passion
           for continuous improvement through CI/CD practices. I focus on
           crafting{" "}
-          <RoughNotation show={true} color="#F3CC4A" type="underline">
-            <span className="text-black px-2 font-mono font-semibold">
-              elegant
-            </span>
-          </RoughNotation>{" "}
+          <span className="text-black px-2 font-mono font-semibold">
+            elegant
+          </span>
           , robust applications that align with overarching{" "}
-          <RoughNotation show={true} color="#F3CC4A" type="underline">
-            <span className="text-black px-2 font-mono font-semibold">
-              business objectives
-            </span>
-          </RoughNotation>{" "}
+          <span className="text-black px-2 font-mono font-semibold">
+            business objectives
+          </span>
           and user demands.
           <br />
-          <p className="text-black italic font-semibold pt-8">
-            Let's innovate and turn intricate problems into impactful,
-            progress-driving solutions together.
+          <p className="text-black font-light pt-8">
+            Let's —innovate and turn intricate problems into —impactful,
+            progress, and driving solutions together.
           </p>
         </div>
         <a
