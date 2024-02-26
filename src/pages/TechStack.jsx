@@ -22,11 +22,11 @@ export default function TechStack() {
             data-aos-duration="1000"
             key={index}
             title={tech.label}
-            className="  lg:shadow-lg drop-shadow-lg lg:drop-shadow-none hover:shadow-[0.01rem_0.001rem_0.130rem_0.1rem_rgba(36,36,34,0.9)] rounded-2xl py-10 px-16 duration-200 "
+            className="  lg:shadow-lg drop-shadow-lg lg:drop-shadow-none  rounded-2xl py-10 px-16 duration-200 "
           >
             <img
               src={tech.icon}
-              className="rounded-lg"
+              className="rounded-lg hover:opacity-80 transition duration-200 ease-in-out"
               width={100}
               height={100}
               alt={tech.name}

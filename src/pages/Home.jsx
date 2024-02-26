@@ -24,6 +24,7 @@ import {
   Tooltip,
   IconButton,
 } from "@material-tailwind/react";
+import DownIcon from "../assets/svg/down.svg";
 export default function Home() {
   const [openMenu, setOpenMenu] = React.useState(false);
   const navLinks = [
@@ -225,11 +226,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <Mouse
+        <img
           className=" hidden lg:flex absolute bottom-4 left-1/2  animate-bounce transform -translate-x-1/2 text-black/70 "
-          size={30}
+          src={DownIcon}
+          alt="downIcon"
         />
+
         <img
           data-aos="fade-in"
           data-aos-duration="1500"

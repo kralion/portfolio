@@ -7,6 +7,7 @@ import ExpenseTrackerCover from "../assets/repo-covers/expense-tracker.png";
 import EventWiseCover from "../assets/repo-covers/eventwise.png";
 import VidplusCover from "../assets/repo-covers/vidplus.png";
 import { FolderInput } from "lucide-react";
+import GithubIcon from "../assets/svg/github.svg";
 
 export default function Experience() {
   return (
@@ -112,7 +113,7 @@ export default function Experience() {
                 className="flex rounded-lg gap-3 justify-center font-semibold items-center"
               >
                 Go to Github
-                <FolderInput size={15} />
+                <img src={GithubIcon} alt="github" width={18} height={18} />
               </Button>
             </a>
           </div>
