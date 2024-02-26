@@ -1,7 +1,6 @@
-import { ArrowUpRight } from "lucide-react";
-import React from "react";
-import devBanner from "../assets/about-banner.gif";
 import { Chip } from "@material-tailwind/react";
+import { ExternalLink } from "lucide-react";
+import React from "react";
 import profilePic from "../assets/images/profile-pic.png";
 
 export default function About() {
@@ -51,13 +50,17 @@ export default function About() {
           </p>
         </div>
         <a
-          className="icon w-fit"
+          className="icon w-fit group"
           href="https://drive.google.com/file/d/1-7HzNKJV675zgY2fGtIGo4def5gn9Q8h/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
           <button className="button rounded flex gap-2 items-center text-sm lg:text-md font-semibold uppercase">
-            My Resume <ArrowUpRight size={15} />
+            My Resume{" "}
+            <ExternalLink
+              className="group-hover:translate-x-0.5 duration-100 group-hover:-translate-y-0.5 ease-in"
+              size={15}
+            />
           </button>
         </a>
       </div>

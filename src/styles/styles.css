@@ -45,6 +45,6 @@
 }
 
 .button:active {
-  transform: translate(0);
-  box-shadow: none;
+  color: var(--hover-text);
+  transform: translate(-0.1rem, -0.1rem);
 }
