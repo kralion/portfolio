@@ -1,13 +1,12 @@
-import React from "react";
-import ProjectCard from "../components/ProjectCard";
 import { Button, Chip } from "@material-tailwind/react";
-import ExayaCover from "../assets/repo-covers/exaya.png";
-import PowerHubCover from "../assets/repo-covers/powerhub.png";
-import ExpenseTrackerCover from "../assets/repo-covers/expense-tracker.png";
+import React from "react";
 import EventWiseCover from "../assets/repo-covers/eventwise.png";
+import ExayaCover from "../assets/repo-covers/exaya.png";
+import ExpenseTrackerCover from "../assets/repo-covers/expense-tracker.png";
+import PowerHubCover from "../assets/repo-covers/powerhub.png";
 import VidplusCover from "../assets/repo-covers/vidplus.png";
-import { FolderInput } from "lucide-react";
 import GithubIcon from "../assets/svg/github.svg";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Experience() {
   return (
@@ -77,7 +76,7 @@ export default function Experience() {
         />
         <ProjectCard
           projectTitle="Expense Tracker"
-          description="Innovative airline management platform harnessing cutting-edge technologies."
+          description="Expense tracking app with cool features for easy expense tracking and seamless user experience."
           usedTechnologies={[
             "nextjs",
             "typescript",
@@ -99,13 +98,14 @@ export default function Experience() {
       </div>
       <div className="flex justify-center m-5  lg:my-10">
         <div className="w-[700px]  p-5 col-span-2 hover:shadow-2xl shadow-xl  rounded-2xl duration-200 bg-white ">
-          More Projects
+          More Projects on my Profile
           <hr className="my-3" />
           <div className="p-6 text-center ">
             <a
-              href="https://github.com/Dv-Joan?tab=repositories"
+              href="https://github.com/kralion"
               target="_blank"
               rel="noreferrer"
+              className="group"
             >
               <Button
                 variant="gradient"
@@ -113,7 +113,13 @@ export default function Experience() {
                 className="flex rounded-lg gap-3 justify-center font-semibold items-center"
               >
                 Go to Github
-                <img src={GithubIcon} alt="github" width={18} height={18} />
+                <img
+                  src={GithubIcon}
+                  className="group-active:scale-105 duration-150 ease-out"
+                  alt="github"
+                  width={18}
+                  height={18}
+                />
               </Button>
             </a>
           </div>

@@ -67,26 +67,15 @@ export default function Contact() {
             </li>
           ))}
         </ul>
-        <div className="font-Source-Sans-Pro text-xs lg:text-lg  flex lg:gap-24 gap-4 justify-center">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://wa.me/51914019629"
-            className="flex cursor-pointer items-center gap-2 hover:opacity-70"
-          >
+        <div className="font-Source-Sans-Pro text-xs lg:text-lg  flex lg:gap-24 px-10 lg:px-0 justify-between lg:justify-center">
+          <span className="flex cursor-pointer items-center gap-2 hover:opacity-70">
             <PhoneCall color="black" size={15} />
             +51 914 019 629
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="mailto:jpm_2001@icloud.com?subject=Contact to DvJoan,%20J!&body=Hi Joan,%20I see your portfolio and ... !
-            "
-            className="flex cursor-pointer items-center gap-2 hover:opacity-70"
-          >
+          </span>
+          <span className="flex cursor-pointer items-center gap-2 hover:opacity-70">
             <Mail color="black" size={15} />
-            jpm_2001@icloud.com
-          </a>
+            brayanjoanpm@gmail.com
+          </span>
         </div>
       </div>
     </section>

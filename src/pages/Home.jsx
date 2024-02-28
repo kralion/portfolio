@@ -97,7 +97,7 @@ export default function Home() {
           data-aos="fade-in"
           data-aos-duration="1000"
           data-aos-delay="200"
-          className=" lg:hidden fixed lg:top-0 p-3 m-2  z-50 flex justify-between w-[95%] backdrop-blur-md bg-orange-100/90  rounded-lg    gap-16 items-center lg:p-10 lg:px-28"
+          className=" lg:hidden fixed lg:top-0 p-3 m-2  z-50 flex justify-between w-[95%] backdrop-blur-md bg-transparent border-b border-black/5  gap-16 items-center lg:p-10 lg:px-28"
         >
           <span className=" lg:block hidden text-6xl  font-Allura">
             Brayan Paucar
@@ -126,18 +126,19 @@ export default function Home() {
                 </div>
               </MenuHandler>
 
-              <MenuList className="h-[90%] backdrop-blur-md text-black bg-orange-100/90  rounded-lg border-none flex flex-col mx-2 mt-4 justify-center items-start gap-3 w-[95%] ">
+              <MenuList className="h-[90%] backdrop-blur-md  bg-white/90  rounded-lg border-none flex flex-col mx-2 mt-4 justify-center items-start gap-3 w-[95%] ">
                 {navLinks.map((link, index) => (
                   <MenuItem
                     key={index}
                     onClick={() => handleSelectMobileMenu(link.label)}
-                    className={`p-4 flex gap-2 items-center justify-center ${
+                    className={`p-4 flex gap-2 items-center  text-zinc-700 justify-center ${
                       activeLink === link.label
-                        ? "active:opacity-80 bg-gray-100"
+                        ? "active:opacity-80 bg-orange-400 text-black"
                         : ""
                     }`}
                   >
-                    {link.name} {link.icon}
+                    {link.icon}
+                    {link.name}
                   </MenuItem>
                 ))}
               </MenuList>
