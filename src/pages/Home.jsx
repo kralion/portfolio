@@ -1,30 +1,30 @@
-import React, { useEffect } from "react";
-import { TypeAnimation } from "react-type-animation";
-import profilePic from "../assets/images/profile-pic.png";
-import "../styles/styles.css";
-import { Socials } from "../data";
-import AOSWrapper from "../utils/AOS";
-import backgroundImage from "../assets/gradient.png";
-import { scroller as scrollSpy } from "react-scroll";
 import {
-  Menu as Burger,
-  User,
-  Code,
-  Briefcase,
-  Phone,
-  X,
-  HomeIcon,
-  Mouse,
-} from "lucide-react";
-import {
+  IconButton,
   Menu,
   MenuHandler,
-  MenuList,
   MenuItem,
+  MenuList,
   Tooltip,
-  IconButton,
 } from "@material-tailwind/react";
+import {
+  Briefcase,
+  Menu as Burger,
+  Code,
+  HomeIcon,
+  Phone,
+  User,
+  X,
+} from "lucide-react";
+import React, { useEffect } from "react";
+import { scroller as scrollSpy } from "react-scroll";
+import { TypeAnimation } from "react-type-animation";
+import backgroundImage from "../assets/gradient.png";
+import profilePic from "../assets/images/profile-pic.png";
 import DownIcon from "../assets/svg/down.svg";
+import { Socials } from "../data";
+import "../styles/styles.css";
+import AOSWrapper from "../utils/AOS";
+import ScrollAnimation from "../components/ScrollAnimation";
 export default function Home() {
   const [openMenu, setOpenMenu] = React.useState(false);
   const navLinks = [
@@ -227,11 +227,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <img
+        {/* <img
           className=" hidden lg:flex absolute bottom-4 left-1/2  animate-bounce transform -translate-x-1/2 text-black/70 "
           src={DownIcon}
           alt="downIcon"
-        />
+        /> */}
+        <ScrollAnimation />
 
         <img
           data-aos="fade-in"
