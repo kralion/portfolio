@@ -1,10 +1,10 @@
 import { Button, Chip } from "@material-tailwind/react";
 import React from "react";
-import EventWiseCover from "../assets/repo-covers/eventwise.png";
-import ExayaCover from "../assets/repo-covers/exaya.png";
-import ExpenseTrackerCover from "../assets/repo-covers/expense-tracker.png";
-import PowerHubCover from "../assets/repo-covers/powerhub.png";
-import VidplusCover from "../assets/repo-covers/vidplus.png";
+import EventWiseCover from "../assets/repo-covers/eventwise.jpg";
+import ExayaCover from "../assets/repo-covers/exaya.jpg";
+import ExpenseTrackerCover from "../assets/repo-covers/expense-tracker.jpg";
+import PowerHubCover from "../assets/repo-covers/powerhub.jpg";
+import VidplusCover from "../assets/repo-covers/vidplus.jpg";
 import GithubIcon from "../assets/svg/github.svg";
 import ProjectCard from "../components/ProjectCard";
 

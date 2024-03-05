@@ -18,13 +18,12 @@ import {
 import React, { useEffect } from "react";
 import { scroller as scrollSpy } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
-import backgroundImage from "../assets/gradient.png";
+import backgroundImage from "../assets/gradient.jpg";
 import profilePic from "../assets/images/profile-pic.png";
-import DownIcon from "../assets/svg/down.svg";
+import ScrollAnimation from "../components/ScrollAnimation";
 import { Socials } from "../data";
 import "../styles/styles.css";
 import AOSWrapper from "../utils/AOS";
-import ScrollAnimation from "../components/ScrollAnimation";
 export default function Home() {
   const [openMenu, setOpenMenu] = React.useState(false);
   const navLinks = [

@@ -26,20 +26,21 @@ export default function About() {
         </h3>
         <div className="text-gray-500  lg:px-0 lg:w-3/4 w-full">
           I'm Brayan, a dynamic
-          <span className="text-black px-2 font-mono font-semibold">
+          <span className="text-black px-1.5 font-mono font-semibold">
             Software
           </span>
-          and<span className="text-black px-2 font-mono font-semibold">AI</span>
+          and
+          <span className="text-black px-1.5 font-mono font-semibold">AI</span>
           Engineer from South America, committed to forging innovative solutions
           for real-world challenges. My drive for tackling complex projects is
           matched by a keen ability to adapt to new technologies and a passion
           for continuous improvement through CI/CD practices. I focus on
-          crafting{" "}
-          <span className="text-black px-2 font-mono font-semibold">
+          crafting
+          <span className="text-black px-1.5 font-mono font-semibold">
             elegant
           </span>
-          , robust applications that align with overarching{" "}
-          <span className="text-black px-2 font-mono font-semibold">
+          , robust applications that align with overarching
+          <span className="text-black px-1.5 font-mono font-semibold">
             business objectives
           </span>
           and user demands.
