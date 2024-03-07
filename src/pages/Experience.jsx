@@ -54,8 +54,7 @@ export default function Experience() {
         <ProjectCard
           projectTitle="Powerhub"
           description="Essential EV companion for battery stats and nearby charging station tracking."
-          //TODO: Change the url with my new nickname on vercel
-          demoLink="https://powerhub-b6enraqqz-dv-joan.vercel.app"
+          demoLink="https://powerhub-58m01mws7-brayanpaucar.vercel.app/"
           usedTechnologies={["tailwindcss", "nextjs", "redis", "typescript"]}
           projectImage={PowerHubCover}
           projectLink="https://github.com/kralion/powerhub"
@@ -63,8 +62,7 @@ export default function Experience() {
         <ProjectCard
           projectTitle="VidPlus"
           description="Vid plus SASS product backbone with modern tech stack, w/ UX best practices."
-          //TODO: Change the url with my new nickname on vercel
-          demoLink="https://vidplus-1758euuw7-dv-joan.vercel.app"
+          demoLink="https://vidplus-ju4q4tmn2-brayanpaucar.vercel.app/"
           usedTechnologies={[
             "aws",
             "nextjs",
