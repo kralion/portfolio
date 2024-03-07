@@ -39,9 +39,9 @@ export default function Experience() {
             "supabase",
             "prisma",
           ]}
-          demoLink="https://superlative-biscotti-39a22f.netlify.app"
+          demoLink="https://exaya.netlify.app"
           projectImage={ExayaCover}
-          projectLink="https://github.com/Dv-Joan/exaya"
+          projectLink="https://github.com/kralion/exaya"
         />
         <ProjectCard
           projectTitle="Event Wise"
@@ -49,20 +49,21 @@ export default function Experience() {
           demoLink="https://event-wise.vercel.app"
           usedTechnologies={["tensorflow", "tailwindcss", "vite", "typescript"]}
           projectImage={EventWiseCover}
-          projectLink="https://github.com/Dv-Joan/event-wise"
+          projectLink="https://github.com/kralion/event-wise"
         />
         <ProjectCard
           projectTitle="Powerhub"
           description="Essential EV companion for battery stats and nearby charging station tracking."
+          //TODO: Change the url with my new nickname on vercel
           demoLink="https://powerhub-b6enraqqz-dv-joan.vercel.app"
           usedTechnologies={["tailwindcss", "nextjs", "redis", "typescript"]}
           projectImage={PowerHubCover}
-          projectLink="https://github.com/Dv-Joan/powerhub"
+          projectLink="https://github.com/kralion/powerhub"
         />
         <ProjectCard
           projectTitle="VidPlus"
           description="Vid plus SASS product backbone with modern tech stack, w/ UX best practices."
-          //TODO Change the url, because nextjs has an issue with the url
+          //TODO: Change the url with my new nickname on vercel
           demoLink="https://vidplus-1758euuw7-dv-joan.vercel.app"
           usedTechnologies={[
             "aws",
@@ -72,7 +73,7 @@ export default function Experience() {
             "typescript",
           ]}
           projectImage={VidplusCover}
-          projectLink="https://github.com/Dv-Joan/vidplus"
+          projectLink="https://github.com/kralion/vidplus"
         />
         <ProjectCard
           projectTitle="Expense Tracker"
@@ -84,16 +85,16 @@ export default function Experience() {
             "github-actions",
           ]}
           projectImage={ExpenseTrackerCover}
-          demoLink="https://expense-tracker-eta-khaki.vercel.app"
-          projectLink="https://github.com/Dv-Joan/maburo"
+          demoLink="https://expensetrackerweb.vercel.app"
+          projectLink="https://github.com/kralion/expense-tracker"
         />
         <ProjectCard
           projectTitle="Parify"
           description="This project serves as a platform for 3D printers, offering a diverse range of cutting-edge models."
-          demoLink="https://luminary-alpha.vercel.app"
+          demoLink="https://parify.vercel.app"
           usedTechnologies={["gcp", "tailwindcss", "vite"]}
           projectImage="https://cdn.dribbble.com/userupload/6319482/file/original-77e9d1c1bd2e944cc97be31180191bf3.png?resize=640x480&vertical=center"
-          projectLink="https://github.com/Dv-Joan/parify"
+          projectLink="https://github.com/kralion/parify"
         />
       </div>
       <div className="flex justify-center m-5  lg:my-10">
