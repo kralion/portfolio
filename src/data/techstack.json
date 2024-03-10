@@ -1,6 +1,7 @@
 [
   {
-    "icon": "https://svgl.app/library/nextjs.svg",
+    "icon": "https://svgl.app/library/nextjs_icon_dark.svg",
+
     "label": "Next JS",
     "name": "nextjs"
   },

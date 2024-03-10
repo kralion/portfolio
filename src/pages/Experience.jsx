@@ -54,7 +54,7 @@ export default function Experience() {
         <ProjectCard
           projectTitle="Powerhub"
           description="Essential EV companion for battery stats and nearby charging station tracking."
-          demoLink="https://powerhub-58m01mws7-brayanpaucar.vercel.app/"
+          demoLink="https://powerhub-doeh5taog-brayanpaucar.vercel.app"
           usedTechnologies={["tailwindcss", "nextjs", "redis", "typescript"]}
           projectImage={PowerHubCover}
           projectLink="https://github.com/kralion/powerhub"
@@ -62,7 +62,7 @@ export default function Experience() {
         <ProjectCard
           projectTitle="VidPlus"
           description="Vid plus SASS product backbone with modern tech stack, w/ UX best practices."
-          demoLink="https://vidplus-ju4q4tmn2-brayanpaucar.vercel.app/"
+          demoLink="https://vidplus-lxcp9kd44-brayanpaucar.vercel.app"
           usedTechnologies={[
             "aws",
             "nextjs",
