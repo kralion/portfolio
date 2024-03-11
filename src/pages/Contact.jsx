@@ -40,7 +40,7 @@ export default function Contact() {
           target="_blank"
           className="w-fit"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/joan-paucar/"
+          href="https://dm.new/brayan"
         >
           <button className="button lg:text-md font-Source-Sans-Pro  group rounded text-sm font-bold uppercase ">
             Contact Me

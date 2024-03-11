@@ -24,7 +24,7 @@ export default function About() {
         <h3 className="lg:text-3xl text-2xl font-Inter flex items-center gap-1">
           Who I am & What I do <span className="text-orange-600">?</span>
         </h3>
-        <div className="text-gray-500  lg:px-0 lg:w-3/4 w-full">
+        <div className="text-gray-600  lg:px-0 lg:w-3/4 w-full">
           I'm Brayan, a dynamic
           <span className="text-black px-1.5 font-mono font-semibold">
             Software
@@ -46,8 +46,8 @@ export default function About() {
           and user demands.
           <br />
           <p className="text-black font-light pt-8">
-            Let's —innovate and turn intricate problems into —impactful,
-            progress, and driving solutions together.
+            Let's innovate and turn real world problems into —impactful,
+            progressive, and driving solutions together.
           </p>
         </div>
         <a
