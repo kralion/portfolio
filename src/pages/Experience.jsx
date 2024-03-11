@@ -62,7 +62,7 @@ export default function Experience() {
         <ProjectCard
           projectTitle="VidPlus"
           description="Vid plus SASS product backbone with modern tech stack, w/ UX best practices."
-          demoLink="https://vidplus-lxcp9kd44-brayanpaucar.vercel.app"
+          demoLink="https://vidplus-e8edr3vpr-brayanpaucar.vercel.app"
           usedTechnologies={[
             "aws",
             "nextjs",
