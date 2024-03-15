@@ -13,7 +13,7 @@ const defaultOptions = {
 
 export default function ScrollAnimation() {
   return (
-    <div className="absolute bottom-5  flex justify-center">
+    <div className="absolute bottom-5 hidden  lg:flex justify-center">
       <Lottie options={defaultOptions} height={30} width={30} />
     </div>
   );

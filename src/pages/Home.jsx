@@ -30,12 +30,12 @@ export default function Home() {
     {
       name: "Home",
       label: "home",
-      icon: <HomeIcon size={15} />,
+      icon: <HomeIcon size={15} className="mb-0.5" />,
     },
     {
       name: "About Me",
       label: "about",
-      icon: <User size={15} />,
+      icon: <User size={15} className="mb-1" />,
     },
     {
       name: "My Tech Stack",
@@ -45,13 +45,13 @@ export default function Home() {
     {
       name: "Experience",
       label: "experience",
-      icon: <Briefcase size={15} />,
+      icon: <Briefcase size={15} className="mb-0.5" />,
       delay: 400,
     },
     {
-      name: "Contact Me",
+      name: "Contact",
       label: "contact",
-      icon: <Phone size={15} />,
+      icon: <Phone size={15} className="" />,
     },
   ];
   const scroller = scrollSpy;
@@ -90,59 +90,55 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
-        className="pb-20 mb-2 relative h-screen w-full flex flex-col lg:justify-center lg:items-center"
+        className="pb-20 mb-2 min-h-[100dvh] flex flex-col space-y-10 lg:justify-center items-center"
       >
         <header
           data-aos="fade-in"
           data-aos-duration="1000"
           data-aos-delay="200"
-          className=" lg:hidden fixed lg:top-0 p-3 m-2  z-50 flex justify-between w-[95%] backdrop-blur-md bg-transparent border-b border-black/5  gap-16 items-center lg:p-10 lg:px-28"
+          className="flex lg:hidden w-full justify-between  items-center"
         >
-          <span className=" lg:block hidden text-6xl  font-Allura">
+          <span className="text-3xl m-4 lg:text-6xl   font-Allura">
             Brayan Paucar
           </span>
-          <div className="flex lg:hidden  justify-between w-full items-center">
-            <span className="text-3xl lg:text-6xl  font-Allura">
-              Brayan Paucar
-            </span>
 
-            <Menu
-              open={openMenu}
-              handler={setOpenMenu}
-              placement="bottom-end"
-              animate={{
-                mount: { y: 0 },
-                unmount: { y: 30 },
-              }}
-            >
-              <MenuHandler>
-                <div
-                  className={` transition ease-in-out duration-500 transform ${
-                    openMenu ? "rotate-0" : "rotate-180"
+          <Menu
+            open={openMenu}
+            handler={setOpenMenu}
+            placement="bottom-end"
+            animate={{
+              mount: { y: 0 },
+              unmount: { y: 30 },
+            }}
+          >
+            <MenuHandler>
+              <div
+                className={` transition ease-in-out duration-500 m-4 transform ${
+                  openMenu ? "rotate-0" : "rotate-180"
+                }`}
+              >
+                {openMenu ? <X size={30} /> : <Burger size={30} />}
+              </div>
+            </MenuHandler>
+
+            <MenuList className="  bg-orange-100  rounded-lg border-none mt-4  w-screen   ">
+              {navLinks.map((link, index) => (
+                <MenuItem
+                  key={index}
+                  onClick={() => handleSelectMobileMenu(link.label)}
+                  className={`p-4 flex gap-2 items-center  text-zinc-700 justify-center ${
+                    activeLink === link.label
+                      ? "active:opacity-80  bg-orange-400 text-black"
+                      : ""
                   }`}
                 >
-                  {openMenu ? <X size={30} /> : <Burger size={30} />}
-                </div>
-              </MenuHandler>
+                  {link.icon}
+                  {link.name}
+                </MenuItem>
+              ))}
+            </MenuList>
+          </Menu>
 
-              <MenuList className="h-[90%] backdrop-blur-md  bg-white/90  rounded-lg border-none flex flex-col mx-2 mt-4 justify-center items-start gap-3 w-[95%] ">
-                {navLinks.map((link, index) => (
-                  <MenuItem
-                    key={index}
-                    onClick={() => handleSelectMobileMenu(link.label)}
-                    className={`p-4 flex gap-2 items-center  text-zinc-700 justify-center ${
-                      activeLink === link.label
-                        ? "active:opacity-80 bg-orange-400 text-black"
-                        : ""
-                    }`}
-                  >
-                    {link.icon}
-                    {link.name}
-                  </MenuItem>
-                ))}
-              </MenuList>
-            </Menu>
-          </div>
           <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
             <ul className="flex gap-3">
               {Socials.map((social, index) => (
@@ -197,7 +193,7 @@ export default function Home() {
             </ul>
           </nav>
         </header>
-        <div className="flex  justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28 mt-24 lg:mt-0 font-Inter ">
+        <div className="flex  justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28 mt-16 lg:mt-0 font-Inter ">
           <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
             <div className="flex flex-col gap-2 font-bold text-center text-5xl lg:text-6xl">
               <span>
@@ -226,18 +222,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <img
-          className=" hidden lg:flex absolute bottom-4 left-1/2  animate-bounce transform -translate-x-1/2 text-black/70 "
-          src={DownIcon}
-          alt="downIcon"
-        /> */}
+
         <ScrollAnimation />
 
         <img
           data-aos="fade-in"
           data-aos-duration="1500"
           data-aos-delay="300"
-          className="absolute lg:hidden  lg:bottom-0 lg:rounded-none rounded-full  bottom-28 mx-auto lg:right-0"
+          className=" lg:hidden w-[70%]  drop-shadow-lg   "
           src={profilePic}
           alt="profilePic"
         />

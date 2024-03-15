@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 import { Element } from "react-scroll";
 function App() {
   return (
-    <div className="App">
+    <div className="App  overflow-x-hidden">
       <Element name="home">
         <Home />
       </Element>
