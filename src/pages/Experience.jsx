@@ -1,6 +1,6 @@
 import { Button, Chip } from "@material-tailwind/react";
 import React from "react";
-import EventWiseCover from "../assets/repo-covers/eventwise.jpg";
+import MantaroToursCover from "../assets/repo-covers/mantaro-tours.jpg";
 import ExayaCover from "../assets/repo-covers/exaya.jpg";
 import ExpenseTrackerCover from "../assets/repo-covers/expense-tracker.jpg";
 import PowerHubCover from "../assets/repo-covers/powerhub.jpg";
@@ -44,14 +44,6 @@ export default function Experience() {
           projectLink="https://github.com/kralion/exaya"
         />
         <ProjectCard
-          projectTitle="Event Wise"
-          description="Smart productivity app harnessing AI for efficient workflows."
-          demoLink="https://event-wise.vercel.app"
-          usedTechnologies={["tensorflow", "tailwindcss", "vite", "typescript"]}
-          projectImage={EventWiseCover}
-          projectLink="https://github.com/kralion/event-wise"
-        />
-        <ProjectCard
           projectTitle="Powerhub"
           description="Essential EV companion for battery stats and nearby charging station tracking."
           demoLink="https://powerhub-doeh5taog-brayanpaucar.vercel.app"
@@ -85,6 +77,14 @@ export default function Experience() {
           projectImage={ExpenseTrackerCover}
           demoLink="https://expensetrackerweb.vercel.app"
           projectLink="https://github.com/kralion/expense-tracker"
+        />
+        <ProjectCard
+          projectTitle="Mantaro Tours"
+          description="SPA for travel agency with AI integrations for personalized travel recommendations."
+          demoLink="https://mantarotours.my.canva.site"
+          usedTechnologies={["canva", "vercel", "figma"]}
+          projectImage={MantaroToursCover}
+          projectLink="https://mantarotours.my.canva.site"
         />
         <ProjectCard
           projectTitle="Parify"

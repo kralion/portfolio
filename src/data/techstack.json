@@ -85,5 +85,20 @@
     "icon": "https://raw.githubusercontent.com/detain/svg-logos/master/svg/v/vitejs.svg",
     "label": "Vite",
     "name": "vite"
+  },
+  {
+    "icon": "https://svgl.app/library/figma.svg",
+    "label": "Figma",
+    "name": "figma"
+  },
+  {
+    "icon": "https://svgl.app/library/vercel.svg",
+    "label": "Vercel",
+    "name": "vercel"
+  },
+  {
+    "icon": "https://svgl.app/library/canva.svg",
+    "label": "Canva",
+    "name": "canva"
   }
 ]
