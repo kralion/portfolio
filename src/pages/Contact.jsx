@@ -30,22 +30,35 @@ export default function Contact() {
           value to the world around us.
         </h5>
       </div>
-      <div
-        data-aos="flip-up"
-        data-aos-delay="200"
-        data-aos-duration="1000"
-        className=" group "
-      >
-        <a
-          target="_blank"
-          className="w-fit"
-          rel="noreferrer"
-          href="https://dm.new/brayan"
+      <div className="flex flex-col justify-center gap-4">
+        <div
+          data-aos="flip-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          className=" group "
         >
-          <button className="button lg:text-md font-Source-Sans-Pro  group rounded text-sm font-bold uppercase ">
-            Contact Me
-          </button>
-        </a>
+          <a
+            target="_blank"
+            className="w-fit"
+            rel="noreferrer"
+            href="https://dm.new/brayan"
+          >
+            <button className="button lg:text-md font-Source-Sans-Pro  group rounded text-sm font-bold uppercase ">
+              Contact Me
+            </button>
+          </a>
+        </div>
+        <div className="flex gap-2 items-center mx-auto">
+          <hr className="border border-black/50 w-20 rounded-md " />
+          or
+          <hr className="rounded-md border border-black/50 w-20" />
+        </div>
+        <div className="font-Source-Sans-Pro text-xs lg:text-lg  flex px-10 lg:px-0 justify-between lg:justify-center">
+          <span className="flex cursor-pointer items-center gap-2 hover:opacity-70">
+            <Mail color="black" size={15} />
+            brayanjoanpm@gmail.com
+          </span>
+        </div>
       </div>
       <div className="pt-20 space-y-8">
         <ul className="flex justify-center gap-2 lg:hidden">
@@ -67,16 +80,6 @@ export default function Contact() {
             </li>
           ))}
         </ul>
-        <div className="font-Source-Sans-Pro text-xs lg:text-lg  flex lg:gap-24 px-10 lg:px-0 justify-between lg:justify-center">
-          <span className="flex cursor-pointer items-center gap-2 hover:opacity-70">
-            <PhoneCall color="black" size={15} />
-            +51 914 019 629
-          </span>
-          <span className="flex cursor-pointer items-center gap-2 hover:opacity-70">
-            <Mail color="black" size={15} />
-            brayanjoanpm@gmail.com
-          </span>
-        </div>
       </div>
     </section>
   );

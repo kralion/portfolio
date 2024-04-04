@@ -16,9 +16,9 @@
     "name": "typescript"
   },
   {
-    "icon": "https://skillicons.dev/icons?i=apollo",
-    "label": "Apollo",
-    "name": "apollo"
+    "icon": "https://svgl.app/library/nodejs.svg",
+    "label": "Node JS",
+    "name": "nodejs"
   },
   {
     "icon": "https://svgl.app/library/prisma.svg",
@@ -31,7 +31,27 @@
     "name": "tailwindcss"
   },
   {
-    "icon": "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
+    "icon": "https://svgl.app/library/jest.svg",
+    "label": "Jest",
+    "name": "jest"
+  },
+  {
+    "icon": "https://svgl.app/library/cypress.svg",
+    "label": "Cypress",
+    "name": "cypress"
+  },
+  {
+    "icon": "https://svgl.app/library/fastapi.svg",
+    "label": "FastAPI",
+    "name": "fastapi"
+  },
+  {
+    "icon": "https://svgl.app/library/aws.svg",
+    "label": "AWS",
+    "name": "aws"
+  },
+  {
+    "icon": "https://svgl.app/library/mongodb.svg",
     "label": "MongoDB",
     "name": "mongodb"
   },
@@ -52,14 +72,14 @@
     "name": "git"
   },
   {
+    "icon": "https://svgl.app/library/nestjs.svg",
+    "label": "Nest JS",
+    "name": "nestjs"
+  },
+  {
     "icon": "https://skillicons.dev/icons?i=githubactions",
     "label": "Github Actions",
     "name": "github-actions"
-  },
-  {
-    "icon": "https://seeklogo.com/images/G/google-cloud-logo-ADE788217F-seeklogo.com.png",
-    "label": "GCP",
-    "name": "gcp"
   },
   {
     "icon": "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg",

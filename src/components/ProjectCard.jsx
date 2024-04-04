@@ -80,12 +80,7 @@ export default function Example({
                   key={tech.label}
                 >
                   <span title={tech.label}>
-                    <img
-                      width={30}
-                      height={30}
-                      src={tech.icon}
-                      alt={tech.label}
-                    />
+                    <img className="w-8 h-8" src={tech.icon} alt={tech.label} />
                   </span>
                 </Tooltip>
               );

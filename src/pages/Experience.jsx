@@ -47,7 +47,7 @@ export default function Experience() {
           projectTitle="Powerhub"
           description="Essential EV companion for battery stats and nearby charging station tracking."
           demoLink="https://powerhub-doeh5taog-brayanpaucar.vercel.app"
-          usedTechnologies={["tailwindcss", "nextjs", "redis", "typescript"]}
+          usedTechnologies={["tailwindcss", "nextjs", "mongodb", "typescript"]}
           projectImage={PowerHubCover}
           projectLink="https://github.com/kralion/powerhub"
         />
@@ -55,13 +55,7 @@ export default function Experience() {
           projectTitle="VidPlus"
           description="Vid plus SASS product backbone with modern tech stack, w/ UX best practices."
           demoLink="https://vidplus-e8edr3vpr-brayanpaucar.vercel.app"
-          usedTechnologies={[
-            "aws",
-            "nextjs",
-            "tailwindcss",
-            "redis",
-            "typescript",
-          ]}
+          usedTechnologies={["nextjs", "mysql", "typescript", "tailwindcss"]}
           projectImage={VidplusCover}
           projectLink="https://github.com/kralion/vidplus"
         />
@@ -90,7 +84,7 @@ export default function Experience() {
           projectTitle="Parify"
           description="This project serves as a platform for 3D printers, offering a diverse range of cutting-edge models."
           demoLink="https://parify.vercel.app"
-          usedTechnologies={["gcp", "tailwindcss", "vite"]}
+          usedTechnologies={["docker", "tailwindcss", "vite"]}
           projectImage="https://cdn.dribbble.com/userupload/6319482/file/original-77e9d1c1bd2e944cc97be31180191bf3.png?resize=640x480&vertical=center"
           projectLink="https://github.com/kralion/parify"
         />

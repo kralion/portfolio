@@ -52,7 +52,7 @@ export default function About() {
         </div>
         <a
           className="icon w-fit group"
-          href="https://drive.google.com/file/d/1PdEi0XiWCHjiD2Ffgh7dq1JPWj_YznRq/view?usp=sharing"
+          href="https://drive.google.com/file/d/1uWEIOPXvljmVd2ppGNZ5q4QldBlBUuGC/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
