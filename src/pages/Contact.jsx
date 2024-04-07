@@ -49,11 +49,11 @@ export default function Contact() {
           </a>
         </div>
         <div className="flex gap-2 items-center mx-auto">
-          <hr className="border border-black/50 w-20 rounded-md " />
+          <hr className="border border-black/50 lg:w-20 w-14 rounded-md " />
           or
-          <hr className="rounded-md border border-black/50 w-20" />
+          <hr className="rounded-md border border-black/50 lg:w-20 w-14" />
         </div>
-        <div className="font-Source-Sans-Pro text-xs lg:text-lg  flex px-10 lg:px-0 justify-between lg:justify-center">
+        <div className="font-Source-Sans-Pro text-xs lg:text-lg  flex px-10 lg:px-0 justify-center">
           <span className="flex cursor-pointer items-center gap-2 hover:opacity-70">
             <Mail color="black" size={15} />
             brayanjoanpm@gmail.com

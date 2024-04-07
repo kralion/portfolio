@@ -13,7 +13,7 @@ export default function About() {
         data-aos="fade-in"
         data-aos-delay="200"
         data-aos-duration="500"
-        className=" flex flex-col lg:w-1/2 gap-5"
+        className=" flex flex-col px-5 lg:px-0 lg:w-1/2 gap-5"
       >
         <Chip
           color="orange"
@@ -24,29 +24,20 @@ export default function About() {
         <h3 className="lg:text-3xl text-2xl font-Inter flex items-center gap-1">
           Who I am & What I do <span className="text-orange-600">?</span>
         </h3>
-        <div className="text-gray-600  lg:px-0 lg:w-3/4 w-full">
-          I'm Brayan, a dynamic
-          <span className="text-black px-1.5 font-mono font-semibold">
-            Software
-          </span>
-          and
-          <span className="text-black px-1.5 font-mono font-semibold">AI</span>
-          Engineer from South America, committed to forging innovative solutions
-          for real-world challenges. My drive for tackling complex projects is
-          matched by a keen ability to adapt to new technologies and a passion
-          for continuous improvement through CI/CD practices. I focus on
-          crafting
-          <span className="text-black px-1.5 font-mono font-semibold">
-            elegant
-          </span>
-          , robust applications that align with overarching
-          <span className="text-black px-1.5 font-mono font-semibold">
-            business objectives
-          </span>
+        <div className="text-gray-600    ">
+          I'm Brayan, a dynamic <strong> Software </strong>and
+          <strong> AI </strong>Engineer from South America, committed to forging
+          innovative solutions for real-world challenges. My drive for tackling
+          complex projects is matched by a keen ability to adapt to new
+          technologies and a passion for continuous improvement through CI/CD
+          practices. I focus on crafting
+          <strong> elegant</strong> & <strong>robust</strong> applications that
+          align with overarching
+          <strong> business objectives </strong>
           and user demands.
           <br />
-          <p className="text-black font-light pt-8">
-            Let's innovate and turn real world problems into —impactful,
+          <p className="my-5 text-black">
+            — Let's innovate and turn real world problems into impactful,
             progressive, and driving solutions together.
           </p>
         </div>

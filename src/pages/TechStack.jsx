@@ -1,4 +1,4 @@
-import { Chip, Tooltip } from "@material-tailwind/react";
+import { Chip } from "@material-tailwind/react";
 import { Technologies } from "../data";
 export default function TechStack() {
   return (
@@ -14,7 +14,7 @@ export default function TechStack() {
           Technologies I work with
         </h3>
       </div>
-      <div className="grid grid-cols-2 border-2 lg:border-none border-dashed rounded-lg lg:mx-72 mx-5 lg:grid-cols-5  lg:gap-y-14 lg:py-5 lg:px-3 justify-center ">
+      <div className="grid grid-cols-3  rounded-lg lg:mx-72 mx-5 lg:grid-cols-5 gap-y-10  lg:gap-y-14 lg:py-5 lg:px-3 justify-center ">
         {Technologies.slice(0, 15).map((tech, index) => (
           <div
             data-aos="fade-up"
@@ -26,7 +26,7 @@ export default function TechStack() {
           >
             <img
               src={tech.icon}
-              className="rounded-lg max-h-20 max-w-20 hover:opacity-80 transition duration-200 ease-in-out"
+              className="rounded-lg lg:h-20 w-14 h-14 lg:w-20 hover:opacity-80 transition duration-200 ease-in-out"
               alt={tech.name}
             />
           </div>
