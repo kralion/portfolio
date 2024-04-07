@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col lg:flex-row lg:justify-center gap-4 pt-24 lg:pt-16  px-4  items-center font-Source-Sans-Pro"
+      className="flex flex-col lg:flex-row lg:justify-center gap-20 pt-24 lg:pt-16  px-4  items-center font-Source-Sans-Pro"
     >
       <div
         data-aos="fade-in"

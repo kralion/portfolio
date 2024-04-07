@@ -24,6 +24,8 @@ import ScrollAnimation from "../components/ScrollAnimation";
 import { Socials } from "../data";
 import "../styles/styles.css";
 import AOSWrapper from "../utils/AOS";
+import { useState } from "react";
+import { Header } from "../components/Header";
 export default function Home() {
   const [openMenu, setOpenMenu] = React.useState(false);
   const navLinks = [
@@ -54,6 +56,8 @@ export default function Home() {
       icon: <Phone size={15} className="" />,
     },
   ];
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
   const scroller = scrollSpy;
   const [activeLink, setActiveLink] = React.useState("home");
   const handleSelectMobileMenu = (value) => {
@@ -81,6 +85,18 @@ export default function Home() {
       smooth: true,
     });
   }, []);
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+
+    // If the user scrolls down and is not at the top of the page, hide the header
+    setVisible(prevScrollPos > currentScrollPos || currentScrollPos === 0);
+    setPrevScrollPos(currentScrollPos);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible]);
+
   return (
     <AOSWrapper>
       <div
@@ -92,16 +108,7 @@ export default function Home() {
         }}
         className="pb-20 mb-2 min-h-[100dvh] flex flex-col space-y-10 lg:justify-center items-center"
       >
-        <header
-          data-aos="fade-in"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-          className="flex lg:hidden w-full justify-between  items-center"
-        >
-          <span className="text-3xl m-4 lg:text-6xl   font-Allura">
-            Brayan Paucar
-          </span>
-
+        <Header>
           <Menu
             open={openMenu}
             handler={setOpenMenu}
@@ -138,29 +145,7 @@ export default function Home() {
               ))}
             </MenuList>
           </Menu>
-
-          <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
-            <ul className="flex gap-3">
-              {Socials.map((social, index) => (
-                <li key={index} className="cursor-pointer">
-                  <Tooltip placement="top" content={social.label}>
-                    <a href={social.url} target="_blank" rel="noreferrer">
-                      <IconButton color="white" variant="gradient" size="md">
-                        <img
-                          title={social.label}
-                          src={social.logo}
-                          alt={social.name}
-                          width={30}
-                          height={30}
-                        />
-                      </IconButton>
-                    </a>
-                  </Tooltip>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </header>
+        </Header>
         <header className="hidden lg:flex rounded-lg gap-16 justify-center items-center py-10 ">
           <span className=" lg:block hidden text-6xl  font-Allura">
             Brayan Paucar
