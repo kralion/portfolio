@@ -27,7 +27,13 @@ import { Header } from "../components/Header";
 import ScrollAnimation from "../components/ScrollAnimation";
 import { Socials } from "../data";
 import "../styles/styles.css";
+
 export default function Home() {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [darkIcon, setDarkIcon] = useState(<Sun size={20} />);
+  const scroller = scrollSpy;
+  const [activeLink, setActiveLink] = React.useState("home");
   const [openMenu, setOpenMenu] = React.useState(false);
   const navLinks = [
     {
@@ -57,11 +63,7 @@ export default function Home() {
       icon: <Phone size={15} className="" />,
     },
   ];
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
-  const [darkIcon, setDarkIcon] = useState(<Sun size={20} />);
-  const scroller = scrollSpy;
-  const [activeLink, setActiveLink] = React.useState("home");
+
   const handleSelectMobileMenu = (value) => {
     if (value) {
       scroller.scrollTo(value, {
@@ -120,15 +122,8 @@ export default function Home() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
-      className="pb-20 mb-2 min-h-[100dvh] dark:bg-zinc-800 flex flex-col -z-10 space-y-10 lg:justify-center items-center"
+      className="pb-20 mb-2 min-h-[100dvh] dark:bg-zinc-800 flex flex-col lg:justify-around  space-y-10 lg:items-end"
     >
-      <button
-        onClick={handleModeToggle}
-        className="absolute top-10 right-10 duration-500 active:rotate-90"
-      >
-        {darkIcon}
-      </button>
-
       <Header>
         <Menu
           open={openMenu}
@@ -164,41 +159,65 @@ export default function Home() {
                 {link.name}
               </MenuItem>
             ))}
+            <MenuItem
+              onClick={handleModeToggle}
+              className="p-4 flex gap-2 items-center  text-zinc-700 justify-center"
+            >
+              {darkIcon}
+              {localStorage.theme === "dark" ? "Light Mode" : "Dark Mode"}
+            </MenuItem>
           </MenuList>
         </Menu>
       </Header>
-      <header className="hidden lg:flex rounded-lg gap-16 justify-center items-center py-10 ">
-        <span className=" lg:block hidden text-5xl  font-Allura">
-          Brayan Paucar
-        </span>
-        <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
-          <ul className="flex gap-3">
-            {Socials.map((social, index) => (
-              <li
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay={index * 100 + 500}
-                key={index}
-                className="cursor-pointer"
-              >
-                <Tooltip placement="top" content={social.label}>
-                  <a href={social.url} target="_blank" rel="noreferrer">
-                    <IconButton color="white" variant="gradient" size="md">
-                      <img
-                        title={social.label}
-                        src={social.logo}
-                        alt={social.name}
-                        width={30}
-                        height={30}
-                      />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header>
+      <img
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        className="hidden lg:absolute lg:left-40 top-8 lg:inline drop-shadow-xl rounded-full"
+        src={profilePic}
+        width={350}
+        alt="profilePic"
+      />
+      <nav className="hidden lg:flex gap-10 w-[600px] justify-between items-center font-Inter font-semibold tracking-wide text-lg ">
+        <header className="hidden lg:flex lg:flex-col rounded-lg gap-6   py-10 ">
+          <span className=" lg:block hidden text-5xl  font-Allura">
+            Brayan Paucar
+          </span>
+          <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
+            <ul className="flex gap-3">
+              {Socials.map((social, index) => (
+                <li
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay={index * 100 + 500}
+                  key={index}
+                  className="cursor-pointer"
+                >
+                  <Tooltip placement="top" content={social.label}>
+                    <a href={social.url} target="_blank" rel="noreferrer">
+                      <IconButton color="white" variant="gradient" size="md">
+                        <img
+                          title={social.label}
+                          src={social.logo}
+                          alt={social.name}
+                          width={30}
+                          height={30}
+                        />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </header>{" "}
+        <button
+          onClick={handleModeToggle}
+          className="duration-500 absolute bottom-10 left-10 active:rotate-90 border-2 bg-black dark:bg-white text-white dark:text-black dark:border-white/90 border-black/90 rounded-full p-2"
+        >
+          {darkIcon}
+        </button>
+      </nav>
+
       <div className="flex  justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28 mt-16 lg:mt-0 font-Inter ">
         <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
           <div className="flex flex-col gap-2 font-bold text-center text-5xl lg:text-6xl">
@@ -208,20 +227,20 @@ export default function Home() {
                 sequence={["", 500, "WEB", 500]}
                 cursor={false}
                 wrapper="span"
-                className="dark:text-black text-white"
+                className="text-orange-500 dark:text-white"
                 style={{ display: "inline-block" }}
               />
-              <span className=" text-white/90"> & </span>
+              <span className=" text-black"> & </span>
             </span>{" "}
             <TypeAnimation
               sequence={["", 1000, "MOBILE", 500]}
               wrapper="span"
-              className="dark:text-black text-white"
+              className="text-black dark:text-white"
               cursor={false}
               style={{ display: "inline-block" }}
             />
             <TypeAnimation
-              className="dark:text-white/90 text-black"
+              className="text-black "
               sequence={["", 2000, "DEVELOPER", 500]}
               wrapper="span"
               cursor={true}
@@ -230,14 +249,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <ScrollAnimation />
-
       <img
         data-aos="fade-in"
         data-aos-duration="1500"
         data-aos-delay="300"
-        className=" lg:hidden w-[70%]  drop-shadow-lg   "
+        className=" lg:hidden drop-shadow-lg   "
         src={profilePic}
         alt="profilePic"
       />
