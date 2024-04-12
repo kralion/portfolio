@@ -24,7 +24,7 @@ export default function About() {
         <h3 className="lg:text-3xl text-2xl font-Inter flex items-center gap-1">
           Who I am & What I do <span className="text-orange-600">?</span>
         </h3>
-        <div className="text-gray-600    ">
+        <div className="text-gray-600 dark:text-gray-300    ">
           I'm Brayan, a dynamic <strong> Software </strong>and
           <strong> AI </strong>Engineer from South America, committed to forging
           innovative solutions for real-world challenges. My drive for tackling
@@ -36,7 +36,7 @@ export default function About() {
           <strong> business objectives </strong>
           and user demands.
           <br />
-          <p className="my-5 text-black">
+          <p className="my-5 dark:text-white">
             — Let's innovate and turn real world problems into impactful,
             progressive, and driving solutions together.
           </p>

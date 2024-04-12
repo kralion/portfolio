@@ -90,7 +90,7 @@ export default function Experience() {
         />
       </div>
       <div className="flex justify-center m-5  lg:my-10">
-        <div className="w-[700px]  p-5 col-span-2 hover:shadow-2xl shadow-xl  rounded-2xl duration-200 bg-white ">
+        <div className="w-[700px]  p-5 col-span-2 hover:shadow-2xl shadow-xl  rounded-2xl duration-200 bg-white dark:bg-gray-900 border-2 dark:border-gray-800/30 ">
           More Projects on my Profile
           <hr className="my-3" />
           <div className="p-6 text-center ">

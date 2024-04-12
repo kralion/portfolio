@@ -30,7 +30,7 @@ export default function Example({
       data-aos="fade-in"
       data-aos-delay="200"
       data-aos-duration="1000"
-      className="hover:shadow-2xl shadow-xl mt-6  lg:mx-0 mx-5 rounded-2xl duration-200 "
+      className="hover:shadow-2xl shadow-xl mt-6 bg-white dark:bg-gray-900  border-2 dark:border-gray-800/30 text-black dark:text-white  lg:mx-0 mx-5 rounded-2xl duration-200 "
     >
       <Dialog size="xl" open={open} handler={handleOpen}>
         <DialogBody>
@@ -53,20 +53,14 @@ export default function Example({
       <CardBody className="space-y-8">
         <div className="space-y-3">
           <div className=" flex items-baseline justify-between">
-            <Typography variant="h5" color="blue-gray">
-              {projectTitle}
-            </Typography>
+            <Typography variant="h5">{projectTitle}</Typography>
             <a href={projectLink} target="_blank" rel="noreferrer">
               <IconButton variant="gradient" color="orange" size="sm">
                 <Code2 size={15} />
               </IconButton>
             </a>
           </div>
-          <Typography
-            variant="small"
-            color="gray"
-            className="text-left font-Roboto "
-          >
+          <Typography variant="small" className="text-left font-Roboto ">
             {description}
           </Typography>
         </div>

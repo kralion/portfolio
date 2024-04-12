@@ -8,14 +8,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: rgb(253, 255, 245, 1);
-  min-width: 320px;
-  min-height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
 ::-webkit-scrollbar {
   width: 5px;
 }

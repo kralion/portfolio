@@ -1,4 +1,5 @@
 import {
+  Button,
   IconButton,
   Menu,
   MenuHandler,
@@ -11,21 +12,21 @@ import {
   Menu as Burger,
   Code,
   HomeIcon,
+  Moon,
   Phone,
+  Sun,
   User,
   X,
 } from "lucide-react";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { scroller as scrollSpy } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
-import backgroundImage from "../assets/gradient.jpg";
+import backgroundImage from "../assets/gradient.svg";
 import profilePic from "../assets/images/profile-pic.png";
+import { Header } from "../components/Header";
 import ScrollAnimation from "../components/ScrollAnimation";
 import { Socials } from "../data";
 import "../styles/styles.css";
-import AOSWrapper from "../utils/AOS";
-import { useState } from "react";
-import { Header } from "../components/Header";
 export default function Home() {
   const [openMenu, setOpenMenu] = React.useState(false);
   const navLinks = [
@@ -58,6 +59,7 @@ export default function Home() {
   ];
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [darkIcon, setDarkIcon] = useState(<Sun size={20} />);
   const scroller = scrollSpy;
   const [activeLink, setActiveLink] = React.useState("home");
   const handleSelectMobileMenu = (value) => {
@@ -77,6 +79,21 @@ export default function Home() {
       });
     }
   };
+  function handleModeToggle() {
+    if (localStorage.theme === "dark" || !("theme" in localStorage)) {
+      document.documentElement.classList.add("dark");
+      setDarkIcon(<Moon size={20} />);
+    } else {
+      document.documentElement.classList.remove("dark");
+      setDarkIcon(<Sun size={20} />);
+    }
+
+    if (localStorage.theme === "dark") {
+      localStorage.theme = "light";
+    } else {
+      localStorage.theme = "dark";
+    }
+  }
 
   useEffect(() => {
     scroller.scrollTo("home", {
@@ -87,8 +104,6 @@ export default function Home() {
   }, []);
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-
-    // If the user scrolls down and is not at the top of the page, hide the header
     setVisible(prevScrollPos > currentScrollPos || currentScrollPos === 0);
     setPrevScrollPos(currentScrollPos);
   };
@@ -98,127 +113,134 @@ export default function Home() {
   }, [prevScrollPos, visible]);
 
   return (
-    <AOSWrapper>
-      <div
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
-        className="pb-20 mb-2 min-h-[100dvh] flex flex-col space-y-10 lg:justify-center items-center"
+    <div
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+      className="pb-20 mb-2 min-h-[100dvh] dark:bg-zinc-800 flex flex-col -z-10 space-y-10 lg:justify-center items-center"
+    >
+      <button
+        onClick={handleModeToggle}
+        className="absolute top-10 right-10 duration-500 active:rotate-90"
       >
-        <Header>
-          <Menu
-            open={openMenu}
-            handler={setOpenMenu}
-            placement="bottom-end"
-            animate={{
-              mount: { y: 0 },
-              unmount: { y: 30 },
-            }}
-          >
-            <MenuHandler>
-              <div
-                className={` transition ease-in-out duration-500 m-4 transform ${
-                  openMenu ? "rotate-0" : "rotate-180"
+        {darkIcon}
+      </button>
+
+      <Header>
+        <Menu
+          open={openMenu}
+          handler={setOpenMenu}
+          placement="bottom-end"
+          animate={{
+            mount: { y: 0 },
+            unmount: { y: 30 },
+          }}
+        >
+          <MenuHandler>
+            <div
+              className={` transition ease-in-out duration-500 m-4 transform ${
+                openMenu ? "rotate-0" : "rotate-180"
+              }`}
+            >
+              {openMenu ? <X size={30} /> : <Burger size={30} />}
+            </div>
+          </MenuHandler>
+
+          <MenuList className="  bg-orange-100  rounded-lg border-none mt-4  w-screen   ">
+            {navLinks.map((link, index) => (
+              <MenuItem
+                key={index}
+                onClick={() => handleSelectMobileMenu(link.label)}
+                className={`p-4 flex gap-2 items-center  text-zinc-700 justify-center ${
+                  activeLink === link.label
+                    ? "active:opacity-80  bg-orange-400 text-black"
+                    : ""
                 }`}
               >
-                {openMenu ? <X size={30} /> : <Burger size={30} />}
-              </div>
-            </MenuHandler>
-
-            <MenuList className="  bg-orange-100  rounded-lg border-none mt-4  w-screen   ">
-              {navLinks.map((link, index) => (
-                <MenuItem
-                  key={index}
-                  onClick={() => handleSelectMobileMenu(link.label)}
-                  className={`p-4 flex gap-2 items-center  text-zinc-700 justify-center ${
-                    activeLink === link.label
-                      ? "active:opacity-80  bg-orange-400 text-black"
-                      : ""
-                  }`}
-                >
-                  {link.icon}
-                  {link.name}
-                </MenuItem>
-              ))}
-            </MenuList>
-          </Menu>
-        </Header>
-        <header className="hidden lg:flex rounded-lg gap-16 justify-center items-center py-10 ">
-          <span className=" lg:block hidden text-6xl  font-Allura">
-            Brayan Paucar
-          </span>
-          <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
-            <ul className="flex gap-3">
-              {Socials.map((social, index) => (
-                <li
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
-                  data-aos-delay={index * 100 + 500}
-                  key={index}
-                  className="cursor-pointer"
-                >
-                  <Tooltip placement="top" content={social.label}>
-                    <a href={social.url} target="_blank" rel="noreferrer">
-                      <IconButton color="white" variant="gradient" size="md">
-                        <img
-                          title={social.label}
-                          src={social.logo}
-                          alt={social.name}
-                          width={30}
-                          height={30}
-                        />
-                      </IconButton>
-                    </a>
-                  </Tooltip>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </header>
-        <div className="flex  justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28 mt-16 lg:mt-0 font-Inter ">
-          <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
-            <div className="flex flex-col gap-2 font-bold text-center text-5xl lg:text-6xl">
-              <span>
-                {" "}
-                <TypeAnimation
-                  sequence={["", 500, "WEB", 500]}
-                  cursor={false}
-                  wrapper="span"
-                  style={{ display: "inline-block" }}
-                />
-                <span className=" text-white/90"> & </span>
-              </span>{" "}
+                {link.icon}
+                {link.name}
+              </MenuItem>
+            ))}
+          </MenuList>
+        </Menu>
+      </Header>
+      <header className="hidden lg:flex rounded-lg gap-16 justify-center items-center py-10 ">
+        <span className=" lg:block hidden text-5xl  font-Allura">
+          Brayan Paucar
+        </span>
+        <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
+          <ul className="flex gap-3">
+            {Socials.map((social, index) => (
+              <li
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay={index * 100 + 500}
+                key={index}
+                className="cursor-pointer"
+              >
+                <Tooltip placement="top" content={social.label}>
+                  <a href={social.url} target="_blank" rel="noreferrer">
+                    <IconButton color="white" variant="gradient" size="md">
+                      <img
+                        title={social.label}
+                        src={social.logo}
+                        alt={social.name}
+                        width={30}
+                        height={30}
+                      />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </header>
+      <div className="flex  justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28 mt-16 lg:mt-0 font-Inter ">
+        <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
+          <div className="flex flex-col gap-2 font-bold text-center text-5xl lg:text-6xl">
+            <span>
+              {" "}
               <TypeAnimation
-                sequence={["", 1000, "MOBILE", 500]}
-                wrapper="span"
+                sequence={["", 500, "WEB", 500]}
                 cursor={false}
-                style={{ display: "inline-block" }}
-              />
-              <TypeAnimation
-                className="text-white/90"
-                sequence={["", 2000, "DEVELOPER", 500]}
                 wrapper="span"
-                cursor={true}
+                className="dark:text-black text-white"
                 style={{ display: "inline-block" }}
               />
-            </div>
+              <span className=" text-white/90"> & </span>
+            </span>{" "}
+            <TypeAnimation
+              sequence={["", 1000, "MOBILE", 500]}
+              wrapper="span"
+              className="dark:text-black text-white"
+              cursor={false}
+              style={{ display: "inline-block" }}
+            />
+            <TypeAnimation
+              className="dark:text-white/90 text-black"
+              sequence={["", 2000, "DEVELOPER", 500]}
+              wrapper="span"
+              cursor={true}
+              style={{ display: "inline-block" }}
+            />
           </div>
         </div>
-
-        <ScrollAnimation />
-
-        <img
-          data-aos="fade-in"
-          data-aos-duration="1500"
-          data-aos-delay="300"
-          className=" lg:hidden w-[70%]  drop-shadow-lg   "
-          src={profilePic}
-          alt="profilePic"
-        />
       </div>
-    </AOSWrapper>
+
+      <ScrollAnimation />
+
+      <img
+        data-aos="fade-in"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+        className=" lg:hidden w-[70%]  drop-shadow-lg   "
+        src={profilePic}
+        alt="profilePic"
+      />
+    </div>
   );
 }
