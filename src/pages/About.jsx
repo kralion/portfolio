@@ -2,12 +2,18 @@ import { Chip } from "@material-tailwind/react";
 import { ExternalLink } from "lucide-react";
 import React from "react";
 import profilePic from "../assets/images/profile-pic.png";
+import backgroundImage from "../assets/gradient2.svg";
 
 export default function About() {
   return (
     <section
       id="about"
       className="flex flex-col lg:flex-row lg:justify-center gap-20 pt-24 lg:pt-16  px-4  items-center font-Source-Sans-Pro"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "right",
+      }}
     >
       <div
         data-aos="fade-in"
@@ -24,7 +30,7 @@ export default function About() {
         <h3 className="lg:text-3xl text-2xl font-Inter flex items-center gap-1">
           Who I am & What I do <span className="text-orange-600">?</span>
         </h3>
-        <div className="text-gray-600 dark:text-gray-300    ">
+        <div className="text-black dark:text-gray-100    ">
           I'm Brayan, a dynamic <strong> Software </strong>and
           <strong> AI </strong>Engineer from South America, committed to forging
           innovative solutions for real-world challenges. My drive for tackling
@@ -57,11 +63,11 @@ export default function About() {
         </a>
       </div>
       <img
-        data-aos="slide-left"
+        data-aos="fade-in"
         data-aos-duration="1000"
         className="hidden lg:inline drop-shadow-xl rounded-full"
-        src={profilePic}
-        width={400}
+        src="https://images.unsplash.com/photo-1415804941191-bc0c3bbac10d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVydXxlbnwwfHwwfHx8MA%3D%3D"
+        width={300}
         alt="profilePic"
       />
     </section>

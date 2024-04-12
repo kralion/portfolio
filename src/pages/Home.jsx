@@ -1,5 +1,4 @@
 import {
-  Button,
   IconButton,
   Menu,
   MenuHandler,
@@ -13,6 +12,7 @@ import {
   Code,
   HomeIcon,
   Moon,
+  Mouse,
   Phone,
   Sun,
   User,
@@ -24,7 +24,6 @@ import { TypeAnimation } from "react-type-animation";
 import backgroundImage from "../assets/gradient.svg";
 import profilePic from "../assets/images/profile-pic.png";
 import { Header } from "../components/Header";
-import ScrollAnimation from "../components/ScrollAnimation";
 import { Socials } from "../data";
 import "../styles/styles.css";
 
@@ -164,7 +163,7 @@ export default function Home() {
               className="p-4 flex gap-2 items-center  text-zinc-700 justify-center"
             >
               {darkIcon}
-              {localStorage.theme === "dark" ? "Light Mode" : "Dark Mode"}
+              {localStorage.theme === "dark" ? "Dark Mode" : "Light Mode"}
             </MenuItem>
           </MenuList>
         </Menu>
@@ -177,6 +176,7 @@ export default function Home() {
         width={350}
         alt="profilePic"
       />
+      <Mouse className=" absolute bottom-5 animate-pulse left-1/2 right-1/2" />
       <nav className="hidden lg:flex gap-10 w-[600px] justify-between items-center font-Inter font-semibold tracking-wide text-lg ">
         <header className="hidden lg:flex lg:flex-col rounded-lg gap-6   py-10 ">
           <span className=" lg:block hidden text-5xl  font-Allura">
@@ -249,7 +249,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <ScrollAnimation />
       <img
         data-aos="fade-in"
         data-aos-duration="1500"

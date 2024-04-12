@@ -1,8 +1,8 @@
-import { Mail, PhoneCall } from "lucide-react";
-import React from "react";
-import backgroundImage from "../assets/gradient.jpg";
-import { Socials } from "../data";
 import { IconButton, Tooltip } from "@material-tailwind/react";
+import { Mail } from "lucide-react";
+import React from "react";
+import backgroundImage from "../assets/footer.svg";
+import { Socials } from "../data";
 export default function Contact() {
   return (
     <section
