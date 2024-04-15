@@ -18,6 +18,7 @@ import {
   User,
   X,
 } from "lucide-react";
+import useSound from "use-sound";
 import React, { useEffect, useState } from "react";
 import { scroller as scrollSpy } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
@@ -26,6 +27,9 @@ import profilePic from "../assets/images/profile-pic.png";
 import { Header } from "../components/Header";
 import { Socials } from "../data";
 import "../styles/styles.css";
+import switchOffSound from "../../public/sounds/switch-off.mp3";
+import switchOnSound from "../../public/sounds/switch-on.mp3";
+import menuSound from "../../public/sounds/menu-open.mp3";
 
 export default function Home() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -34,6 +38,10 @@ export default function Home() {
   const scroller = scrollSpy;
   const [activeLink, setActiveLink] = React.useState("home");
   const [openMenu, setOpenMenu] = React.useState(false);
+  const [playOn] = useSound(switchOnSound);
+  const [playOff] = useSound(switchOffSound);
+  const [playMenu] = useSound(menuSound);
+
   const navLinks = [
     {
       name: "Home",
@@ -64,6 +72,7 @@ export default function Home() {
   ];
 
   const handleSelectMobileMenu = (value) => {
+    playMenu();
     if (value) {
       scroller.scrollTo(value, {
         duration: 1000,
@@ -84,9 +93,11 @@ export default function Home() {
     if (localStorage.theme === "dark" || !("theme" in localStorage)) {
       document.documentElement.classList.add("dark");
       setDarkIcon(<Moon size={20} />);
+      playOn();
     } else {
       document.documentElement.classList.remove("dark");
       setDarkIcon(<Sun size={20} />);
+      playOff();
     }
 
     if (localStorage.theme === "dark") {
