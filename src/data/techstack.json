@@ -41,9 +41,9 @@
     "name": "cypress"
   },
   {
-    "icon": "https://svgl.app/library/fastapi.svg",
-    "label": "FastAPI",
-    "name": "fastapi"
+    "icon": "https://svgl.app/library/python.svg",
+    "label": "Python",
+    "name": "python"
   },
   {
     "icon": "https://svgl.app/library/aws.svg",

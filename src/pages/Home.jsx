@@ -12,7 +12,6 @@ import {
   Code,
   HomeIcon,
   Moon,
-  Mouse,
   Phone,
   Sun,
   User,
@@ -34,7 +33,7 @@ import menuSound from "../../public/sounds/menu-open.mp3";
 export default function Home() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const [darkIcon, setDarkIcon] = useState(<Sun size={20} />);
+  const [darkIcon, setDarkIcon] = useState(<Moon size={20} />);
   const scroller = scrollSpy;
   const [activeLink, setActiveLink] = React.useState("home");
   const [openMenu, setOpenMenu] = React.useState(false);
@@ -92,11 +91,11 @@ export default function Home() {
   function handleModeToggle() {
     if (localStorage.theme === "dark" || !("theme" in localStorage)) {
       document.documentElement.classList.add("dark");
-      setDarkIcon(<Moon size={20} />);
+      setDarkIcon(<Sun size={20} />);
       playOn();
     } else {
       document.documentElement.classList.remove("dark");
-      setDarkIcon(<Sun size={20} />);
+      setDarkIcon(<Moon size={20} />);
       playOff();
     }
 
@@ -187,7 +186,6 @@ export default function Home() {
         width={350}
         alt="profilePic"
       />
-      <Mouse className=" absolute bottom-5 animate-pulse left-1/2 right-1/2" />
       <nav className="hidden lg:flex gap-10 w-[600px] justify-between items-center font-Inter font-semibold tracking-wide text-lg ">
         <header className="hidden lg:flex lg:flex-col rounded-lg gap-6   py-10 ">
           <span className=" lg:block hidden text-5xl  font-Allura">
