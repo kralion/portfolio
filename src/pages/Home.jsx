@@ -221,7 +221,7 @@ export default function Home() {
         </header>{" "}
         <button
           onClick={handleModeToggle}
-          className="duration-500 absolute bottom-10 left-10 active:rotate-90 border-2 bg-black dark:bg-white text-white dark:text-black dark:border-white/90 border-black/90 rounded-full p-2"
+          className="duration-500 fixed bottom-5 left-5 active:rotate-90 border-2 bg-black dark:bg-white text-white dark:text-black dark:border-white/90 border-black/90 rounded-full p-2"
         >
           {darkIcon}
         </button>

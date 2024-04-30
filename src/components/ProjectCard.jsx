@@ -21,7 +21,6 @@ export default function Example({
   description,
   usedTechnologies,
   projectImage,
-  projectLink,
 }) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(!open);
@@ -54,11 +53,6 @@ export default function Example({
         <div className="space-y-3">
           <div className=" flex items-baseline justify-between">
             <Typography variant="h5">{projectTitle}</Typography>
-            <a href={projectLink} target="_blank" rel="noreferrer">
-              <IconButton variant="gradient" color="orange" size="sm">
-                <Code2 size={15} />
-              </IconButton>
-            </a>
           </div>
           <Typography variant="small" className="text-left font-Roboto ">
             {description}

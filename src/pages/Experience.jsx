@@ -39,9 +39,8 @@ export default function Experience() {
             "supabase",
             "prisma",
           ]}
-          demoLink="https://exaya.netlify.app"
+          demoLink="https://exaya.vercel.app"
           projectImage={ExayaCover}
-          projectLink="https://github.com/kralion/exaya"
         />
         <ProjectCard
           projectTitle="Powerhub"
@@ -49,7 +48,6 @@ export default function Experience() {
           demoLink="https://powerhub-doeh5taog-brayanpaucar.vercel.app"
           usedTechnologies={["tailwindcss", "nextjs", "mongodb", "typescript"]}
           projectImage={PowerHubCover}
-          projectLink="https://github.com/kralion/powerhub"
         />
         <ProjectCard
           projectTitle="VidPlus"
@@ -57,7 +55,6 @@ export default function Experience() {
           demoLink="https://vidplus-e8edr3vpr-brayanpaucar.vercel.app"
           usedTechnologies={["nextjs", "mysql", "typescript", "tailwindcss"]}
           projectImage={VidplusCover}
-          projectLink="https://github.com/kralion/vidplus"
         />
         <ProjectCard
           projectTitle="Expense Tracker"
@@ -70,7 +67,6 @@ export default function Experience() {
           ]}
           projectImage={ExpenseTrackerCover}
           demoLink="https://expensetrackerweb.vercel.app"
-          projectLink="https://github.com/kralion/expense-tracker"
         />
         <ProjectCard
           projectTitle="Mantaro Tours"
@@ -78,7 +74,6 @@ export default function Experience() {
           demoLink="https://mantarotours.my.canva.site"
           usedTechnologies={["canva", "vercel", "figma"]}
           projectImage={MantaroToursCover}
-          projectLink="https://mantarotours.my.canva.site"
         />
         <ProjectCard
           projectTitle="Parify"
@@ -86,7 +81,6 @@ export default function Experience() {
           demoLink="https://parify.vercel.app"
           usedTechnologies={["docker", "tailwindcss", "vite"]}
           projectImage="https://cdn.dribbble.com/userupload/6319482/file/original-77e9d1c1bd2e944cc97be31180191bf3.png?resize=640x480&vertical=center"
-          projectLink="https://github.com/kralion/parify"
         />
       </div>
       <div className="flex justify-center m-5  lg:my-10">
