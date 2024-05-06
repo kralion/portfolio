@@ -7,6 +7,7 @@ import PowerHubCover from "../assets/repo-covers/powerhub.jpg";
 import VidplusCover from "../assets/repo-covers/vidplus.jpg";
 import GithubIcon from "../assets/svg/github.svg";
 import ProjectCard from "../components/ProjectCard";
+import GrubloCover from "../assets/repo-covers/grublo.jpg";
 
 export default function Experience() {
   return (
@@ -50,11 +51,16 @@ export default function Experience() {
           projectImage={PowerHubCover}
         />
         <ProjectCard
-          projectTitle="VidPlus"
-          description="Vid plus SASS product backbone with modern tech stack, w/ UX best practices."
-          demoLink="https://vidplus-e8edr3vpr-brayanpaucar.vercel.app"
-          usedTechnologies={["nextjs", "mysql", "typescript", "tailwindcss"]}
-          projectImage={VidplusCover}
+          projectTitle="Grublo Inc"
+          description="Software development company with a focus on web development and design."
+          demoLink="https://grublo.netlify.app"
+          usedTechnologies={[
+            "figma",
+            "astro-dark",
+            "typescript",
+            "tailwindcss",
+          ]}
+          projectImage={GrubloCover}
         />
         <ProjectCard
           projectTitle="Expense Tracker"

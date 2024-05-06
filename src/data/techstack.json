@@ -120,5 +120,11 @@
     "icon": "https://svgl.app/library/canva.svg",
     "label": "Canva",
     "name": "canva"
+  },
+
+  {
+    "icon": "https://svgl.app/library/astro.svg",
+    "label": "Astro",
+    "name": "astro-dark"
   }
 ]
