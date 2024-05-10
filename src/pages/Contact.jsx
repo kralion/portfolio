@@ -19,12 +19,12 @@ export default function Contact() {
         data-aos="fade-in"
         data-aos-delay="200"
         data-aos-duration="500"
-        className="space-y-3 p-6"
+        className="space-y-3 lg:p-6 p-5"
       >
         <h3 className="text-2xl font-bold lg:text-4xl">
           Interested In Working With Me? Let me know!
         </h3>
-        <h5 className=" text-black/70 font-light lg:px-64">
+        <h5 className=" text-black/70 font-light  lg:px-64">
           I welcome opportunities to collaborate with talented people. Let's
           connect to see how we can create strong solutions that provide real
           value to the world around us.
