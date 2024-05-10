@@ -1,12 +1,11 @@
 import { Button, Chip } from "@material-tailwind/react";
 import React from "react";
-import MantaroToursCover from "../assets/repo-covers/mantaro-tours.jpg";
 import ExayaCover from "../assets/repo-covers/exaya.jpg";
-import ExpenseTrackerCover from "../assets/repo-covers/expense-tracker.jpg";
+import MonedoCover from "../assets/repo-covers/monedo.jpg";
 import PowerHubCover from "../assets/repo-covers/powerhub.jpg";
-import VidplusCover from "../assets/repo-covers/vidplus.jpg";
 import GithubIcon from "../assets/svg/github.svg";
 import ProjectCard from "../components/ProjectCard";
+import KindranetCover from "../assets/repo-covers/kindranet.jpg";
 import GrubloCover from "../assets/repo-covers/grublo.jpg";
 
 export default function Experience() {
@@ -44,6 +43,20 @@ export default function Experience() {
           projectImage={ExayaCover}
         />
         <ProjectCard
+          projectTitle="Kindranet"
+          description="Modern intranet solution for educational institutions with Edge technology integrations"
+          demoLink="https://kindranet.vercel.app"
+          usedTechnologies={[
+            "prisma",
+            "nextjs",
+            "tailwindcss",
+            "nodejs",
+            "jest",
+            "cypress",
+          ]}
+          projectImage={KindranetCover}
+        />
+        <ProjectCard
           projectTitle="Powerhub"
           description="Essential EV companion for battery stats and nearby charging station tracking."
           demoLink="https://powerhub-doeh5taog-brayanpaucar.vercel.app"
@@ -51,7 +64,7 @@ export default function Experience() {
           projectImage={PowerHubCover}
         />
         <ProjectCard
-          projectTitle="Grublo Inc"
+          projectTitle="Grublo"
           description="Software development company with a focus on web development and design."
           demoLink="https://grublo.netlify.app"
           usedTechnologies={[
@@ -63,24 +76,18 @@ export default function Experience() {
           projectImage={GrubloCover}
         />
         <ProjectCard
-          projectTitle="Expense Tracker"
+          projectTitle="Monedo"
           description="Expense tracking app with cool features for easy expense tracking and seamless user experience."
           usedTechnologies={[
-            "nextjs",
+            "expo",
             "typescript",
             "tailwindcss",
             "github-actions",
           ]}
-          projectImage={ExpenseTrackerCover}
-          demoLink="https://expensetrackerweb.vercel.app"
+          projectImage={MonedoCover}
+          demoLink="https://monedo.vercel.app"
         />
-        <ProjectCard
-          projectTitle="Mantaro Tours"
-          description="SPA for travel agency with AI integrations for personalized travel recommendations."
-          demoLink="https://mantarotours.my.canva.site"
-          usedTechnologies={["canva", "vercel", "figma"]}
-          projectImage={MantaroToursCover}
-        />
+
         <ProjectCard
           projectTitle="Parify"
           description="This project serves as a platform for 3D printers, offering a diverse range of cutting-edge models."
