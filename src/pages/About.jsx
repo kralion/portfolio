@@ -9,11 +9,6 @@ export default function About() {
     <section
       id="about"
       className="flex flex-col lg:flex-row lg:justify-center gap-20 pt-24 lg:pt-16  px-4  items-center font-Source-Sans-Pro"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "right",
-      }}
     >
       <div
         data-aos="fade-in"
@@ -63,12 +58,12 @@ export default function About() {
         </a>
       </div>
       <img
-        data-aos="fade-in"
+        data-aos="flip-left"
         data-aos-duration="1000"
-        className="hidden lg:inline drop-shadow-xl rounded-full"
+        className="hidden lg:inline scale-150 duration-[5s] drop-shadow-2xl rounded-full border-4 border-orange-500 "
         src="https://images.unsplash.com/photo-1415804941191-bc0c3bbac10d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVydXxlbnwwfHwwfHx8MA%3D%3D"
         width={300}
-        alt="profilePic"
+        alt="pic"
       />
     </section>
   );

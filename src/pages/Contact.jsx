@@ -1,5 +1,5 @@
 import { IconButton, Tooltip } from "@material-tailwind/react";
-import { Mail } from "lucide-react";
+import { Inbox, Mail } from "lucide-react";
 import React from "react";
 import backgroundImage from "../assets/footer.svg";
 import { Socials } from "../data";
@@ -13,16 +13,16 @@ export default function Contact() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
-      className=" font-Source-Sans-Pro pt-20 h-screen lg:h-auto space-y-8 lg:rounded-t-3xl py-10 text-center lg:p-24"
+      className=" font-Source-Sans-Pro pt-20 text-black h-screen lg:h-auto space-y-8 lg:rounded-t-3xl py-10 text-center lg:p-24"
     >
       <div
         data-aos="fade-in"
         data-aos-delay="200"
         data-aos-duration="500"
-        className="space-y-4 p-10"
+        className="space-y-3 p-6"
       >
         <h3 className="text-2xl font-bold lg:text-4xl">
-          Interested In Working With Me? Please let me know!
+          Interested In Working With Me? Let me know!
         </h3>
         <h5 className=" text-black/70 font-light lg:px-64">
           I welcome opportunities to collaborate with talented people. Let's
@@ -43,19 +43,15 @@ export default function Contact() {
             rel="noreferrer"
             href="https://dm.new/brayan"
           >
-            <button className="button lg:text-md font-Source-Sans-Pro  group rounded text-sm font-bold uppercase ">
+            <button className="button  lg:text-md font-Source-Sans-Pro  group rounded text-sm font-bold uppercase ">
               Contact Me
             </button>
           </a>
         </div>
-        <div className="flex gap-2 items-center mx-auto">
-          <hr className="border border-black/50 lg:w-20 w-14 rounded-md " />
-          or
-          <hr className="rounded-md border border-black/50 lg:w-20 w-14" />
-        </div>
-        <div className="font-Source-Sans-Pro text-xs lg:text-lg  flex px-10 lg:px-0 justify-center">
+
+        <div className="font-Source-Sans-Pro text-xs lg:text-[15px] lg:mt-8  flex px-10  justify-center">
           <span className="flex cursor-pointer items-center gap-2 hover:opacity-70">
-            <Mail color="black" size={15} />
+            <Inbox color="black" size={15} />
             brayanjoanpm@gmail.com
           </span>
         </div>
