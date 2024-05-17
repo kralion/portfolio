@@ -22,7 +22,7 @@ export default function About() {
           variant="gradient"
           value="About Me"
         />
-        <h3 className="lg:text-3xl text-2xl font-Inter flex items-center gap-1">
+        <h3 className="lg:text-3xl text-2xl  font-Inter flex items-center gap-1">
           Who I am & What I do <span className="text-orange-600">?</span>
         </h3>
         <div className="text-black dark:text-gray-100    ">
@@ -60,7 +60,7 @@ export default function About() {
       <img
         data-aos="flip-left"
         data-aos-duration="1000"
-        className="hidden lg:inline scale-150 duration-[5s] drop-shadow-2xl rounded-full border-4 border-orange-500 "
+        className="hidden lg:inline scale-105 duration-[5s] drop-shadow-2xl rounded-full border-4 border-orange-500 "
         src="https://images.unsplash.com/photo-1415804941191-bc0c3bbac10d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVydXxlbnwwfHwwfHx8MA%3D%3D"
         width={300}
         alt="pic"

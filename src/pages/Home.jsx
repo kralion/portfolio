@@ -19,16 +19,18 @@ import {
 } from "lucide-react";
 import useSound from "use-sound";
 import React, { useEffect, useState } from "react";
+import ProfileSvg from "../assets/svg/profile.svg";
 import { scroller as scrollSpy } from "react-scroll";
-import { TypeAnimation } from "react-type-animation";
+
 import backgroundImage from "../assets/gradient.svg";
-import profilePic from "../assets/images/profile-pic.png";
+
 import { Header } from "../components/Header";
 import { Socials } from "../data";
 import "../styles/styles.css";
 import switchOffSound from "../../public/sounds/switch-off.mp3";
 import switchOnSound from "../../public/sounds/switch-on.mp3";
 import menuSound from "../../public/sounds/menu-open.mp3";
+import { FlipWords } from "../components/flip-words";
 
 export default function Home() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -122,6 +124,7 @@ export default function Home() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible]);
+  const words = ["WEB", "MOBILE", "DESKTOP"];
 
   return (
     <div
@@ -129,9 +132,9 @@ export default function Home() {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
+        backgroundPosition: "center bottom",
       }}
-      className="pb-20 mb-2 min-h-[100dvh] dark:bg-zinc-800 flex flex-col lg:justify-around  space-y-10 lg:items-end"
+      className=" mb-2 min-h-[100dvh]  dark:bg-black flex flex-col lg:justify-around  space-y-10 "
     >
       <Header>
         <Menu
@@ -178,20 +181,32 @@ export default function Home() {
           </MenuList>
         </Menu>
       </Header>
+
       <img
-        data-aos="fade-in"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
         data-aos-duration="1000"
-        className="hidden lg:absolute lg:left-40 top-8 lg:inline drop-shadow-xl rounded-full"
-        src={profilePic}
-        width={350}
+        className="hidden lg:absolute lg:right-40 top-28 lg:inline drop-shadow-xl  "
+        src={ProfileSvg}
+        width={400}
         alt="profilePic"
       />
-      <nav className="hidden lg:flex gap-10 w-[600px] justify-between items-center font-Inter font-semibold tracking-wide text-lg ">
-        <header className="hidden lg:flex lg:flex-col rounded-lg gap-6   py-10 ">
-          <span className=" lg:block hidden text-5xl  font-Allura">
-            Brayan Paucar
-          </span>
-          <nav className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
+      <nav className=" flex gap-10 lg:w-[600px] justify-between items-center font-Inter font-semibold tracking-wide text-lg ">
+        <div className="flex flex-col gap-14 w-[600px] justify-between items-center font-Inter font-semibold tracking-wide text-lg ">
+          <img
+            data-aos="fade-in"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+            className=" lg:hidden   drop-shadow-lg   "
+            src={ProfileSvg}
+            alt="profilePic"
+          />
+          <div className="lg:text-6xl  lg:mt-72 -mt-14  text-4xl text-neutral-600  dark:text-neutral-400 font-Inter ">
+            <FlipWords className="text-yellow-700 mb-2" words={words} />
+            <br />
+            DEVELOPER
+          </div>{" "}
+          <section className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
             <ul className="flex gap-3">
               {Socials.map((social, index) => (
                 <li
@@ -217,55 +232,18 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-          </nav>
-        </header>{" "}
+          </section>
+          <span className=" lg:block hidden  text-5xl  font-Allura absolute right-56 bottom-16">
+            Brayan Paucar
+          </span>
+        </div>
         <button
           onClick={handleModeToggle}
-          className="duration-500 fixed bottom-5 left-5 active:rotate-90 border-2 bg-black dark:bg-white text-white dark:text-black dark:border-white/90 border-black/90 rounded-full p-2"
+          className="duration-500 z-50 fixed bottom-5 left-5 active:rotate-90 border-2 bg-black dark:bg-white text-white dark:text-black dark:border-white/90 border-black/90 rounded-full p-2"
         >
           {darkIcon}
         </button>
       </nav>
-
-      <div className="flex  justify-center items-center lg:flex-row gap-10 lg:gap-0 flex-col-reverse lg:justify-between  lg:mx-28 mt-16 lg:mt-0 font-Inter ">
-        <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
-          <div className="flex flex-col gap-2 font-bold text-center text-5xl lg:text-6xl">
-            <span>
-              {" "}
-              <TypeAnimation
-                sequence={["", 500, "WEB", 500]}
-                cursor={false}
-                wrapper="span"
-                className="text-orange-500 dark:text-white"
-                style={{ display: "inline-block" }}
-              />
-              <span className=" text-black"> & </span>
-            </span>{" "}
-            <TypeAnimation
-              sequence={["", 1000, "MOBILE", 500]}
-              wrapper="span"
-              className="text-black dark:text-white"
-              cursor={false}
-              style={{ display: "inline-block" }}
-            />
-            <TypeAnimation
-              className="text-black "
-              sequence={["", 2000, "DEVELOPER", 500]}
-              wrapper="span"
-              cursor={true}
-              style={{ display: "inline-block" }}
-            />
-          </div>
-        </div>
-      </div>
-      <img
-        data-aos="fade-in"
-        data-aos-duration="1500"
-        data-aos-delay="300"
-        className=" lg:hidden drop-shadow-lg   "
-        src={profilePic}
-        alt="profilePic"
-      />
     </div>
   );
 }

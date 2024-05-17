@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export function Header({ children }: { children: React.ReactNode }) {
+export function Header({ children }) {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
