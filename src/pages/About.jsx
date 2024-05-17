@@ -1,7 +1,6 @@
 import { Chip } from "@material-tailwind/react";
 import { ExternalLink } from "lucide-react";
 import React from "react";
-import profilePic from "../assets/images/profile-pic.png";
 import backgroundImage from "../assets/gradient2.svg";
 
 export default function About() {
