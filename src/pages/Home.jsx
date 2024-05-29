@@ -4,7 +4,6 @@ import {
   MenuHandler,
   MenuItem,
   MenuList,
-  Tooltip,
 } from "@material-tailwind/react";
 import {
   Briefcase,
@@ -20,11 +19,11 @@ import {
 import React, { useEffect, useState } from "react";
 import { scroller as scrollSpy } from "react-scroll";
 import useSound from "use-sound";
-import ProfileSvg from "../assets/svg/profile.svg";
-import backgroundImage from "../assets/gradient.svg";
 import menuSound from "../../public/sounds/menu-open.mp3";
 import switchOffSound from "../../public/sounds/switch-off.mp3";
 import switchOnSound from "../../public/sounds/switch-on.mp3";
+import backgroundImage from "../assets/gradient.svg";
+import ProfileSvg from "../assets/svg/profile.svg";
 import { Header } from "../components/Header";
 import { FlipWords } from "../components/flip-words";
 import { Socials } from "../data";

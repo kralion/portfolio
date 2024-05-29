@@ -1,7 +1,6 @@
 import { Chip } from "@material-tailwind/react";
 import { ExternalLink } from "lucide-react";
 import React from "react";
-import backgroundImage from "../assets/gradient2.svg";
 
 export default function About() {
   return (
@@ -24,7 +23,7 @@ export default function About() {
         <h3 className="lg:text-3xl text-2xl font-black   font-Obviously flex items-center gap-1">
           Who I am , What I do
         </h3>
-        <div className="text-black dark:text-gray-100    ">
+        <div className="text-black dark:text-gray-100 text-sm lg:text-md   ">
           I'm Brayan, a dynamic <strong> Software </strong>and
           <strong> AI </strong>Engineer from South America, committed to forging
           innovative solutions for real-world challenges. My drive for tackling
