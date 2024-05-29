@@ -12,13 +12,13 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className=" lg:mx-24 pt-24 lg:pt-16 space-y-10 font-Source-Sans-Pro"
+      className=" lg:mx-24 pt-24 lg:pt-16 lg:space-y-20 space-y-10 font-Obviously"
     >
       <header
         data-aos="zoom-in"
         data-aos-delay="200"
         data-aos-duration="1000"
-        className="space-y-3.5 text-center"
+        className="space-y-2 text-center"
       >
         <Chip
           color="orange"
@@ -26,7 +26,9 @@ export default function Experience() {
           variant="gradient"
           value="Experience"
         />
-        <h3 className="lg:text-4xl text-2xl font-Inter font-bold">Projects</h3>
+        <h3 className="lg:text-4xl text-2xl  font-Obviously font-black">
+          Projects
+        </h3>
       </header>
       <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 ">
         <ProjectCard

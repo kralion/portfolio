@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col lg:flex-row lg:justify-center gap-20 pt-24 lg:pt-16  px-4  items-center font-Source-Sans-Pro"
+      className="flex flex-col lg:flex-row lg:justify-center gap-20 pt-24 lg:pt-16  px-4  items-center "
     >
       <div
         data-aos="fade-in"
@@ -21,8 +21,8 @@ export default function About() {
           variant="gradient"
           value="About Me"
         />
-        <h3 className="lg:text-3xl text-2xl  font-Inter flex items-center gap-1">
-          Who I am & What I do <span className="text-orange-600">?</span>
+        <h3 className="lg:text-3xl text-2xl font-black   font-Obviously flex items-center gap-1">
+          Who I am , What I do
         </h3>
         <div className="text-black dark:text-gray-100    ">
           I'm Brayan, a dynamic <strong> Software </strong>and

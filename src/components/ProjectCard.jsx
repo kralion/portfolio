@@ -52,7 +52,9 @@ export default function Example({
       <CardBody className="space-y-8">
         <div className="space-y-3">
           <div className=" flex items-baseline justify-between">
-            <Typography variant="h5">{projectTitle}</Typography>
+            <Typography variant="h6" className="font-Obviously">
+              {projectTitle}
+            </Typography>
           </div>
           <Typography variant="small" className="text-left font-Roboto ">
             {description}

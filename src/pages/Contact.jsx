@@ -13,18 +13,18 @@ export default function Contact() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
-      className=" font-Source-Sans-Pro pt-20 text-black h-screen lg:h-auto space-y-8 lg:rounded-t-3xl py-10 text-center lg:p-24"
+      className="  pt-20 text-black h-screen lg:h-auto space-y-8 lg:rounded-t-3xl py-10 text-center lg:p-24"
     >
       <div
         data-aos="fade-in"
         data-aos-delay="200"
         data-aos-duration="500"
-        className="space-y-3 lg:p-6 p-5"
+        className="space-y-5 lg:p-6 p-5"
       >
-        <h3 className="text-2xl font-bold lg:text-4xl">
-          Interested In Working With Me? Let me know!
+        <h3 className="text-xl font-bold lg:text-4xl font-Obviously">
+          Interested In Working With Me?
         </h3>
-        <h5 className=" text-black/70 font-light  lg:px-64">
+        <h5 className="  font-inter  lg:px-64">
           I welcome opportunities to collaborate with talented people. Let's
           connect to see how we can create strong solutions that provide real
           value to the world around us.
@@ -43,13 +43,13 @@ export default function Contact() {
             rel="noreferrer"
             href="https://dm.new/brayan"
           >
-            <button className="button  lg:text-md font-Source-Sans-Pro  group rounded text-sm font-bold uppercase ">
+            <button className="button  lg:text-md   group rounded text-sm font-bold uppercase ">
               Contact Me
             </button>
           </a>
         </div>
 
-        <div className="font-Source-Sans-Pro text-xs lg:text-[15px] lg:mt-8  flex px-10  justify-center">
+        <div className="text-xs lg:text-[15px] lg:mt-8  flex px-10  justify-center">
           <span className="flex cursor-pointer items-center gap-2 hover:opacity-70">
             <Inbox color="black" size={15} />
             brayanjoanpm@gmail.com

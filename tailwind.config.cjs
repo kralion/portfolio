@@ -6,6 +6,7 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
+        Obviously: ["Obviously", "sans-serif"],
         "Source-Sans-Pro": ["Source Sans Pro", "sans-serif"],
         Roboto: ["Roboto", "sans-serif"],
         Inter: ["Inter", "sans-serif"],

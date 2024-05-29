@@ -8,6 +8,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Obviously";
+  src: url(../public/font/ObviouslyDemo-Regular.otf);
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }

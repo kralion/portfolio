@@ -2,15 +2,15 @@ import { Chip } from "@material-tailwind/react";
 import { Technologies } from "../data";
 export default function TechStack() {
   return (
-    <div className="  pt-24 lg:pt-16 text-center lg:space-y-20 space-y-16 font-Source-Sans-Pro">
-      <div className="text-center space-y-10">
+    <div className="  pt-24 lg:pt-16 text-center lg:space-y-20 space-y-10 font-Obviously">
+      <div className="text-center space-y-2">
         <Chip
           color="orange"
           className="w-fit rounded-full mx-auto  "
           variant="gradient"
           value="My Tech Stack"
         />
-        <h3 className="lg:text-3xl text-2xl font-Inter gap-1">
+        <h3 className="lg:text-3xl text-2xl font-black   gap-1">
           Technologies I work with
         </h3>
       </div>

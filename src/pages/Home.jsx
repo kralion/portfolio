@@ -17,20 +17,18 @@ import {
   User,
   X,
 } from "lucide-react";
-import useSound from "use-sound";
 import React, { useEffect, useState } from "react";
-import ProfileSvg from "../assets/svg/profile.svg";
 import { scroller as scrollSpy } from "react-scroll";
-
+import useSound from "use-sound";
+import ProfileSvg from "../assets/svg/profile.svg";
 import backgroundImage from "../assets/gradient.svg";
-
-import { Header } from "../components/Header";
-import { Socials } from "../data";
-import "../styles/styles.css";
+import menuSound from "../../public/sounds/menu-open.mp3";
 import switchOffSound from "../../public/sounds/switch-off.mp3";
 import switchOnSound from "../../public/sounds/switch-on.mp3";
-import menuSound from "../../public/sounds/menu-open.mp3";
+import { Header } from "../components/Header";
 import { FlipWords } from "../components/flip-words";
+import { Socials } from "../data";
+import "../styles/styles.css";
 
 export default function Home() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -181,7 +179,6 @@ export default function Home() {
           </MenuList>
         </Menu>
       </Header>
-
       <img
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
@@ -191,8 +188,9 @@ export default function Home() {
         width={400}
         alt="profilePic"
       />
-      <nav className=" flex gap-10 lg:w-[600px] justify-between items-center font-Inter font-semibold tracking-wide text-lg ">
-        <div className="flex flex-col gap-14 w-[600px] justify-between items-center font-Inter font-semibold tracking-wide text-lg ">
+
+      <nav className=" flex gap-10 lg:w-[600px] justify-between items-center font-Obviously font-semibold tracking-wide text-lg ">
+        <div className="flex flex-col gap-14 w-[600px] justify-between items-center  font-Obviously font-semibold tracking-wide text-lg ">
           <img
             data-aos="fade-in"
             data-aos-duration="1500"
@@ -201,12 +199,15 @@ export default function Home() {
             src={ProfileSvg}
             alt="profilePic"
           />
-          <div className="lg:text-6xl  lg:mt-72 -mt-14  text-4xl text-neutral-600  dark:text-neutral-400 font-Inter ">
-            <FlipWords className="text-yellow-700 mb-2" words={words} />
+          <div className="lg:text-6xl  lg:mt-72 -mt-14  text-4xl text-neutral-600  dark:text-neutral-400    ">
+            <FlipWords
+              className="text-yellow-700 mb-2 font-black font-Obviously"
+              words={words}
+            />
             <br />
             DEVELOPER
           </div>{" "}
-          <section className="font-Source-Sans-Pro hidden lg:inline font-semibold tracking-wide ">
+          <section className="font-Obviously hidden lg:inline font-semibold tracking-wide ">
             <ul className="flex gap-3">
               {Socials.map((social, index) => (
                 <li
@@ -216,24 +217,27 @@ export default function Home() {
                   key={index}
                   className="cursor-pointer"
                 >
-                  <Tooltip placement="top" content={social.label}>
-                    <a href={social.url} target="_blank" rel="noreferrer">
-                      <IconButton color="white" variant="gradient" size="md">
-                        <img
-                          title={social.label}
-                          src={social.logo}
-                          alt={social.name}
-                          width={30}
-                          height={30}
-                        />
-                      </IconButton>
-                    </a>
-                  </Tooltip>
+                  <a
+                    href={social.url}
+                    target="_blank"
+                    className="hover:opacity-80"
+                    rel="noreferrer"
+                  >
+                    <IconButton color="white" variant="gradient" size="md">
+                      <img
+                        title={social.label}
+                        src={social.logo}
+                        alt={social.name}
+                        width={30}
+                        height={30}
+                      />
+                    </IconButton>
+                  </a>
                 </li>
               ))}
             </ul>
           </section>
-          <span className=" lg:block hidden  text-5xl  font-Allura absolute right-56 bottom-16">
+          <span className=" lg:block hidden font-thin font-Allura  text-5xl   absolute right-56 bottom-16">
             Brayan Paucar
           </span>
         </div>
