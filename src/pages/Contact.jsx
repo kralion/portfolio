@@ -1,5 +1,5 @@
 import { IconButton, Tooltip } from "@material-tailwind/react";
-import { Inbox, Mail } from "lucide-react";
+import { Inbox } from "lucide-react";
 import React from "react";
 import backgroundImage from "../assets/footer.svg";
 import { Socials } from "../data";
@@ -51,7 +51,7 @@ export default function Contact() {
 
         <div className="text-xs lg:text-[15px] lg:mt-8  flex px-10  justify-center">
           <span className="flex cursor-pointer items-center gap-2 hover:opacity-70">
-            <Inbox color="black" size={15} />
+            <Inbox size={20} />
             brayanjoanpm@gmail.com
           </span>
         </div>
