@@ -46,7 +46,7 @@ export default function About() {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="button rounded flex gap-2 items-center text-sm lg:text-md font-semibold uppercase">
+          <button className="button rounded dark:bg-orange-500 flex gap-2 items-center text-sm lg:text-md font-semibold uppercase">
             My Resume{" "}
             <ExternalLink
               className="group-hover:translate-x-0.5 duration-100 group-hover:-translate-y-0.5 ease-in"

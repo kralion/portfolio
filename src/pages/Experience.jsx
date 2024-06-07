@@ -112,6 +112,7 @@ export default function Experience() {
               <Button
                 variant="gradient"
                 fullWidth
+                color="orange"
                 className="flex rounded-lg gap-3 justify-center font-semibold items-center"
               >
                 Go to Github

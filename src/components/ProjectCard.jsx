@@ -6,14 +6,11 @@ import {
   CardHeader,
   Dialog,
   DialogBody,
-  IconButton,
   Tooltip,
   Typography,
 } from "@material-tailwind/react";
-import { ArrowUpRight, Code2 } from "lucide-react";
 import { useState } from "react";
 import { Technologies } from "./../data";
-import ExternalLink from "../assets/svg/external-link.svg";
 
 export default function Example({
   projectTitle,
@@ -85,15 +82,10 @@ export default function Example({
           <Button
             variant="gradient"
             fullWidth
+            color="orange"
             className="flex rounded-lg gap-3 justify-center font-semibold items-end"
           >
-            View Demo
-            <img
-              src={ExternalLink}
-              alt="external link"
-              width={18}
-              height={18}
-            />
+            Live Preview
           </Button>
         </a>
       </CardFooter>

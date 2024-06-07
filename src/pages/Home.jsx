@@ -1,4 +1,4 @@
-  import {
+import {
   IconButton,
   Menu,
   MenuHandler,
@@ -124,15 +124,7 @@ export default function Home() {
   const words = ["WEB", "MOBILE", "DESKTOP"];
 
   return (
-    <div
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center bottom",
-      }}
-      className=" mb-2 min-h-[100dvh]  dark:bg-black flex flex-col lg:justify-around  space-y-10 "
-    >
+    <div className=" mb-2 min-h-[100dvh]  dark:bg-black flex lg:flex-row justify-center gap-20 flex-col  space-y-10 ">
       <Header>
         <Menu
           open={openMenu}
@@ -178,15 +170,6 @@ export default function Home() {
           </MenuList>
         </Menu>
       </Header>
-      <img
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="1000"
-        className="hidden lg:absolute lg:right-40 top-28 lg:inline drop-shadow-xl  "
-        src={ProfileSvg}
-        width={400}
-        alt="profilePic"
-      />
 
       <nav className=" flex gap-10 lg:w-[600px] justify-between items-center font-Obviously font-semibold tracking-wide text-lg ">
         <div className="flex flex-col gap-14 w-[600px] justify-between items-center  font-Obviously font-semibold tracking-wide text-lg ">
@@ -198,9 +181,9 @@ export default function Home() {
             src={ProfileSvg}
             alt="profilePic"
           />
-          <div className="lg:text-6xl  lg:mt-72 -mt-14  text-4xl text-neutral-600  dark:text-neutral-400    ">
+          <div className="lg:text-7xl lg:mt-0  -mt-14  text-4xl text-neutral-600  dark:text-neutral-400    ">
             <FlipWords
-              className="text-yellow-700 mb-2 font-black font-Obviously"
+              className="text-orange-500 mb-2 font-black font-Obviously"
               words={words}
             />
             <br />
@@ -236,7 +219,7 @@ export default function Home() {
               ))}
             </ul>
           </section>
-          <span className=" lg:block hidden font-thin font-Allura  text-5xl   absolute right-56 bottom-16">
+          <span className=" lg:block hidden font-thin font-Allura  text-5xl   absolute right-56 bottom-16 z-50">
             Brayan Paucar
           </span>
         </div>
@@ -247,6 +230,23 @@ export default function Home() {
           {darkIcon}
         </button>
       </nav>
+
+      <img
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPositionY: "300px",
+          backgroundPositionX: "80px",
+          backgroundSize: "550px",
+          backdropFilter: "blur(10px)",
+        }}
+        data-aos="fade-in"
+        data-aos-easing="ease-out-cubic"
+        className="hidden lg:inline drop-shadow-xl "
+        src={ProfileSvg}
+        width={400}
+        alt="profilePic"
+      />
     </div>
   );
 }
