@@ -41,7 +41,7 @@ export default function Contact() {
             target="_blank"
             className="w-fit"
             rel="noreferrer"
-            href="https://dm.new/brayan"
+            href="https://cal.com/brayanpaucar/portfolio-contact"
           >
             <button className="button  lg:text-md   group rounded text-sm font-bold uppercase ">
               Contact Me
