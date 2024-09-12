@@ -30,7 +30,7 @@ export default function Experience() {
           Projects
         </h3>
       </header>
-      <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 ">
+      <div className="grid  grid-cols-1 lg:grid-cols-6 gap-10 ">
         <ProjectCard
           projectTitle="Exaya"
           description="Modern transportation management system with AI integrations"
@@ -65,6 +65,7 @@ export default function Experience() {
           usedTechnologies={["tailwindcss", "nextjs", "mongodb", "typescript"]}
           projectImage={PowerHubCover}
         />
+        <div></div>
         <ProjectCard
           projectTitle="Grublo"
           description="Software development company with a focus on web development and design."
@@ -77,6 +78,7 @@ export default function Experience() {
           ]}
           projectImage={GrubloCover}
         />
+
         <ProjectCard
           projectTitle="Monedo"
           description="Expense tracking app with cool features for easy expense tracking and seamless user experience."
@@ -89,14 +91,7 @@ export default function Experience() {
           projectImage={MonedoCover}
           demoLink="https://monedo.vercel.app"
         />
-
-        <ProjectCard
-          projectTitle="Parify"
-          description="This project serves as a platform for 3D printers, offering a diverse range of cutting-edge models."
-          demoLink="https://parify.vercel.app"
-          usedTechnologies={["docker", "tailwindcss", "nextjs", "typescript"]}
-          projectImage="https://cdn.dribbble.com/userupload/6319482/file/original-77e9d1c1bd2e944cc97be31180191bf3.png?resize=640x480&vertical=center"
-        />
+        <div></div>
       </div>
       <div className="flex justify-center m-5  lg:my-10">
         <div className="w-[700px]  p-5 col-span-2 hover:shadow-2xl shadow-xl  rounded-2xl duration-200 bg-white dark:bg-gray-900 border-2 dark:border-gray-800/30 ">

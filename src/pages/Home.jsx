@@ -124,7 +124,15 @@ export default function Home() {
   const words = ["WEB", "MOBILE", "DESKTOP"];
 
   return (
-    <div className=" mb-2 min-h-[100dvh]  dark:bg-black flex lg:flex-row justify-center gap-20 flex-col  space-y-10 ">
+    <div
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "1200px",
+        backgroundPositionY: "-300px",
+      }}
+      className=" mb-2 min-h-[100dvh]  dark:bg-black flex  lg:justify-center lg:items-center gap-20 flex-col   "
+    >
       <Header>
         <Menu
           open={openMenu}
@@ -145,7 +153,7 @@ export default function Home() {
             </div>
           </MenuHandler>
 
-          <MenuList className="  bg-orange-100  rounded-lg border-none mt-4  w-screen   ">
+          <MenuList className="  bg-orange-100  rounded-lg border-none   w-screen   ">
             {navLinks.map((link, index) => (
               <MenuItem
                 key={index}
@@ -170,9 +178,22 @@ export default function Home() {
           </MenuList>
         </Menu>
       </Header>
+      <div className="-space-y-10">
+        <img
+          data-aos="fade-in"
+          data-aos-easing="ease-out-cubic"
+          className="hidden lg:inline  "
+          src={ProfileSvg}
+          width={400}
+          alt="profilePic"
+        />
+        <span className=" lg:block hidden font-thin font-Allura  text-6xl  ">
+          Brayan Paucar
+        </span>
+      </div>
 
-      <nav className=" flex gap-10 lg:w-[600px] justify-between items-center font-Obviously font-semibold tracking-wide text-lg ">
-        <div className="flex flex-col gap-14 w-[600px] justify-between items-center  font-Obviously font-semibold tracking-wide text-lg ">
+      <nav className=" flex gap-4  justify-between items-center font-Obviously font-semibold tracking-wide text-lg ">
+        <div className="flex flex-col gap-10 w-screen justify-between items-center  font-Obviously font-semibold tracking-wide text-lg ">
           <img
             data-aos="fade-in"
             data-aos-duration="1500"
@@ -219,9 +240,6 @@ export default function Home() {
               ))}
             </ul>
           </section>
-          <span className=" lg:block hidden font-thin font-Allura  text-5xl   absolute right-56 bottom-16 z-50">
-            Brayan Paucar
-          </span>
         </div>
         <button
           onClick={handleModeToggle}
@@ -230,23 +248,6 @@ export default function Home() {
           {darkIcon}
         </button>
       </nav>
-
-      <img
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPositionY: "300px",
-          backgroundPositionX: "80px",
-          backgroundSize: "550px",
-          backdropFilter: "blur(10px)",
-        }}
-        data-aos="fade-in"
-        data-aos-easing="ease-out-cubic"
-        className="hidden lg:inline drop-shadow-xl "
-        src={ProfileSvg}
-        width={400}
-        alt="profilePic"
-      />
     </div>
   );
 }

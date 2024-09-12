@@ -26,7 +26,7 @@ export default function Example({
       data-aos="fade-in"
       data-aos-delay="200"
       data-aos-duration="1000"
-      className="hover:shadow-2xl shadow-xl mt-6 bg-white dark:bg-gray-900  border-2 dark:border-gray-800/30 text-black dark:text-white  lg:mx-0 mx-5 rounded-2xl duration-200 "
+      className="hover:shadow-2xl col-span-2 shadow-xl mt-6 bg-white dark:bg-gray-900  border-2 dark:border-gray-800/30 text-black dark:text-white  lg:mx-0 mx-5 rounded-2xl duration-200 "
     >
       <Dialog size="xl" open={open} handler={handleOpen}>
         <DialogBody>
