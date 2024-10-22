@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/icon.png" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const favicon = document.querySelector('link[rel="icon"]');
+        if (favicon) {
+          document.addEventListener("visibilitychange", () => {
+            const hidden = document.hidden;
+            favicon.setAttribute("href", hidden ? "/icon2.png" : "/icon.png");
+          });
+        }
+      });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
   </head>
